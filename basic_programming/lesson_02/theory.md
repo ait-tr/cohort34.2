@@ -85,12 +85,16 @@ Hi, my name is Kostya
 
 ## Part 4: Variables and Data Types
 
-### Variables
+[//]: # (### Variables)
 
-- Variables are "containers" for storing information that can be used and modified in the program.
-- Real-life examples
-- **Wallet**: A variable is like a wallet where you can store money (values). You can put money into it, take money out
-  of it, or check how much money you have.
+[//]: # ()
+[//]: # (- Variables are "containers" for storing information that can be used and modified in the program.)
+
+[//]: # (- Real-life examples)
+
+[//]: # (- **Wallet**: A variable is like a wallet where you can store money &#40;values&#41;. You can put money into it, take money out)
+
+[//]: # (  of it, or check how much money you have.)
 
 ### Primitive Types and Strings
 

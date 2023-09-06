@@ -37,17 +37,23 @@
 - Examples and features of Java syntax.
 - Class name and file name.
 
-## Part 4: Variables and Data Types
+[//]: # (## Part 4: Variables and Data Types)
 
-### Variables
+[//]: # ()
+[//]: # (### Variables)
 
-- What are variables and how to use them.
+[//]: # ()
+[//]: # (- What are variables and how to use them.)
 
-### Primitive Types and Strings
+[//]: # ()
+[//]: # (### Primitive Types and Strings)
 
-- Overview of primitive data types and strings in Java.
-- Minimum and maximum values of primitive types.
-- How primitive types are stored in memory.
+[//]: # ()
+[//]: # (- Overview of primitive data types and strings in Java.)
+
+[//]: # (- Minimum and maximum values of primitive types.)
+
+[//]: # (- How primitive types are stored in memory.)
 
 
 # План 2 Урока (Русский)
