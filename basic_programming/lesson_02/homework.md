@@ -8,19 +8,19 @@ Create a separate project for each task!
 
 ```java
 public class Main {
-    void currentCity() {
+    public static void currentCity() {
     }
 
-    void yourNickname() {
+    public static void yourNickname() {
     }
 
     public static void main(String[] args) {
     }
 
-    void yourName() {
+    public static void yourName() {
     }
 
-    void casualTalk() {
+    public static void casualTalk() {
     }
 }
 ```
@@ -126,19 +126,19 @@ Favorite Drink: [Your Favorite Drink]
 ````java
 public class Main {
 
-    void currentCity() {
+    public static void currentCity() {
     }
 
-    void yourNickname() {
+    public static void yourNickname() {
     }
 
     public static void main(String[] args) {
     }
 
-    void yourName() {
+    public static void yourName() {
     }
 
-    void casualTalk() {
+    public static void casualTalk() {
     }
 }
 ````
@@ -207,26 +207,44 @@ public class CommonSymbols {
 
 ![img.png](img.png)
 
-## Задача 4: Понимание переменных и присваивания
+[//]: # (## Задача 4: Понимание переменных и присваивания)
 
-Объявление переменных, их инициализации и присваивания значений.
+[//]: # ()
+[//]: # (Объявление переменных, их инициализации и присваивания значений.)
 
-````java
-public class VariableBasics {
-    public static void main(String[] args) {
-        // Объявите переменную типа int с именем 'daysInDecember'
-        // Инициализируйте 'daysInDecember' значением 31
-        // Объявите и инициализируйте переменную типа double с именем 'pi' значением 3.14159
-        // Объявите переменную типа String с именем 'favoriteDrink' и присвойте ей название вашего любимого напитка
-        // Выведите все переменные в консоль
-    }
-}
-````
+[//]: # ()
+[//]: # (````java)
 
-**Ожидаемый вывод** (обратите внимание на порядок вывода)
+[//]: # (public class VariableBasics {)
 
-````text
-Дней в декабре: 31
-Число Пи: 3.14159
-Любимый напиток: [Ваш любимый напиток]
-````
+[//]: # (    public static void main&#40;String[] args&#41; {)
+
+[//]: # (        // Объявите переменную типа int с именем 'daysInDecember')
+
+[//]: # (        // Инициализируйте 'daysInDecember' значением 31)
+
+[//]: # (        // Объявите и инициализируйте переменную типа double с именем 'pi' значением 3.14159)
+
+[//]: # (        // Объявите переменную типа String с именем 'favoriteDrink' и присвойте ей название вашего любимого напитка)
+
+[//]: # (        // Выведите все переменные в консоль)
+
+[//]: # (    })
+
+[//]: # (})
+
+[//]: # (````)
+
+[//]: # ()
+[//]: # (**Ожидаемый вывод** &#40;обратите внимание на порядок вывода&#41;)
+
+[//]: # ()
+[//]: # (````text)
+
+[//]: # (Дней в декабре: 31)
+
+[//]: # (Число Пи: 3.14159)
+
+[//]: # (Любимый напиток: [Ваш любимый напиток])
+
+[//]: # (````)
