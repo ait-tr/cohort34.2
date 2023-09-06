@@ -96,31 +96,51 @@ Hi, my name is Kostya
 
 [//]: # (  of it, or check how much money you have.)
 
-### Primitive Types and Strings
+[//]: # (### Primitive Types and Strings)
 
-- Java has different data types:
-- boolean values (boolean)
-- integers (byte, short, int, long)
-- floating-point numbers (double, float)
-- characters (char)
-- strings (String).
-  The data type determines the range of values that a variable can store.
+[//]: # ()
+[//]: # (- Java has different data types:)
 
-| Type    | Description                         | Example code                  | Range of values                                         | Size (in bits) | Size in bytes |
-|---------|-------------------------------------|-------------------------------|---------------------------------------------------------|----------------|---------------|
-| boolean | Stores either true or false         | boolean isActive = false;     | true,  false                                            | 1 bit          |               |
-| byte    | Integer                             | byte a = 3;                   | -128 to 127                                             | 8              | 1             |
-| short   | Integer                             | short a = 3;                  | -32,768 to 32,767                                       | 16             | 2             |
-| int     | Integer                             | int a = 4;                    | -2,147,483,648 to 2,147,483,647                         | 32             | 4             |
-| long    | Integer                             | long a = 5L;                  | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | 64             | 8             |
-| double  | Floating-point number               | double x = 8.5;               | ±4.910^-324 to ±1.797693134862315710^308                | 64             | 8             |
-| float   | Floating-point number               | float x = 8.5F;               | -3.410^38 to 3.410^38                                   | 32             | 4             |
-| char    | Single character in UTF-16 encoding | char c = 'A'; char c = '178'; | 0 to 65,535                                             | 16             | 2             |
+[//]: # (- boolean values &#40;boolean&#41;)
 
-### What is a Bit, Byte
+[//]: # (- integers &#40;byte, short, int, long&#41;)
 
-- A Bit is the smallest unit of information, a single memory cell. It can take one of two values: 0 or 1.
-- A Byte is a set of 8 bits. A byte can store a number ranging from 0 to 255 (inclusive) in the decimal numbering system.
+[//]: # (- floating-point numbers &#40;double, float&#41;)
+
+[//]: # (- characters &#40;char&#41;)
+
+[//]: # (- strings &#40;String&#41;.)
+
+[//]: # (  The data type determines the range of values that a variable can store.)
+
+[//]: # ()
+[//]: # (| Type    | Description                         | Example code                  | Range of values                                         | Size &#40;in bits&#41; | Size in bytes |)
+
+[//]: # (|---------|-------------------------------------|-------------------------------|---------------------------------------------------------|----------------|---------------|)
+
+[//]: # (| boolean | Stores either true or false         | boolean isActive = false;     | true,  false                                            | 1 bit          |               |)
+
+[//]: # (| byte    | Integer                             | byte a = 3;                   | -128 to 127                                             | 8              | 1             |)
+
+[//]: # (| short   | Integer                             | short a = 3;                  | -32,768 to 32,767                                       | 16             | 2             |)
+
+[//]: # (| int     | Integer                             | int a = 4;                    | -2,147,483,648 to 2,147,483,647                         | 32             | 4             |)
+
+[//]: # (| long    | Integer                             | long a = 5L;                  | -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 | 64             | 8             |)
+
+[//]: # (| double  | Floating-point number               | double x = 8.5;               | ±4.910^-324 to ±1.797693134862315710^308                | 64             | 8             |)
+
+[//]: # (| float   | Floating-point number               | float x = 8.5F;               | -3.410^38 to 3.410^38                                   | 32             | 4             |)
+
+[//]: # (| char    | Single character in UTF-16 encoding | char c = 'A'; char c = '178'; | 0 to 65,535                                             | 16             | 2             |)
+
+[//]: # ()
+[//]: # (### What is a Bit, Byte)
+
+[//]: # ()
+[//]: # (- A Bit is the smallest unit of information, a single memory cell. It can take one of two values: 0 or 1.)
+
+[//]: # (- A Byte is a set of 8 bits. A byte can store a number ranging from 0 to 255 &#40;inclusive&#41; in the decimal numbering system.)
 
 # По русский
 
