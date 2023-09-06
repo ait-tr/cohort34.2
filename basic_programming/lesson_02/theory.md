@@ -83,7 +83,7 @@ Hi, my name is Kostya
   apartments (
   methods) or in common areas of the house (class variables), but not on the street (outside curly braces).
 
-## Part 4: Variables and Data Types
+[//]: # (## Part 4: Variables and Data Types)
 
 [//]: # (### Variables)
 
