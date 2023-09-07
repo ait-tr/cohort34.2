@@ -4,6 +4,6 @@
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
-  "code": ["code/hello_world/src/Variable.java", "code/hello_world/src/Application.java"],
+  "code": ["code/Main/src/Variable.java", "code/Main/src/Application.java"],
   "video": ""
 }
