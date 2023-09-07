@@ -30,17 +30,29 @@
 - остаток от деления
 - деление чисел типа double, вычисление среднего арифметического
 
-[//]: # (**Задача 1**. Реализовать метод, который принимает на вход сумму денег в евро, а возвращает ее значение в долларах.)
+## Lesson Plan №3 07.09.2023
 
-[//]: # (Значение курса задать внутри программы.)
+## Homework
 
-[//]: # ()
-[//]: # (**Задача 2**. Написать программу для вычисления средней стоимости поездки по транспортному проездному. В программе)
+- Naming Conventions
+- Primitive Data Types
+- Variables
+- Arithmetic Operations
+- Practical Exercises:
 
-[//]: # (задать стоимость проездного на месяц и количество рабочих дней в месяце. Считая, что в рабочий день в среднем две)
+- General Scenario:
 
-[//]: # (поездки, и)
+### Variable Declaration
 
-[//]: # (1.5 поездки в выходной, посчитать и округлить общее число поездок в месяц и затем рассчитать среднюю стоимость одной)
+- assigning values to them
+- calculations
+- printing the answer
 
-[//]: # (поездки по проездному билету. Рассчитать для сентября.)
+## Tasks
+
+- addition, subtraction, multiplication
+- division of integers
+- integer part of division
+- remainder of division
+- division of double type numbers, calculating the arithmetic mean
+
