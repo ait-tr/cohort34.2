@@ -67,6 +67,7 @@ public class Variable {
     }
 
     public static void math() {
+        byte a = 120;
         int x = 10;
         int y = 5;
 

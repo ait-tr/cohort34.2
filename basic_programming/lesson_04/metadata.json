@@ -1,0 +1,9 @@
+{
+  "topic": "Methods. Arguments, Return, Practice",
+  "date": "2023-09-10",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": ["code/Lesson_04/src/Method.java", "code/Lesson_04/src/Practice.java"],
+  "video": ""
+}
