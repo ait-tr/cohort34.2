@@ -4,6 +4,6 @@
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
-  "code": ["code/Lesson_04/src/Method.java", "code/Lesson_04/src/Practice.java"],
+  "code": ["code/Lesson_04/src/Main.java", "code/Lesson_04/src/Method.java"],
   "video": ""
 }
