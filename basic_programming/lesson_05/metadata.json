@@ -4,6 +4,10 @@
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
-  "code": ["hw/basic_programming/lesson_05/hw/HwSolution/src/Main.java"],
+  "code": ["hw/HwSolution/src/Main.java",
+    "code/Conditional_operator/src/Main.java",
+    "code/Conditional_operator/src/LogicalOperators.java",
+    "code/Conditional_operator/src/TernaryOperator.java"
+  ],
   "video": ""
 }
