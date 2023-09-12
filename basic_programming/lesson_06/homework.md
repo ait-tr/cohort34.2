@@ -1,13 +1,26 @@
-Task 1. Write an application - a calculator for working with integers: oper == 1 => +, oper == 2 => -, oper == 3 => *, oper == 4 => /, oper == 5 => %, other print "Wrong operation"
+### Tasks on if-else if
 
-Task 2. The user enters a number from 1 to 12 using the keyboard, the program reports what season it belongs to entered month.
+1. **Age Calculator with Input**: Write a program that takes age from the console and outputs the corresponding
+   category (child, teenager, adult).
+2. **Season Determination with Input**: Write a program that takes a month from the console and outputs the
+   corresponding season.
 
-Task 3. Write a program for calculating the payment of money to an employee, taking into account the bonus for length of service, if the base salary is $500. For 3 years of work, a 10% bonus, for 5 years of work, a 50% bonus, for 10 years of work, a 100% bonus, for 15 years of work, a 150% bonus. How many years the employee has worked is entered from the keyboard.
+### Tasks on switch-case
 
-Задача 1. Написать приложение - калькулятор для работы с целыми числами:
+1. **Calculator**: Write a program that takes two numbers and an operation from the console, and then performs that
+   operation.
+2. **Day Rating**: Write a program that takes a day of the week from the console and outputs your mood on that day.
 
-oper == 1 => +, oper == 2 => -, oper == 3 => *, oper == 4 => /, oper == 5 => % , other print "Wrong operation"
+### Задачи на `if-else if`
 
-Задача 2. Пользователь с клавиатуры вводит число от 1 до 12, программа сообщает, какому времени года принадлежит введенный месяц.
+1. **Калькулятор возраста с вводом**: Напишите программу, которая принимает возраст с консоли и выводит соответствующую
+   категорию (ребенок, подросток, взрослый).
+2. **Определение сезона с вводом**: Напишите программу, которая принимает месяц с консоли и выводит соответствующий
+   сезон.
 
-Задача 3. Напишите программу расчета выдачи денег работнику с учётом надбавки за стаж, если базовая зарплата 500$. За 3 года работы надбавка 10%, за 5 лет работы надбавка 50%, за 10 лет работы надбавка 100%, за 15 лет работы надбавка 150%. Сколько лет проработал работник вводится с клавиатуры.
+### Задачи на `switch-case`
+
+1. **Калькулятор**: Напишите программу, которая принимает два числа и операцию с консоли, а затем выполняет эту
+   операцию.
+2. **Оценка дня**: Напишите программу, которая принимает день недели с консоли и выводит ваше настроение в этот
+   день.
