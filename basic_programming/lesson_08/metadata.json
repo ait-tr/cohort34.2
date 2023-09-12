@@ -5,10 +5,7 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/HwSolution_l06/src/AgeCalculator.java",
-    "code/HwSolution_l06/src/Calculator.java",
-    "code/HwSolution_l06/src/MoodEvaluator.java",
-    "code/HwSolution_l06/src/SeasonDeterminer.java"
+
   ],
   "video": ""
 }
