@@ -1,15 +1,15 @@
 ### Tasks on if-else if
 
-1. **Age Calculator with Input**: Write a program that takes age from the console and outputs the corresponding
+1. **Age Calculator**: Write a program that takes age and outputs the corresponding
    category (child, teenager, adult).
-2. **Season Determination with Input**: Write a program that takes a month from the console and outputs the
+2. **Season Determination**: Write a program that takes a month and outputs the
    corresponding season.
 
 ### Tasks on switch-case
 
-1. **Calculator**: Write a program that takes two numbers and an operation from the console, and then performs that
+1. **Calculator**: Write a program that takes two numbers and an operation, and then performs that
    operation.
-2. **Day Rating**: Write a program that takes a day of the week from the console and outputs your mood on that day.
+2. **Day Rating**: Write a program that takes a day of the week and outputs your mood on that day.
 
 ### Задачи на `if-else if`
 
