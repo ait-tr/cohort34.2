@@ -7,8 +7,15 @@
   "code": [
     "code/Lesson_06/src/solution/TriangleCheck.java",
     "code/Lesson_06/src/solution/DiscountCalculator.java",
-    "code/Lesson_06/src/solution/LeapYearChecker.java"
+    "code/Lesson_06/src/solution/LeapYearChecker.java",
+    "code/Lesson_06/src/solution/TriangleCheckWithConstant.java",
+    "code/Lesson_06/src/solution/DiscountCalculatorWithConstant.java",
 
+    "code/Lesson_06/src/ConstantExample.java",
+    "code/Lesson_06/src/IfElseIfExample.java",
+    "code/Lesson_06/src/GradeConverter.java",
+    "code/Lesson_06/src/SwitchCaseExample.java",
+    "code/Lesson_06/src/MoodOfDay.java"
   ],
   "video": ""
 }
