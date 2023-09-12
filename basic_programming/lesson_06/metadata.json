@@ -5,7 +5,10 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/hello_world/src/Main.java"
+    "code/Lesson_06/src/solution/TriangleCheck.java",
+    "code/Lesson_06/src/solution/DiscountCalculator.java",
+    "code/Lesson_06/src/solution/LeapYearChecker.java"
+
   ],
   "video": ""
 }
