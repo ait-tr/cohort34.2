@@ -1,14 +1,11 @@
 {
   "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
-  "date": "2023-09-13",
+  "date": "2023-05-16",
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/HwSolution_l06/src/AgeCalculator.java",
-    "code/HwSolution_l06/src/Calculator.java",
-    "code/HwSolution_l06/src/MoodEvaluator.java",
-    "code/HwSolution_l06/src/SeasonDeterminer.java"
+
   ],
   "video": ""
 }
