@@ -4,7 +4,7 @@ import java.util.Scanner;
  * @author Andrej Reutow
  * created on 12.09.2023
  */
-public class ScannerExample {
+public class ScannerExampleExceptionHandle {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -16,6 +16,8 @@ public class ScannerExample {
             System.out.println("Это не целое число.");
             // Обработка некорректного ввода, например, запрос повторного ввода.
         }
+
+        scanner.nextLine();
 
         // Проверяем, можно ли считать число с плавающей точкой
         if (scanner.hasNextDouble()) {

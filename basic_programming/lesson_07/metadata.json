@@ -8,7 +8,11 @@
     "code/HwSolution_l06/src/AgeCalculator.java",
     "code/HwSolution_l06/src/Calculator.java",
     "code/HwSolution_l06/src/MoodEvaluator.java",
-    "code/HwSolution_l06/src/SeasonDeterminer.java"
+    "code/HwSolution_l06/src/SeasonDeterminer.java",
+
+    "code/Lesson_07/src/ScannerExample.java",
+    "code/Lesson_07/src/ScannerExampleExceptionHandle.java",
+    "code/Lesson_07/src/LogicalOperator.java"
   ],
   "video": ""
 }
