@@ -5,7 +5,14 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/hello_world/src/Main.java"
+    "code/HwSolution_l04/src/CallCost.java",
+    "code/HwSolution_l04/src/CalorieCalculation.java",
+    "code/HwSolution_l04/src/EnergyCalculator.java",
+    "code/HwSolution_l04/src/FuelCalculation.java",
+    "code/HwSolution_l04/src/CryptoCalculator.java",
+
+    "code/Lesson_08/src/Main.java",
+    "code/Lesson_08/src/TasksLesson08.java"
   ],
   "video": ""
 }
