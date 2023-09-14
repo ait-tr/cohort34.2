@@ -1,11 +1,11 @@
 {
-  "topic": "Repetition and practice",
-  "date": "2023-09-14",
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-09-15",
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/hello_world/src/Main.java"
+
   ],
   "video": ""
 }
