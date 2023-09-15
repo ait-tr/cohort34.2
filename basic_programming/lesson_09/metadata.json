@@ -1,11 +1,13 @@
 {
-  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "topic": "Loops: while, do_while",
   "date": "2023-09-15",
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-
+    "code/HwSolution_07/src/SalaryCalculator.java",
+    "code/lesson_08/src/LoopWhileDoWhile.java",
+    "code/lesson_08/src/BucketTask.java"
   ],
   "video": ""
 }
