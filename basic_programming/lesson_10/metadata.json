@@ -1,0 +1,15 @@
+{
+  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
+  "date": "2023-05-16",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/HwSolution_09/src/Hw09Task1.java",
+    "code/HwSolution_09/src/Hw09Task2.java",
+    "code/HwSolution_09/src/Hw09Task3.java",
+    "code/HwSolution_09/src/Hw09Task4.java",
+    "code/Lesson_10/src/ForLoopExample.java"
+  ],
+  "video": ""
+}
