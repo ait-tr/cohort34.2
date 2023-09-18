@@ -1,0 +1,14 @@
+{
+  "topic": "Array",
+  "date": "2023-09-19",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/HwSolution_10/src/DepositForLoop.java",
+    "code/HwSolution_10/src/DepositWhileLoop.java",
+    "code/HwSolution_10/src/MultiplicationTable.java",
+    "code/HwSolution_10/src/PopulationGrowth.java"
+  ],
+  "video": ""
+}

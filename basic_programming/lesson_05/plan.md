@@ -1,4 +1,4 @@
-# Lesson plan No. 5 09/11/2023
+# 2023-09-11
 
 1. Homework:
 - area of the cube, triangle, circle;
