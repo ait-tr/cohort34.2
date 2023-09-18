@@ -44,14 +44,14 @@ Each primitive data type occupies a certain amount of memory.
 
 ```
 int x=4;
-        short y=x; // Error
+short y=x; // Error
 ```
 
 ### Explanation:
 
-- The **byte** and **int** types represent integers.
-- The value of the variable **x**, which is assigned to a **byte** type variable, fits well within the range of values
-  for the **byte** type (from -128 to 127).
+- The **short** and **int** types represent integers.
+- The value of the variable **x**, which is assigned to a **short** type variable, fits well within the range of values
+  for the **short** type (from -128 to 127).
 - The error occurs because we are trying to assign some data that occupies 4 bytes (**int**) to a variable that only
   occupies 2 bytes (**short**).
 
@@ -61,12 +61,12 @@ int x=4;
 
 ```
 int x=4;
-        short y=(short)x;  // Type casting: from int to byte
-        System.out.println(y); // 4
+short y=(short)x;       // Type casting: from int to short
+System.out.println(y); // 4
 ```
 
 - The type casting operation involves specifying the type to which the value should be converted in parentheses. For
-  example, in the operation (byte)x, the data of type **int** is converted to type **short**. As a result, we get a
+  example, in the operation (short)x, the data of type **int** is converted to type **short**. As a result, we get a
   value of type **short**.
   **Note**
 - Expanding conversions are automatically performed without any problems - they expand the object's representation in
@@ -74,7 +74,7 @@ int x=4;
 
 ```
 byte b=7;
-        int d=b;  // Conversion from byte to int (from smaller to larger)
+int d=b;  // Conversion from byte to int (from smaller to larger)
 ```
 
 # Data Type Overflow in Java
@@ -89,7 +89,7 @@ lead to unexpected and incorrect results.
 
 ```
 byte a=127; // maximum value for byte
-        a++; // now a is -128, overflow occurred
+a++;        // now a is -128, overflow occurred
 ```
 
 In this example, the variable `a` has the maximum value for the `byte` type, which is 127. When attempting to increase
@@ -312,9 +312,10 @@ short y = x; // ! Ошибка
 
 ### Разбор:
 
-- тип **byte**, и тип **int** представляют целые числа.
-- значение переменной **x**, которое присваивается переменной типа **byte**, вполне укладывается в диапазон значений для
-  типа **byte** (от -128 до 127)
+- тип **short**, и тип **int** представляют целые числа.
+- значение переменной **x**, которое присваивается переменной типа **short**, вполне укладывается в диапазон значений
+  для
+  типа **short** (от -128 до 127)
 - Ошибка возникает поскольку в данном случае мы пытаемся присвоить некоторые данные, которые занимают 4 байта (**int**),
   переменной, которая занимает всего 2 байт (**short**)
 
@@ -324,12 +325,12 @@ short y = x; // ! Ошибка
 
 ````
 int x = 4;
-short y = (short)x;  // преобразование типов: от типа int к типу byte
+short y = (short)x;  // преобразование типов: от типа int к типу short
 System.out.println(y); // 4
 ````
 
 - Операция преобразования типов предполагает указание в скобках того типа, к которому надо преобразовать значение.
-  Например, в случае операции (byte)x, идет преобразование данных типа **int** в тип **short**. В итоге мы получим
+  Например, в случае операции (short)x, идет преобразование данных типа **int** в тип **short**. В итоге мы получим
   значение типа
   **short**.
 
@@ -353,7 +354,7 @@ int d = b;  // преобразование от byte к int (от меньше�
 
 ```
 byte a = 127; // максимальное значение для byte
-a++; // теперь a равно -128, произошло переполнение
+a++;          // теперь a равно -128, произошло переполнение
 ```
 
 В этом примере переменная `a` имеет максимальное значение для типа `byte`, которое равно 127. При попытке увеличить это
@@ -378,12 +379,12 @@ a++; // теперь a равно -128, произошло переполнен�
 
 Цикл for имеет следующее определение:
 
-````
+```
 for ([инициализация счетчика]; [условие]; [изменение счетчика])
 {
     // действия
 }
-````
+```
 
 ````java
 public class ForLoopExample {
@@ -418,22 +419,22 @@ public class ForLoopExample {
 
 **Необязательно** указывать все условия при объявлении цикла. Например, мы можем написать так:
 
-````
+```
 for (; ;){
     // code
 }
-````
+```
 
 - Определение цикла осталось тем же, только теперь блоки в определении у нас пустые: 'for (; ;)'. Теперь **нет**
   инициализированной переменной-счетчика, **нет** условия, поэтому цикл будет работать **вечно** - **бесконечный цикл**.
 
-````
+```
 int i = 1;
 for (; i<9;){
     // code
     i++;
 }
-````
+```
 
 - у нас есть счетчик (**i**), только создан он **вне** цикла. У нас есть условие выполнения цикла (**i<9**). И есть
   приращение счетчика уже в самом блоке for (**i++**).
