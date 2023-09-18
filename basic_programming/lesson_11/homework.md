@@ -1,3 +1,6 @@
+<details>
+  <summary>English</summary>
+
 ## Task 1
 
 **"Is the array symmetrical?"**
@@ -32,7 +35,7 @@ To generate random numbers in Java, the Random class is often used. First, you n
 1. **Import the class:** At the beginning of your file, you need to import the Random class.
 
 <details>
-  <summary>Нажмите, чтобы открыть</summary>
+  <summary >Нажмите, чтобы открыть</summary>
 
 ```
 import java.util.Random;
@@ -66,6 +69,11 @@ public class MyRandom {
 **!!!** Note that nextInt(50) returns a number from **0** to **49**. By adding 1, we get a range from 1 to 50.
 
 </details>
+
+</details>
+
+<details>
+  <summary>На русском</summary>
 
 ## Задача 1
 
@@ -135,4 +143,6 @@ public class MyRandom {
 
 **!!!** Обратите внимание, что nextInt(50) возвращает число от **0** до **49**. Прибавляя 1, мы получаем диапазон от 1
 до 50.
+
+</details>
 </details>
