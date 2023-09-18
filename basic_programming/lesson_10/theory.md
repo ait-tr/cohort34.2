@@ -51,7 +51,7 @@ short y=x; // Error
 
 - The **short** and **int** types represent integers.
 - The value of the variable **x**, which is assigned to a **short** type variable, fits well within the range of values
-  for the **short** type (from -128 to 127).
+  for the **short** type (from -32,768 to 32,767).
 - The error occurs because we are trying to assign some data that occupies 4 bytes (**int**) to a variable that only
   occupies 2 bytes (**short**).
 
@@ -314,8 +314,7 @@ short y = x; // ! Ошибка
 
 - тип **short**, и тип **int** представляют целые числа.
 - значение переменной **x**, которое присваивается переменной типа **short**, вполне укладывается в диапазон значений
-  для
-  типа **short** (от -128 до 127)
+  для типа **short** (от -32,768 до 32,767)
 - Ошибка возникает поскольку в данном случае мы пытаемся присвоить некоторые данные, которые занимают 4 байта (**int**),
   переменной, которая занимает всего 2 байт (**short**)
 
@@ -405,8 +404,7 @@ public class ForLoopExample {
 
 ### Вторая часть `(... i < 9; ...)`
 
-- **условие**, при котором будет выполняться цикл. В данном случае цикл будет выполняться, пока **i** не достигнет **9
-  **.
+- **условие**, при котором будет выполняться цикл. В данном случае цикл будет выполняться, пока **i** не достигнет **9**.
 
 ### Третья часть for (... i++)
 
