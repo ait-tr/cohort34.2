@@ -1,5 +1,5 @@
-<details>
-  <summary>Open in English</summary>
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: blue;"><b>Open in English</b></summary>
 
 ## Arrays
 
@@ -154,8 +154,8 @@ ___
 
 </details>
 
-<details>
-  <summary>Открыть на русском</summary>
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: blue;"><b>Открыть на русском</b></summary>
 
 ## Массивы
 

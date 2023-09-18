@@ -1,5 +1,5 @@
-<details>
-  <summary>English</summary>
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: blue;"><b>English</b></summary>
 
 ## Task 1
 
@@ -34,8 +34,8 @@ To generate random numbers in Java, the Random class is often used. First, you n
 
 1. **Import the class:** At the beginning of your file, you need to import the Random class.
 
-<details>
-  <summary >Нажмите, чтобы открыть</summary>
+<details style="margin-top: 16px; margin-left: 26px">
+  <summary style="cursor: pointer; color: blue;">Click to open</summary>
 
 ```
 import java.util.Random;
@@ -72,8 +72,8 @@ public class MyRandom {
 
 </details>
 
-<details>
-  <summary>На русском</summary>
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: blue;"><b>На русском</b></summary>
 
 ## Задача 1
 
@@ -109,8 +109,8 @@ public class MyRandom {
 
 1. **Импорт класса:** В начале вашего файла нужно импортировать класс Random.
 
-<details>
-  <summary>Нажмите, чтобы открыть</summary>
+<details style="margin-top: 16px; margin-left: 26px">
+  <summary style="cursor: pointer; color: blue;">Нажмите, чтобы открыть</summary>
 
 ````
 import java.util.Random;
@@ -145,4 +145,5 @@ public class MyRandom {
 до 50.
 
 </details>
+
 </details>
