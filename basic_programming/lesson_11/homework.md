@@ -3,147 +3,132 @@
 
 ## Task 1
 
-**"Is the array symmetrical?"**
-Check if the array is symmetrical. A symmetrical array looks the same when read from left to right and from right to
-left.
+**Find the maximum element in the array**
+Create an array of 12 random integers ranging from `-15` to `15`. Determine which element is the maximum in this array
+and report the index of its last occurrence in the array.
 
 ## Task 2
 
-**"Lottery Ticket"**
-Create an array with numbers from 1 to 10. Let the user enter 3 numbers. Check how many numbers the user guessed
-correctly.
+**Replace every array element with an odd index with zero.**
 
-## Task 3
+1. Create an array of 8 random integers ranging from `-3` to `10`
+2. Display the array on the screen in a line
+3. Replace every element with an odd index with zero
+4. Again, display the array on the screen on a separate line
 
-**"Random Choice"**
-Create an array with movie or book titles. The program randomly selects one of them for viewing or reading and displays
-it to the user.
+## Task 3 *
 
-## Task 4 ***!!!
+**Arithmetic mean of array elements**
 
-Create an array with numbers from 1 to 50. The program should randomly select one of these numbers, and the user should
-guess it. After each attempt, the program should give a hint: whether the number is higher or lower than the guessed
-one.
-**Hint:**
-
-- For this task, you will need a method that generates a random number:
-
-### How to use Random in Java
-
-To generate random numbers in Java, the Random class is often used. First, you need to import this class:
-
-1. **Import the class:** At the beginning of your file, you need to import the Random class.
-
-<details style="margin-top: 16px; margin-left: 26px">
-  <summary style="cursor: pointer; color: blue;">Click to open</summary>
-
-```
-import java.util.Random;
-```
-
-2. **Create an object:** Create an object of the Random class.
-
-```
-Random rand = new Random();
-```
-
-3. **Generate random numbers:** Now you can use the **rand** object to generate random numbers.
-
-```
-int randomNumber = rand.nextInt(50) + 1; // Random number from 1 to 50
-```
-
-Example:
-
-```java
-import java.util.Random;
-
-public class MyRandom {
-    public static void main(String[] args) {
-        Random rand = new Random();
-        int randomNumber = rand.nextInt(50) + 1; // Random number from 1 to 50
-    }
-}
-```
-
-**!!!** Note that nextInt(50) returns a number from **0** to **49**. By adding 1, we get a range from 1 to 50.
+1. Create 2 arrays of 5 random integers each, ranging from `0` to `5`
+2. Display the arrays on the screen in two separate lines
+3. Calculate the arithmetic mean of the elements of each array and report which array has a higher value (or report that
+   their arithmetic means are equal)
 
 </details>
 
-</details>
+<hr>
 
 <details style="margin-top: 16px">
   <summary style="cursor: pointer; color: blue;"><b>На русском</b></summary>
 
 ## Задача 1
 
-**"Симметричный ли массив?"**
+**Найти максимальный элемент в массиве**
 
-Проверьте, является ли массив симметричным. Симметричный массив выглядит одинаково при чтении слева направо и справа
-налево.
+Создайте массив из 12 случайных целых чисел из отрезка от `-15` до `15`. Определите какой элемент является в этом
+массиве максимальным и сообщите индекс его последнего вхождения в массив.
+
+<!---
+https://vertex-academy.com/tutorials/ru/najti-maksimalmyj-element-v-massive-iz-sgenerirovannyh-chisel-java/
+public static void main(String[] args) {
+        int [] mas = new int[12];
+        int maxNumber = -16;
+        int maxIndex = 0;
+ 
+        for (int i = 0; i < mas.length; i++) {
+            mas[i] = (int)(Math.random()*31)-15;
+            if(maxNumber <= mas[i]){
+                maxNumber = mas[i];
+                maxIndex = i;
+            }
+        }
+        
+        System.out.println("Индекс максимального элемента: " + maxIndex);
+    }
+-->
 
 ## Задача 2
 
-**"Лотерейный билет"**
+**Заменить каждый элемент массива с нечетным индексом на ноль.**
 
-Создайте массив с числами от 1 до 10. Пусть пользователь вводит 3 числа. Проверьте, сколько чисел пользователь угадал.
+1. Создайте массив из 8 случайных целых чисел из отрезка от `-3` до `10`
+2. Выведите массив на экран в строку
+3. Замените каждый элемент с нечётным индексом на ноль
+4. Снова выведете массив на экран на отдельной строке
 
-## Задача 3
-
-**"Случайный выбор"**
-
-Создайте массив с названиями фильмов или книг. Программа случайным образом выбирает одно из них для просмотра или чтения
-и выводит это пользователю.
-
-## Задача 4 ***!!!
-
-Создайте массив с числами от 1 до 50. Программа должна случайно выбрать одно из этих чисел, а пользователь должен его
-угадать. После каждой попытки программа должна подсказывать: число больше или меньше загаданного.
-**Подсказка:**
-
-- Для этой задачи вам понадобится метод, который генерирует рандомное число:
-
-### Как использовать Random в Java
-
-Для генерации случайных чисел в Java часто используется класс Random. Сначала необходимо импортировать этот класс:
-
-1. **Импорт класса:** В начале вашего файла нужно импортировать класс Random.
-
-<details style="margin-top: 16px; margin-left: 26px">
-  <summary style="cursor: pointer; color: blue;">Нажмите, чтобы открыть</summary>
-
-````
-import java.util.Random;
-````
-
-2. **Создание объекта:** Создайте объект класса Random.
-
-````
-Random rand = new Random();
-````
-
-3. **Генерация случайных чисел:** Теперь вы можете использовать объект **rand** для генерации случайных чисел.
-
-````
-int randomNumber = rand.nextInt(50) + 1; // Случайное число от 1 до 50
-````
-
-Пример:
-
-````java
-import java.util.Random;
-
-public class MyRandom {
+<!--
+https://vertex-academy.com/tutorials/ru/zamenit-element-massiva-s-nechetnym-indeksom-na-nol-java/
+public class Test {
     public static void main(String[] args) {
-        Random rand = new Random();
-        int randomNumber = rand.nextInt(50) + 1; // Случайное число от 1 до 50
+        int [] mas = new int[8];
+       
+        for (int i = 0; i < mas.length; i++) {
+             mas[i] = (int)(Math.random()*10)+1;
+        }
+        System.out.println(Arrays.toString(mas));
+        for (int i = 0; i < mas.length; i++) {
+            if(i%2 == 1){
+                mas[i] = 0;
+            }
+        }
+        System.out.println(Arrays.toString(mas));
     }
 }
-````
+-->
 
-**!!!** Обратите внимание, что nextInt(50) возвращает число от **0** до **49**. Прибавляя 1, мы получаем диапазон от 1
-до 50.
+## Задача 3 *
 
-</details>
+**Среднее арифметическое элементов массива**
+
+1. Создайте 2 массива из 5 случайных целых чисел из отрезка от `0` до `5` каждый
+2. Выведите массивы на экран в двух отдельных строках
+3. Посчитайте среднее арифметическое элементов каждого массива и сообщите, для какого из массивов это значение оказалось
+   больше (либо сообщите, что их средние арифметические равны)
+
+<!--- 
+https://vertex-academy.com/tutorials/ru/srednee-arifmeticheskoe-elementov-massiva-java/
+public static void main(String[] args) {
+        int [] mas1 = new int[5];
+        int [] mas2 = new int[5];
+ 
+        for (int i = 0; i < 5; i++) {
+            mas1[i] = (int)(Math.random()*6);
+            mas2[i] = (int)(Math.random()*6);
+        }
+        System.out.println(Arrays.toString(mas1));
+        System.out.println(Arrays.toString(mas2));
+        
+        double average1 = 0;
+        double average2 = 0;
+ 
+        for (int i = 0; i < 5; i++) {
+            average1 += mas1[i];
+            average2 += mas2[i];
+        }
+        average1/=5;
+        average2/=5;
+ 
+        if(average1 > average1){
+            System.out.println("Среднее арифметическое первого массива ("+average1+") больше среднего арифметического "+
+                    "второго массива ("+average2+")");
+        } else if(average1 < average2){
+            System.out.println("Среднее арифметическое первого массива ("+average1+") меньше среднего арифметического "+
+                    "второго массива ("+average2+")");
+        } else {
+            System.out.println("Средние арифметические массивов равны ("+average1+")");
+        }
+    }
+-->
 
 </details>
