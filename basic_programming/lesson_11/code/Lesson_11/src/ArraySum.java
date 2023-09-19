@@ -14,7 +14,7 @@ public class ArraySum {
         // 100 + 5 + 0 + 7 + 8 = 120
         int result = 0;
         for (int i = 0; i < ints.length; i++) {
-            result += ints[0]; // ints[0] = 1, ints[1] = 5, ints[2] = 5
+            result += ints[i]; // ints[0] = 1, ints[1] = 5, ints[2] = 5
         }
 
         System.out.println(result);
