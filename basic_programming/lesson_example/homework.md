@@ -1,15 +1,15 @@
-Задача 1. 
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: blue;"><b>English</b></summary>
 
-Для того чтобы успевать за нами писать код, вы должны найти на своей клавиатуре следующие символы
 
-```console
-#  <  >  +  - ,  .  :  ; (  ) {  }  /  \
-```
-Задача 2. 
 
-Напишите программу, которая выводит на экран информацию о вас (или выдуманном персонаже) в три строчки:
-```console
-"Меня зовут ..."
-"Мне ... лет"
-"Я из ..."
-```
+</details>
+
+<hr>
+
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: blue;"><b>На русском</b></summary>
+
+
+
+</details>
