@@ -10,27 +10,31 @@
 public class ArrayTask3 {
 
     public static void main(String[] args) {
-        int[] mas1 = new int[5];
-        int[] mas2 = new int[5];
+        int currentArrLength = 5;
 
-        for (int i = 0; i < 5; i++) {
+        int[] mas1 = new int[currentArrLength];
+        int[] mas2 = new int[currentArrLength];
+
+        for (int i = 0; i < currentArrLength; i++) {
             mas1[i] = (int) (Math.random() * 6);
             mas2[i] = (int) (Math.random() * 6);
         }
 
         printArray(mas1);
+        System.out.println();
         printArray(mas2);
+        System.out.println();
 
         double sum1 = 0;
         double sum2 = 0;
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < currentArrLength; i++) {
             sum1 += mas1[i];
             sum2 += mas2[i];
         }
 
-        double average1 = sum1 / mas1.length;
-        double average2 = sum2 / mas1.length;
+        double average1 = sum1 / currentArrLength;
+        double average2 = sum2 / currentArrLength;
 
         if (average1 > average1) {
             System.out.println("Среднее арифметическое первого массива (" + average1 + ") больше среднего арифметического " +
@@ -45,7 +49,7 @@ public class ArrayTask3 {
 
     public static void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ,");
+            System.out.print(array[i] + "\t");
         }
     }
 }
