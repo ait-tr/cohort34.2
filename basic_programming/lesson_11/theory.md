@@ -113,6 +113,12 @@ temperature.length - returns the length of the array temperature
 - removing empty (zero) elements.
   We will gradually go through all these points.
 
+</details>
+
+
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: blue;"><b>На русском</b></summary>
+
 ## Массивы
 
 1. Зачем нужны массивы данных?

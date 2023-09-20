@@ -27,5 +27,4 @@ public class ArraySum {
             System.out.println("Интдекс: " + i + " значение: " + arr[i]);
         }
     }
-
 }
