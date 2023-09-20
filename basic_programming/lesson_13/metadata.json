@@ -1,0 +1,16 @@
+{
+  "topic": "Practice",
+  "date": "2023-09-21",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/HwSolution_12/src/Task1.java",
+    "code/HwSolution_12/src/Task2.java",
+    "code/HwSolution_12/src/Task3.java",
+    "code/HwSolution_12/src/Task4.java",
+    "code/HwSolution_12/src/Task5.java",
+    "code/HwSolution_12/src/ArrayTask3.java"
+  ],
+  "video": ""
+}
