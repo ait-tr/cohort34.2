@@ -10,7 +10,7 @@
 public class ArrayTask3 {
 
     public static void main(String[] args) {
-        int currentArrLength = 5;
+        int currentArrLength = 10;
 
         int[] mas1 = new int[currentArrLength];
         int[] mas2 = new int[currentArrLength];

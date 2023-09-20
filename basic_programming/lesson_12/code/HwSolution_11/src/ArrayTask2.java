@@ -15,7 +15,7 @@ public class ArrayTask2 {
     public static void main(String[] args) {
         int[] mas = {-3, 5, 6, -1, 9, 8, 2, 4};
         printArray(mas);
-
+        System.out.println();
         for (int i = 0; i < mas.length; i++) {
             if (i % 2 == 1) {
                 mas[i] = 0;
@@ -23,11 +23,13 @@ public class ArrayTask2 {
         }
 
         printArray(mas);
+        System.out.println();
+
     }
 
     public static void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] + " ,");
+            System.out.print(array[i] + "\t");
         }
     }
 }
