@@ -1,5 +1,5 @@
 {
-  "topic": "Practice",
+  "topic": "Bubble Sort, Binary search",
   "date": "2023-09-21",
   "plan": "plan.md",
   "theory": "theory.md",
@@ -10,7 +10,9 @@
     "code/HwSolution_12/src/Task3.java",
     "code/HwSolution_12/src/Task4.java",
     "code/HwSolution_12/src/Task5.java",
-    "code/HwSolution_12/src/ArrayTask3.java"
+    "code/HwSolution_12/src/ArrayTask3.java",
+    "code/Lesson_13/src/BinarySearch.java",
+    "code/Lesson_13/src/BubbleSort.java"
   ],
   "video": ""
 }

@@ -92,7 +92,11 @@ public class BubbleSort {
 
         // --- Пятая и последняя итерация ---
 
-        if (arr[0] > arr[1]) { int temp = arr[0]; arr[0] = arr[1]; arr[1] = temp; } // [1, 2, 3, 4, 5, 6] (нет изменений)
+        if (arr[0] > arr[1]) {
+            int temp = arr[0];
+            arr[0] = arr[1];
+            arr[1] = temp;
+        } // [1, 2, 3, 4, 5, 6] (нет изменений)
     }
 
     public static void bubbleSortWithoutLoopArrLength5V1() {
@@ -100,29 +104,89 @@ public class BubbleSort {
         int[] arr = {3, 1, 2, 6, 4, 5}; // начальное состояние: [3, 1, 2, 6, 4, 5]
 
         // --- Первая итерация ---
-        if (arr[0] > arr[1]) { int temp = arr[0]; arr[0] = arr[1]; arr[1] = temp; } // [1, 3, 2, 6, 4, 5]
-        if (arr[1] > arr[2]) { int temp = arr[1]; arr[1] = arr[2]; arr[2] = temp; } // [1, 2, 3, 6, 4, 5]
-        if (arr[2] > arr[3]) { int temp = arr[2]; arr[2] = arr[3]; arr[3] = temp; } // [1, 2, 3, 6, 4, 5] (нет изменений)
-        if (arr[3] > arr[4]) { int temp = arr[3]; arr[3] = arr[4]; arr[4] = temp; } // [1, 2, 3, 4, 6, 5]
-        if (arr[4] > arr[5]) { int temp = arr[4]; arr[4] = arr[5]; arr[5] = temp; } // [1, 2, 3, 4, 5, 6]
+        if (arr[0] > arr[1]) {
+            int temp = arr[0];
+            arr[0] = arr[1];
+            arr[1] = temp;
+        } // [1, 3, 2, 6, 4, 5]
+        if (arr[1] > arr[2]) {
+            int temp = arr[1];
+            arr[1] = arr[2];
+            arr[2] = temp;
+        } // [1, 2, 3, 6, 4, 5]
+        if (arr[2] > arr[3]) {
+            int temp = arr[2];
+            arr[2] = arr[3];
+            arr[3] = temp;
+        } // [1, 2, 3, 6, 4, 5] (нет изменений)
+        if (arr[3] > arr[4]) {
+            int temp = arr[3];
+            arr[3] = arr[4];
+            arr[4] = temp;
+        } // [1, 2, 3, 4, 6, 5]
+        if (arr[4] > arr[5]) {
+            int temp = arr[4];
+            arr[4] = arr[5];
+            arr[5] = temp;
+        } // [1, 2, 3, 4, 5, 6]
 
         // --- Вторая итерация ---
-        if (arr[0] > arr[1]) { int temp = arr[0]; arr[0] = arr[1]; arr[1] = temp; } // [1, 2, 3, 4, 5, 6] (нет изменений)
-        if (arr[1] > arr[2]) { int temp = arr[1]; arr[1] = arr[2]; arr[2] = temp; } // [1, 2, 3, 4, 5, 6] (нет изменений)
-        if (arr[2] > arr[3]) { int temp = arr[2]; arr[2] = arr[3]; arr[3] = temp; } // [1, 2, 3, 4, 5, 6] (нет изменений)
-        if (arr[3] > arr[4]) { int temp = arr[3]; arr[3] = arr[4]; arr[4] = temp; } // [1, 2, 3, 4, 5, 6] (нет изменений)
+        if (arr[0] > arr[1]) {
+            int temp = arr[0];
+            arr[0] = arr[1];
+            arr[1] = temp;
+        } // [1, 2, 3, 4, 5, 6] (нет изменений)
+        if (arr[1] > arr[2]) {
+            int temp = arr[1];
+            arr[1] = arr[2];
+            arr[2] = temp;
+        } // [1, 2, 3, 4, 5, 6] (нет изменений)
+        if (arr[2] > arr[3]) {
+            int temp = arr[2];
+            arr[2] = arr[3];
+            arr[3] = temp;
+        } // [1, 2, 3, 4, 5, 6] (нет изменений)
+        if (arr[3] > arr[4]) {
+            int temp = arr[3];
+            arr[3] = arr[4];
+            arr[4] = temp;
+        } // [1, 2, 3, 4, 5, 6] (нет изменений)
 
         // --- Третья итерация ---
-        if (arr[0] > arr[1]) { int temp = arr[0]; arr[0] = arr[1]; arr[1] = temp; } // [1, 2, 3, 4, 5, 6] (нет изменений)
-        if (arr[1] > arr[2]) { int temp = arr[1]; arr[1] = arr[2]; arr[2] = temp; } // [1, 2, 3, 4, 5, 6] (нет изменений)
-        if (arr[2] > arr[3]) { int temp = arr[2]; arr[2] = arr[3]; arr[3] = temp; } // [1, 2, 3, 4, 5, 6] (нет изменений)
+        if (arr[0] > arr[1]) {
+            int temp = arr[0];
+            arr[0] = arr[1];
+            arr[1] = temp;
+        } // [1, 2, 3, 4, 5, 6] (нет изменений)
+        if (arr[1] > arr[2]) {
+            int temp = arr[1];
+            arr[1] = arr[2];
+            arr[2] = temp;
+        } // [1, 2, 3, 4, 5, 6] (нет изменений)
+        if (arr[2] > arr[3]) {
+            int temp = arr[2];
+            arr[2] = arr[3];
+            arr[3] = temp;
+        } // [1, 2, 3, 4, 5, 6] (нет изменений)
 
         // --- Четвертая итерация ---
-        if (arr[0] > arr[1]) { int temp = arr[0]; arr[0] = arr[1]; arr[1] = temp; } // [1, 2, 3, 4, 5, 6] (нет изменений)
-        if (arr[1] > arr[2]) { int temp = arr[1]; arr[1] = arr[2]; arr[2] = temp; } // [1, 2, 3, 4, 5, 6] (нет изменений)
+        if (arr[0] > arr[1]) {
+            int temp = arr[0];
+            arr[0] = arr[1];
+            arr[1] = temp;
+        } // [1, 2, 3, 4, 5, 6] (нет изменений)
+        if (arr[1] > arr[2]) {
+            int temp = arr[1];
+            arr[1] = arr[2];
+            arr[2] = temp;
+        } // [1, 2, 3, 4, 5, 6] (нет изменений)
 
         // --- Пятая и последняя итерация ---
 
-        if (arr[0] > arr[1]) { int temp = arr[0]; arr[0] = arr[1]; arr[1] = temp; } // [1, 2, 3, 4, 5, 6] (нет изменений)
+        if (arr[0] > arr[1]) {
+            int temp = arr[0];
+            arr[0] = arr[1];
+            arr[1] = temp;
+        } // [1, 2, 3, 4, 5, 6] (нет изменений)
     }
 }
