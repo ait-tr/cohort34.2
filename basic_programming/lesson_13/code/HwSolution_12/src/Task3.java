@@ -6,78 +6,22 @@
 // Программа должна подсчитать, сколько раз каждое число встречается в массиве и вывести результат в консоль.
 public class Task3 {
 
-//    public static void main(String[] args) {
-//        int[] source = {1, 2, 3, 1, 1, 4};
-//        int length = source.length;
-//
-//        for (int outerLoopIndex = 0; outerLoopIndex < length; outerLoopIndex++) {
-//            int currentNumber = source[outerLoopIndex];
-//            int repeatCounter = 1;
-//
-//            for (int innerLoopIndex = 0; innerLoopIndex < length; innerLoopIndex++) {
-//                if (innerLoopIndex != outerLoopIndex && source[innerLoopIndex] == currentNumber) {
-//                    repeatCounter++;
-//                }
-//            }
-//
-//            System.out.println("Число " + currentNumber + " повторяется: " + repeatCounter + " раз");
-//        }
-//    }
-
-//    public static void main(String[] args) {
-//        int[] source = {1, 2, 3, 1, 1, 4};
-//        int[] repeats = new int[source.length];
-//        int length = source.length;
-//
-//        for (int outerLoopIndex = 0; outerLoopIndex < length; outerLoopIndex++) {
-//            int currentNumber = source[outerLoopIndex];
-//            repeats[outerLoopIndex] = currentNumber;
-//            int repeatCounter = 1;
-//
-//            if (!isElementExistByValue(repeats, currentNumber)) {
-//                for (int innerLoopIndex = 0; innerLoopIndex < length; innerLoopIndex++) {
-//                    if (innerLoopIndex != outerLoopIndex && source[innerLoopIndex] == currentNumber) {
-//                        repeatCounter++;
-//                    }
-//                }
-//                System.out.println("Число " + currentNumber + " повторяется: " + repeatCounter + " раз");
-//
-//            }
-//        }
-//    }
-
     public static void main(String[] args) {
-        double result = calculateHourlyConsumption(0.15, 2);
-        System.out.println("Анна тратит энергию холодильника всместе с кондиционером в час " + result + " КВт.");
-        result = calculateMonthlyCost(2.15, 24, 31);
-        System.out.println("А в месяц выходит у нее " + result + " КВт.");
-        result = moneyForEnergyMonth(1599.6,0.15);
-        System.out.println("У Анны выходит в месяц за электричество " + result + " евро за КВт.");
-    }
+        int[] source = {1, 2, 3, 1, 1, 4};
+        int length = source.length;
 
-    public static double calculateHourlyConsumption(double a, int b) {
-        double result = a + b;
-        return result;
-    }
+        for (int outerLoopIndex = 0; outerLoopIndex < length; outerLoopIndex++) {
+            int currentNumber = source[outerLoopIndex];
+            int repeatCounter = 1;
 
-    public static double calculateMonthlyCost(double hour, int day, int month) {
-        double result = hour * day * month;
-        return result;
-    }
-
-    public static double moneyForEnergyMonth(double v, double m) {
-        double result = v * m;
-        return result;
-    }
-
-    public static boolean isElementExistByValue(int[] source, int element) {
-        boolean isExist = false;
-        for (int i = 1; i < source.length; i++) {
-            if (source[i] == element) {
-                isExist = true;
+            for (int innerLoopIndex = 0; innerLoopIndex < length; innerLoopIndex++) {
+                if (innerLoopIndex != outerLoopIndex && source[innerLoopIndex] == currentNumber) {
+                    repeatCounter++;
+                }
             }
+
+            System.out.println("Число " + currentNumber + " повторяется: " + repeatCounter + " раз");
         }
-        return isExist;
     }
 
 

@@ -2,7 +2,7 @@
 
 1. Homework Review
 2. Bubble Sort
-2. Binary search
+3Binary search
 
 ---
 
