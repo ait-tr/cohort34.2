@@ -1,5 +1,3 @@
-# 2023-09-21
-
 1. Homework Review
 
 ---
