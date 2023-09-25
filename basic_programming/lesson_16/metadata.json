@@ -1,0 +1,15 @@
+{
+  "topic": "Introduction to OOP",
+  "date": "2023-09-26",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/HwSolution13/src/Task1.java",
+    "code/HwSolution13/src/Task2.java",
+    "code/HwSolution13/src/Task3.java",
+
+    "code/Lesson_16/src/Main.java"
+  ],
+  "video": ""
+}

@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  * @author Andrej Reutow
  * created on 25.09.2023
@@ -18,36 +16,56 @@ public class MyArrayUtils {
     public static void main(String[] args) {
         int[] testArray = {1, 10, 1111082, -5, 20, 1111082, 1, 10, 1, 1};
 
-        int findIndex = findIndexByElement(testArray, 1111082);
-        System.out.println(findIndex);
+        printArray(testArray);
 
-        if (findIndex >= 0) {
-            System.out.println("Element is found");
-        } else {
-            System.out.println("Element not found");
+        sortAz(testArray);
+
+        printArray(testArray);
+
+//        int findIndex = findIndexByElement(testArray, 1111082);
+//        System.out.println(findIndex);
+//
+//        if (findIndex >= 0) {
+//            System.out.println("Element is found");
+//        } else {
+//            System.out.println("Element not found");
+//        }
+//
+//        findIndex = findIndexByElementN(testArray, 1, 4);
+//        System.out.println("4 " + findIndex); // 9
+//
+//        findIndex = findIndexByElementN(testArray, 1, 2);
+//        System.out.println("2 " + findIndex); // 6
+//
+//        findIndex = findIndexByElementN(testArray, 1, 100);
+//        System.out.println("100 " + findIndex); // -1
+//
+//        findIndex = findIndexByElementN(testArray, 7777, 1);
+//        System.out.println("1 " + findIndex); // -1
+//
+//
+//        System.out.println(Arrays.toString(testArray));
+//        removeElement(testArray, testArray.length - 1);
+//
+//        int maxElement = findMaxElement(testArray);
+//        System.out.println(maxElement);
+//
+//        int minElement = findMinElement(testArray);
+//        System.out.println(minElement);
+    }
+
+    public static void printArray(int[] arrayToPrint) {
+//        for (int i = 0; i < arrayToPrint.length; i++) {
+//            System.out.print(arrayToPrint[i] + " ");
+//        }
+
+        int index = 0;
+        while (index < arrayToPrint.length) {
+            System.out.print(arrayToPrint[index] + " ");
+            index++;
         }
 
-        findIndex = findIndexByElementN(testArray, 1, 4);
-        System.out.println("4 " + findIndex); // 9
-
-        findIndex = findIndexByElementN(testArray, 1, 2);
-        System.out.println("2 " + findIndex); // 6
-
-        findIndex = findIndexByElementN(testArray, 1, 100);
-        System.out.println("100 " + findIndex); // -1
-
-        findIndex = findIndexByElementN(testArray, 7777, 1);
-        System.out.println("1 " + findIndex); // -1
-
-
-        System.out.println(Arrays.toString(testArray));
-        removeElement(testArray, testArray.length - 1);
-
-        int maxElement = findMaxElement(testArray);
-        System.out.println(maxElement);
-
-        int minElement = findMinElement(testArray);
-        System.out.println(minElement);
+        System.out.println();
     }
 
     /**
@@ -152,7 +170,16 @@ public class MyArrayUtils {
     }
 
     public static void sortAz(int[] sourceArr) {
-        //todo
+        // {5,2,10}
+        for (int i = 0; i < sourceArr.length; i++) {
+            for (int j = 0; j < sourceArr.length - 1; j++) {
+                if (sourceArr[j] > sourceArr[j + 1]) { // 5 > 2 {5,2,10}
+                    int temp = sourceArr[j];           // 5
+                    sourceArr[j] = sourceArr[j + 1];   // {2,2,10}
+                    sourceArr[j + 1] = temp;           // {2,5,10}
+                }
+            }
+        }
     }
 
     public static void sortZa(int[] sourceArr) {
