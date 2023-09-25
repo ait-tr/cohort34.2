@@ -1,6 +1,6 @@
 {
-  "topic": "Introduction to the programming in Java. \"Hello, World!!!\" program",
-  "date": "2023-09-21",
+  "topic": "Array practice",
+  "date": "2023-09-25",
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
@@ -11,7 +11,9 @@
     "code/HWSolution14/src/Task4.java",
     "code/HWSolution14/src/Task5.java",
 
-    "code/Lesson15/src/hw_solution_14/Task1.java"
+    "code/Lesson15/src/hw_solution_14/Task1.java",
+    "code/Lesson15/src/hw_solution_14/Task2.java",
+    "code/Lesson15/src/hw_solution_14/MyArrayUtils.java"
   ],
   "video": ""
 }
