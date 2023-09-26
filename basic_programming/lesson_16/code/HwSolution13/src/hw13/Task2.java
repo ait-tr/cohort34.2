@@ -17,7 +17,7 @@ public class Task2 {
     public static void main(String[] args) {
         int[] arr = {1, 3, 3, 3, 7, 9, 11, 13, 15, 17, 17, 19};
         int target = 3;
-        int n = 2; // Второе вхождение
+        int n = 2; // Второе вхождение числа три
 
         int linearIndex = findNthOccurrenceLinear(arr, target, n);
 
@@ -44,6 +44,4 @@ public class Task2 {
 
         return index;
     }
-
-
 }

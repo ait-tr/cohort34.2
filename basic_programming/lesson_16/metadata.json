@@ -1,5 +1,5 @@
 {
-  "topic": "Introduction to OOP, Incapsulation",
+  "topic": "Introduction to OOP, Encapsulation",
   "date": "2023-09-26",
   "plan": "plan.md",
   "theory": "theory.md",
@@ -9,7 +9,15 @@
     "code/HwSolution13/src/Task2.java",
     "code/HwSolution13/src/Task3.java",
 
-    "code/Lesson_16/src/Main.java"
+    "code/HwSolution13/src/hw13/Task1.java",
+    "code/HwSolution13/src/hw13/Task2.java",
+    "code/HwSolution13/src/hw13/Task3.java",
+    "code/HwSolution13/src/hw13/Task4.java",
+    "code/HwSolution13/src/hw13/Task5.java",
+    "code/HwSolution13/src/hw13/Pizza.java",
+
+    "code/Lesson_16/src/Application.java",
+    "code/Lesson_16/src/Planet.java"
   ],
   "video": ""
 }
