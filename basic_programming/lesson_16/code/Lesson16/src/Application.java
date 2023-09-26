@@ -33,7 +33,7 @@ public class Application {
 //        planetEarth.printDetails();
 //        planetMars.printDetails();
 
-        // пример с Классом Car
+        // пример с классом Car
         Car bwm = new Car("BMW", "Black", 250.0, "disel"); // создание новго объекта типа Car
         bwm.drive(); // начать движение машины BMW
         bwm.stop(); // отсановить BMW
