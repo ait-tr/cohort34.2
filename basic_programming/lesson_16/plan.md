@@ -1,6 +1,9 @@
 # 2023-09-26 
 
-1. Homework Review
+1. Analysis of homework
+2. Introduction to OOP
+3. Encapsulation
+4. Access modifiers, Getters and setters, Constructor
 
 ---
 
