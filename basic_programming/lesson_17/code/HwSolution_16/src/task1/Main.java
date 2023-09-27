@@ -6,14 +6,22 @@ package task1;
  */
 public class Main {
     public static void main(String[] args) {
-        User user = new User("Farkhunda", 31, "odinaevafarkhunda@gmail.com");
-        System.out.println("Farkhunda" + user.getName());
-        System.out.println("31" + user.getAge());
-        System.out.println("email" + user.getEmail());
+        User user = new User("Andre", 35, "ar@gmail.com");
+
+        // значение такие же как передавали в конструктор
+        System.out.println(user.getName());     // Andre
+        System.out.println(user.getAge());      // 35
+        System.out.println(user.getEmail());    // ar@gmail.com
 
         System.out.println();
-        user.setName("Odinaeva");
-        user.setAge(32);
-        user.setEmail("farkhundaodinaeva@gmail.com");
+        // изменение значений
+        user.setName("Vasja");  // Vasja
+        user.setAge(18);        // 18
+        user.setEmail("vasja@gmail.com"); // vasja@gmail.com
+
+        // значения изменились
+        System.out.println(user.getName());     // Vasja
+        System.out.println(user.getAge());      // 18
+        System.out.println(user.getEmail());    // vasja@gmail.com
     }
 }

@@ -5,9 +5,17 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/HwSolution_16/src/Main.java",
+    "code/HwSolution_16/src/task1/User.java",
+    "code/HwSolution_16/src/task1/Main.java",
 
-    "code/Lesson_17/src/Main.java"
+    "code/HwSolution_16/src/task3/BankAccount.java",
+    "code/HwSolution_16/src/task3/Main.java",
+
+    "code/Lesson_17/src/Calculator.java",
+    "code/Lesson_17/src/CalculatorRunner.java",
+
+    "code/AitStudents/src/entity/Student.java",
+    "code/AitStudents/src/Main.java"
   ],
   "video": ""
 }
