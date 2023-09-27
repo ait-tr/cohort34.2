@@ -11,7 +11,8 @@ use one name for different actions.
 ### Static Polymorphism
 
 Static polymorphism is associated with method and operator overloading. This means that one method can have several
-definitions with different parameters, and the compiler will choose the appropriate method based on the arguments passed.
+definitions with different parameters, and the compiler will choose the appropriate method based on the arguments
+passed.
 
 ## Dynamic polymorphism (consider after inheritance)
 
@@ -35,5 +36,26 @@ definitions with different parameters, and the compiler will choose the appropri
 определений с разными параметрами, и компилятор будет выбирать подходящий метод на основе переданных аргументов.
 
 ## Динамический полиморфизм (рассмотрим после наследования)
+
+### Перегрузка методов
+
+**Перегрузка методов** — это приём программирования, который позволяет разработчику в одном классе для методов с разными
+параметрами использовать одно и то же имя. В этом случае мы говорим, что метод перегружен.
+
+#### Зачем мне использовать перегрузку методов?
+
+Использование перегрузки делает ваш код чище и проще для чтения, а также помогает избежать ошибок в программе.
+
+### Перегрузка конструкторов
+
+В Java можно создавать несколько конструкторов с разными параметрами для одного класса. Это называется перегрузкой
+конструкторов (constructor overloading). Перегруженные конструкторы позволяют инициализировать объекты разными
+способами, в зависимости от переданных параметров.
+
+### Что такое конструктор
+
+Конструктор — это специальный метод в классе, который вызывается при создании нового объекта этого класса. Он имеет тот
+же имя, что и класс, и не возвращает никакого значения (даже void). Задача конструктора — инициализировать
+поля объекта значениями, которые передаются в качестве параметров.
 
 </details>
