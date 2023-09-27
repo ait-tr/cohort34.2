@@ -1,0 +1,14 @@
+{
+  "topic": "Inheritance",
+  "date": "2023-09-28",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/HwSolution_17/src/task1/Main.java",
+    "code/HwSolution_17/src/task1/Main.java",
+
+    "code/Lesson_18/src/Inheritance.java"
+  ],
+  "video": ""
+}
