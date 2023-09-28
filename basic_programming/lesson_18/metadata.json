@@ -14,15 +14,14 @@
     "code/Lesson_18/src/inheritance/auto/model/Auto.java",
     "code/Lesson_18/src/inheritance/auto/Main.java",
 
-    "code/Lesson_18/src/object/model/IntObject.java",
-    "code/Lesson_18/src/object/model/Book.java",
-    "code/Lesson_18/src/object/model/Application.java",
+    "code/Lesson_18/src/object/IntObject.java",
+    "code/Lesson_18/src/object/Book.java",
+    "code/Lesson_18/src/object/Application.java",
 
-    "code/Lesson_18/src/inheritance/shape/model/Shape.java",
-    "code/Lesson_18/src/inheritance/shape/model/Triangle.java",
-    "code/Lesson_18/src/inheritance/shape/model/Circle.java",
-    "code/Lesson_18/src/inheritance/shape/model/Main.java"
-
+    "code/Lesson_18/src/inheritance/shape/Shape.java",
+    "code/Lesson_18/src/inheritance/shape/Triangle.java",
+    "code/Lesson_18/src/inheritance/shape/Circle.java",
+    "code/Lesson_18/src/inheritance/shape/Main.java"
   ],
   "video": ""
 }
