@@ -9,14 +9,14 @@
     "code/HwSolution_17/src/task2/Library.java",
     "code/HwSolution_17/src/task2/LibraryApp.java",
 
+    "code/Lesson_18/src/object/IntObject.java",
+    "code/Lesson_18/src/object/Book.java",
+    "code/Lesson_18/src/object/Application.java",
+
     "code/Lesson_18/src/inheritance/auto/child/Bus.java",
     "code/Lesson_18/src/inheritance/auto/child/Truck.java",
     "code/Lesson_18/src/inheritance/auto/model/Auto.java",
     "code/Lesson_18/src/inheritance/auto/Main.java",
-
-    "code/Lesson_18/src/object/IntObject.java",
-    "code/Lesson_18/src/object/Book.java",
-    "code/Lesson_18/src/object/Application.java",
 
     "code/Lesson_18/src/inheritance/shape/Shape.java",
     "code/Lesson_18/src/inheritance/shape/Triangle.java",
