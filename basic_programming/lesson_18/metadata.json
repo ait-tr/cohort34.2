@@ -5,10 +5,24 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/HwSolution_17/src/task1/Main.java",
-    "code/HwSolution_17/src/task1/Main.java",
+    "code/HwSolution_17/src/task2/Book.java",
+    "code/HwSolution_17/src/task2/Library.java",
+    "code/HwSolution_17/src/task2/LibraryApp.java",
 
-    "code/Lesson_18/src/Inheritance.java"
+    "code/Lesson_18/src/inheritance/auto/child/Bus.java",
+    "code/Lesson_18/src/inheritance/auto/child/Truck.java",
+    "code/Lesson_18/src/inheritance/auto/model/Auto.java",
+    "code/Lesson_18/src/inheritance/auto/Main.java",
+
+    "code/Lesson_18/src/object/model/IntObject.java",
+    "code/Lesson_18/src/object/model/Book.java",
+    "code/Lesson_18/src/object/model/Application.java",
+
+    "code/Lesson_18/src/inheritance/shape/model/Shape.java",
+    "code/Lesson_18/src/inheritance/shape/model/Triangle.java",
+    "code/Lesson_18/src/inheritance/shape/model/Circle.java",
+    "code/Lesson_18/src/inheritance/shape/model/Main.java"
+
   ],
   "video": ""
 }
