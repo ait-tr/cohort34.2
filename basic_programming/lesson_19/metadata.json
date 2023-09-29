@@ -1,0 +1,11 @@
+{
+  "topic": "OOP, Encapsulation, Polymorphism",
+  "date": "2023-09-29",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/Lesson_19/src/Main.java"
+  ],
+  "video": ""
+}
