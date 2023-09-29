@@ -2,43 +2,41 @@ package pizza2;
 
 public class PizzaContest {
     public static void main(String[] args) {
-        int totalPizzas = 2;
-        int slicesPerPizza = 8;
-        int totalSlices = totalPizzas * slicesPerPizza;
+        int totalSlices = 20;
 
         // Создаем участников конкурса
-        Participant[] participants = new Participant[3];
-        participants[0] = new Participant(1, 1);
-        participants[1] = new Participant(2, 2);
-        participants[2] = new Participant(3, 1);
+        Participant[] participants = new Participant[6];
+        participants[0] = new Participant(1);
+        participants[1] = new Participant(2);
+        participants[2] = new Participant(3);
+        participants[3] = new Participant(4);
+        participants[4] = new Participant(5);
+        participants[5] = new Participant(6);
 
         int rounds = 0;
-        int lastEatenIndex = -1;
+        Participant secondLastEater = null;
 
         // Начинаем конкурс
         while (totalSlices > 0) {
+            rounds++;
+            System.out.println("Round: " + rounds);
+
             for (int i = 0; i < participants.length; i++) {
-                Participant participant = participants[i];
-                int name = participant.getName();
+
                 if (totalSlices == 0) {
                     break;
                 }
-                if (name == 2 && rounds % 2 != 0) {
-                    continue;
-                }
 
-                if (name == 3 && (totalSlices > 8 && rounds % 2 != 0)) {
-                    continue;
-                } else if (name == 3 && totalSlices < 9){
-                    participant.eatPizza();
-                    totalSlices--;
-                }
-
+                Participant participant = participants[i];
                 participant.eatPizza();
                 totalSlices--;
-                lastEatenIndex = i;
+
+                if (totalSlices == 1) {
+                    secondLastEater = participant;
+                }
             }
-            rounds++;
+
+            printAll(participants);
         }
 
         // Определяем победителя сортировкой пузырьком
@@ -53,9 +51,18 @@ public class PizzaContest {
             }
         }
 
+        System.out.println();
+        printAll(participants);
         // Выводим результаты
-        System.out.println("Победитель: " + participants[2].getName());
+        System.out.println("Победитель: " + participants[participants.length - 1].getId());
         System.out.println("Количество кругов: " + rounds);
-        System.out.println("Последний кусок съеден участником: " + participants[lastEatenIndex].getName());
+        System.out.println("Предпоследний  кусок съеден участником: " + secondLastEater.getId());
+    }
+
+    private static void printAll(Participant[] participants) {
+        for (int i = 0; i < participants.length; i++) {
+            System.out.println("ID: " + participants[i].getId() +
+                    " eat: " + participants[i].getPizzasEaten());
+        }
     }
 }
