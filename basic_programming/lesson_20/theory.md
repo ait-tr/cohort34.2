@@ -46,7 +46,7 @@ For example, a cat makes “meow-meow”, a dog “woof-woof”.
 
 Example:
 
-![img_2.png](img_2.png)
+![img_2.png](https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_20/img_2.png)
 
 ```java
 public class Animal { // parent class for all animals

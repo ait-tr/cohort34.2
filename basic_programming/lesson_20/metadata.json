@@ -1,13 +1,11 @@
 {
-  "topic": "Inheritance",
-  "date": "2023-09-29",
+  "topic": "Inheritance, Overriding methods, Type casting",
+  "date": "2023-10-02",
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/hello_world/src/Main.java",
-
-    "code/Lesson_18/src/Main.java"
+    "code/Lesson_20/src/Main.java"
   ],
   "video": ""
 }
