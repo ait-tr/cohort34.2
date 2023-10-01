@@ -28,7 +28,7 @@ class Banana extends Fruit {
 }
 ```
 
-![img.png](img.png)
+![img.png](https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_20/img.png)
 
 ### Overriding methods in subclasses:
 
@@ -266,7 +266,7 @@ class Banana extends Fruit {
 }
 ```
 
-![img.png](img.png)
+![img.png](https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_20/img.png)
 
 ### Переопределение методов в подклассах:
 
@@ -381,7 +381,7 @@ public class Main {
 
 Каждый класс имеет метод `makeSound()`, который выводит звук, издаваемый животным.
 
-![img_3.png](img_3.png)
+![img_3.png](https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_20/img_3.png)
 
 Теперь давайте рассмотрим приведение типов:
 
