@@ -110,7 +110,7 @@ public class Cat extends Animal {
 }
 ```
 
-![img_3.png](img_3.png)
+![img_3.png](https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_20/img_3.png)
 
 This code overrides the parent `makeSound()` method in each descendant class. What allows animals
 reproduce the correct sounds.
@@ -143,7 +143,7 @@ We have a class hierarchy:
 
 Each class has a `makeSound()` method that outputs the sound the animal makes.
 
-![img_3.png](img_3.png)
+![img_3.png](https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_20/img_3.png)
 
 Now let's look at type casting:
 
@@ -284,7 +284,7 @@ class Banana extends Fruit {
 
 Пример:
 
-![img_2.png](img_2.png)
+![img_2.png](https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_20/img_2.png)
 
 ```java
 public class Animal { // родительский класс для всех животных
@@ -348,7 +348,7 @@ public class Cat extends Animal {
 }
 ```
 
-![img_3.png](img_3.png)
+![img_3.png](https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_20/img_3.png)
 
 Этот код переопределяет в каждом классе наследнике родительский метод `makeSound()`. Что позволяет животным
 воспроизводить верные звуки.

@@ -3,8 +3,7 @@
 
 ## Task 1
 
-Look around you. Write three classes that describe some entities around you. Don't forget to use
-abstraction.
+Look around you. Write three classes that describe some entities around you.
 
 For example, describe the student, the desk, the keyboard, etc.
 
@@ -88,8 +87,7 @@ ___
 
 ## Задача 1
 
-Посмотрите вокруг себя. Напишите три класса, описывающие какие-то сущности вокруг Вас. Не забудьте использовать
-абстракцию.
+Посмотрите вокруг себя. Напишите три класса, описывающие какие-то сущности вокруг Вас.
 
 Например, опишите студента, стол, клавиатуру и т.д.
 
