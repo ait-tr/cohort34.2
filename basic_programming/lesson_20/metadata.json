@@ -5,7 +5,21 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/Lesson_20/src/Main.java"
+    "code/Lesson_20/src/animal/Animal.java",
+    "code/Lesson_20/src/animal/Cat.java",
+    "code/Lesson_20/src/animal/Dog.java",
+    "code/Lesson_20/src/animal/AnimalApl.java",
+    "code/Lesson_20/src/animal/AnimalApl2.java",
+
+    "code/Lesson_20/src/animal2/Animal.java",
+    "code/Lesson_20/src/animal2/Cat.java",
+    "code/Lesson_20/src/animal2/Dog.java",
+    "code/Lesson_20/src/animal2/AnimalApl3.java",
+
+    "code/Lesson_20/src/zoo2/Main.java",
+    "code/Lesson_20/src/zoo2/Animal.java",
+    "code/Lesson_20/src/zoo2/Cat.java",
+    "code/Lesson_20/src/zoo2/Dog.java"
   ],
   "video": ""
 }
