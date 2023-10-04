@@ -1,0 +1,14 @@
+{
+  "topic": "static, javac, Application Arguments",
+  "date": "2023-10-05",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/ClassWork_22/src/javac/MyApp.java",
+    "code/ClassWork_22/src/javac/model/Auto.java",
+
+    "code/Lesson_22/src/model/Main.java"
+  ],
+  "video": ""
+}
