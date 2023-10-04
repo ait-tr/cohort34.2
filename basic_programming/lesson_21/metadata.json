@@ -5,14 +5,14 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/Lesson_21/to_string/Auto.java",
-    "code/Lesson_21/to_string/Person.java",
-    "code/Lesson_21/to_string/Main.java",
+    "code/Lesson_21/src/to_string/Auto.java",
+    "code/Lesson_21/src/to_string/Person.java",
+    "code/Lesson_21/src/to_string/Main.java",
 
-    "code/Lesson_21/equals/intro/IntroToEquals.java",
+    "code/Lesson_21/src/equals/intro/IntroToEquals.java",
 
-    "code/Lesson_21/equals/auto2/Auto2.java",
-    "code/Lesson_21/equals/auto2/Main.java",
+    "code/Lesson_21/src/equals/auto2/Auto2.java",
+    "code/Lesson_21/src/equals/auto2/Main.java",
 
     "code/Bank/src/ATM.java",
     "code/Bank/src/Bank.java",
