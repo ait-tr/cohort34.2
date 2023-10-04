@@ -38,7 +38,7 @@ Display the search result on the screen, showing the found match or a message ab
 
 1. Создайте несколько объектов класса Car с разными параметрами
 2. Сравните объекты с использованием метода
-3. 
+
 
 ## Задача 2
 

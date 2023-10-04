@@ -5,9 +5,19 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/hello_world/src/Main.java",
+    "code/Lesson_21/to_string/Auto.java",
+    "code/Lesson_21/to_string/Person.java",
+    "code/Lesson_21/to_string/Main.java",
 
-    "code/Lesson_20/src/Main.java"
+    "code/Lesson_21/equals/intro/IntroToEquals.java",
+
+    "code/Lesson_21/equals/auto2/Auto2.java",
+    "code/Lesson_21/equals/auto2/Main.java",
+
+    "code/Bank/src/ATM.java",
+    "code/Bank/src/Bank.java",
+    "code/Bank/src/BankCard.java",
+    "code/Bank/src/Main.java"
   ],
   "video": ""
 }
