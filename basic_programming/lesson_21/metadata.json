@@ -1,0 +1,13 @@
+{
+  "topic": "Object",
+  "date": "2023-10-04",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/hello_world/src/Main.java",
+
+    "code/Lesson_20/src/Main.java"
+  ],
+  "video": ""
+}
