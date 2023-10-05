@@ -8,7 +8,18 @@
     "code/ClassWork_22/src/javac/MyApp.java",
     "code/ClassWork_22/src/javac/model/Auto.java",
 
-    "code/Lesson_22/src/model/Main.java"
+    "code/Lesson_22/src/MyApp.java",
+
+    "code/Lesson_22/src/calculator/Calculator.java",
+    "code/Lesson_22/src/calculator/CalculatorApp.java",
+
+    "code/Lesson_22/src/array_tool/ArrayTools.java",
+    "code/Lesson_22/src/array_tool/ArrayToolApp.java",
+
+    "code/Lesson_22/src/constants/AppConstants.java",
+
+    "code/Lesson_22/src/static_mod/Car.java",
+    "code/Lesson_22/src/static_mod/Main.java"
   ],
   "video": ""
 }
