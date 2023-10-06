@@ -1,7 +1,7 @@
 <details style="margin-top: 16px">
   <summary style="cursor: pointer; color: blue;"><b>English</b></summary>
 
-Add methods of the class [ATM.java](code%2FBank%2Fsrc%2FATM.java) of the project [Bank](code%2FBank)
+Add methods of the class `ATM.java` of the project **Bank**
 
 - write a constructor
 - add the deposit method
@@ -12,7 +12,7 @@ Test the added methods.
 
 ### Task 2
 
-- Understand how methods work in the class [Bank.java](code%2FBank%2Fsrc%2FBank.java)
+- Understand how methods work in the class `Bank.java`
 - Test functionality
 
 </details>
@@ -24,7 +24,7 @@ Test the added methods.
 
 ### Задача 1
 
-Дописать методы класса [ATM.java](code%2FBank%2Fsrc%2FATM.java) проекта [Bank](code%2FBank)
+Дописать методы класса `ATM.java` проекта **Bank**
 
 - написать конструктор
 - дописать метод deposit
@@ -35,7 +35,7 @@ Test the added methods.
 
 ### Задача 2
 
-- Разобраться как работают методы в классе [Bank.java](code%2FBank%2Fsrc%2FBank.java)
+- Разобраться как работают методы в классе `Bank.java`
 - Протестировать работоспособность
 
 </details>
