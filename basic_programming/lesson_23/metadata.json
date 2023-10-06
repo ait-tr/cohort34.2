@@ -1,11 +1,20 @@
 {
-  "topic": "Inheritance",
+  "topic": "Prctice",
   "date": "2023-10-06",
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/Lesson_23/src/Main.java"
+    "code/Lesson_23/src/animal/Animal.java",
+    "code/Lesson_23/src/cat/Cat.java",
+    "code/Lesson_23/src/dog/Dog.java",
+    "code/Lesson_23/src/dog/Main.java",
+
+    "code/Bank/src/constants/AppConstants.java",
+    "code/Bank/src/ATM.java",
+    "code/Bank/src/Bank.java",
+    "code/Bank/src/BankCard.java",
+    "code/Bank/src/Main.java"
   ],
   "video": ""
 }

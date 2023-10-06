@@ -1,7 +1,43 @@
 <details style="margin-top: 16px">
   <summary style="cursor: pointer; color: blue;"><b>English</b></summary>
 
+The `final` modifier can be applied to classes, methods and variables. When it is applied to a class it is
+means that the class cannot be inherited by other classes. Here's how it works:
 
+1. `final` for the class:
+   When a class is declared as `final`, it means that it is "complete" and cannot be extended or
+   inherit. This is useful, for example, when you want to prevent the creation of subclasses that could change or
+   disrupt your class. Example:
+
+    ```java
+    final class MyFinalClass {
+        // Class code
+    }
+    ```
+
+2. `final` for the method:
+   The `final` modifier can also be applied to methods within a class. When a method is declared as `final`, subclasses are not
+   can override this method. This ensures that the method implementation will be constant and will not change across subclasses.
+   Example:
+
+    ```java
+    class MyBaseClass {
+        final void myFinalMethod() {
+            // Method code
+        }
+    }
+    ```
+
+3. `final` for variables:
+   When a variable is declared as `final`, it can only be assigned a value once, and that value cannot be
+   changed after that. This is used to create immutable variables. Example:
+
+    ```java
+    final int myFinalVariable = 10;
+    ```
+
+Using the `final` modifier helps create more reliable and predictable code in Java and should be
+Use where necessary to ensure the stability and security of your application.
 
 </details>
 

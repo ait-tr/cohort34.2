@@ -15,7 +15,6 @@ public class BankCard {
 
     // Конструкторы и геттеры/сеттеры
 
-
     public String getCardNumber() {
         return cardNumber;
     }
@@ -51,12 +50,21 @@ public class BankCard {
     /**
      * Метод для сравнения карт по балансу, имени и фамилии владельца.
      *
-     * @param otherCard Карта, с которой сравниваем текущую карту.
+     * @param object Карта, с которой сравниваем текущую карту.
      * @return true, если карты равны по балансу, имени и фамилии; в противном случае - false.
      */
     @Override
-    public boolean equals(Object otherCard) {
-        // Реализация метода
-        return false;
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+
+        BankCard bankCard = (BankCard) object;
+
+        return this.cardNumber.equals(bankCard.cardNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return cardNumber.hashCode();
     }
 }
