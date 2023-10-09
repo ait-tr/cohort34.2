@@ -26,7 +26,6 @@ public class Application {
     public static void main(String[] args) {
         System.out.println(StringTasks.countDigits("I am agent 007"));
         System.out.println(StringTasks.countUppercaseLetters("Hello World"));
-        System.out.println(StringTasks.isPalindrome("radar"));
         System.out.println(StringTasks.reverseWords("Hello World"));
     }
 }
@@ -65,9 +64,8 @@ public class StringTasks {
 **Пример 3:** Дана строка "I was in Berlin 3 times in 2023, and in 2022 I was there twice", Результат: 3 букв(ы)
 верхнего регистра
 
-### Задача 3*. Реализуйте метод, который проверяет, является ли строка палиндромом.
 
-### Задача 4**. Реализуйте метод, который принимает строку и возвращает новую строку, в которой все слова перевернуты, но порядок слов остается прежним.
+### Задача 3*. Реализуйте метод, который принимает строку и возвращает новую строку, в которой все слова перевернуты, но порядок слов остается прежним.
 
 **Пример 1:** Дана строка "Hello World", Результат: "olleH dlroW"
 
