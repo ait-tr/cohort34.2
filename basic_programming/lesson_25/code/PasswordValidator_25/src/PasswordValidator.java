@@ -29,7 +29,12 @@ public class PasswordValidator {
                              int minLength,
                              String symbolList,
                              int minSymbolCount) {
-
+        this.minDigits = 0;
+        this.minLength = 0;
+        this.symbolList = null;
+        this.minSymbolCount = 0;
+        this.minLowerCase = 0;
+        this.minUpperCase = 0;
     }
 
     /**
