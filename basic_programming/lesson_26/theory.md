@@ -26,7 +26,7 @@ development costs; As Java is close to C++ and C#, it makes it easy for programm
 
 You need to print this text to the console approximately in the following format along with the title `Why Use Java?`:
 
-(An image is referenced here but cannot be displayed in a text response)
+![img.png](https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_26/img.png)
 
 ### Task 3
 
@@ -202,7 +202,7 @@ development costs; As Java is close to C++ and C#, it makes it easy for programm
 
 Необходимо вывести этот текст в консоль (примерно) в таком виде вместе с заголовком `Why Use Java?`:
 
-![img.png](img.png)
+![img.png](https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_26/img.png)
 
 ___
 
