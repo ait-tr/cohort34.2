@@ -5,7 +5,12 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/PasswordValidator_25/src/PasswordValidator.java"
+    "code/PasswordValidator_25/src/PasswordValidator.java",
+
+    "code/Lesson_25/src/string/StringTasks.java",
+    "code/Lesson_25/src/wrapper_char/CharTasks.java",
+    "code/Lesson_25/src/wrapper_char/CharTasksApp.java",
+    "code/Lesson_25/src/wrapper_char/WrapperCharacter.java"
   ],
   "video": ""
 }
