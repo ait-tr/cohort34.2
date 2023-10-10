@@ -18,4 +18,7 @@ public class AppConstants {
     public static final String CLIENT_AMOUNT_LIMIT = "Банк больше не принимает новых клиентов";
 
     public static final String CARD_FOUND_MESSAGE = "Карта с номером: ";
+
+    public static final String BALANCE_ERROR_MESSAGE = "На счету не достаточно средств";
+    public static final String BALANCE_INFO = "Текущий баланс: ";
 }

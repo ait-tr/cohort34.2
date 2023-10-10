@@ -1,11 +1,15 @@
+import constants.AppConstants;
+
 /**
  * Класс для представления банкомата и выполнения операций с картами.
  */
 public class ATM {
 
-    private Bank bank;
+    private final Bank bank;
 
-    // todo: Конструкторы и геттеры/сеттеры
+    public ATM(Bank bank) {
+        this.bank = bank;
+    }
 
     /**
      * Метод для внесения денег на карту.
@@ -14,16 +18,10 @@ public class ATM {
      * @param amount Сумма, которую нужно внести.
      */
     public void deposit(BankCard card, double amount) {
-        //todo: 1. проверить есть ли карта (card) в нашем банке (this.bank)
-        //todo: 2. Если карта есть в банке, тогда провести оперецию по внусения средств на карту. (card.setBalance(...))
-        //todo: 3. Важно, не перезапишите баланс, а добавьтие к текущему балансу значение amount
-
-        // К примеру, если у владельца карты на счету уже есть 1000 евро, и владелец карты хочет пополнить свой счет на 10 евро,
-        // после этой опрерации у пользователя должно оказаться на счету 1010 евро, а не 10 евро.
-        // Проследите за тем что бы при пополнении счета баланс не перезаписывается 
-
-
-        // Реализация метода
+        if (this.bank.findCard(card)) {
+            card.setBalance(card.getBalance() + amount);
+            System.out.println("Сумма " + amount + " внесена на счет");
+        }
     }
 
     /**
@@ -33,8 +31,16 @@ public class ATM {
      * @param amount Сумма, которую нужно снять.
      */
     public void withdraw(BankCard card, double amount) {
-        this.bank.findCard(card); // проверяем есть ли карточка (card) в банке (this.bank)
-        // Реализация метода
+        if (!this.bank.findCard(card)) {
+            return;
+        }
+
+        if (card.getBalance() >= amount) {
+            card.setBalance(card.getBalance() - amount);
+            System.out.println("Сумма " + amount + " выдана");
+        } else {
+            System.out.println(AppConstants.BALANCE_ERROR_MESSAGE);
+        }
     }
 
     /**
@@ -43,6 +49,10 @@ public class ATM {
      * @param card Карта, баланс которой нужно отобразить.
      */
     public void showBalance(BankCard card) {
-        // Реализация метода
+        if (!this.bank.findCard(card)) {
+            return;
+        }
+
+        System.out.println(AppConstants.BALANCE_INFO + card.getBalance());
     }
 }

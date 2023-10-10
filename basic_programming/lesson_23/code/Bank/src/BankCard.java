@@ -60,7 +60,8 @@ public class BankCard {
 
         BankCard bankCard = (BankCard) object;
 
-        return this.cardNumber.equals(bankCard.cardNumber);
+        return this.firstName.equals(bankCard.firstName)
+                && this.lastName.equals(bankCard.lastName);
     }
 
     @Override

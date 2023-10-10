@@ -73,7 +73,6 @@ public class Bank {
         for (int i = 0; i < cards.length; i++) {
             final BankCard currentElement = cards[i];
             if (currentElement != null && currentElement.equals(card)) {
-//            if (cards[i] != null && cards[i].getCardNumber().equals(card.getCardNumber())) {
                 System.out.println(AppConstants.CARD_FOUND_MESSAGE + card.getCardNumber() + " найдена под индексом: " + i);
                 return true;
             }
