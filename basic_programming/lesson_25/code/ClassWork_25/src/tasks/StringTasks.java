@@ -60,6 +60,20 @@ public class StringTasks {
         return result.trim();
     }
 
+    public static String reverseWords2(String str) {
+        String[] words = str.split(" ");
+        String result = "";
+        for (int i = 0; i < words.length; i++) {
+            String word = words[i];
+            String reversedWord = "";
+            for (int j = word.length() - 1; j >= 0; j--) {
+                reversedWord += word.charAt(j);
+            }
+            result += reversedWord + " ";
+        }
+        return result.trim();
+    }
+
     public static void main(String[] args) {
         System.out.println(isPalindrome("radar"));  // true
         System.out.println(countDigits("I am agent 007"));  // 3

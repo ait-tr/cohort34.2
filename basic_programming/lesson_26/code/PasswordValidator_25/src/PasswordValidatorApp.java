@@ -33,5 +33,6 @@ public class PasswordValidatorApp {
         System.out.println("validate pass: " + pass9 + " result: " + passwordValidator.isValid(pass9));
         System.out.println("validate pass: " + pass10 + " result: " + passwordValidator.isValid(pass10));
         System.out.println("validate pass: " + pass11 + " result: " + passwordValidator.isValid(pass11));
+        System.out.println("validate pass: " + pass12 + " result: " + passwordValidator.isValid(pass12));
     }
 }

@@ -1,0 +1,12 @@
+{
+  "topic": "String, Character, Practice",
+  "date": "2023-10-11",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/PasswordValidator_25/src/PasswordValidatorApp.java",
+    "code/PasswordValidator_25/src/PasswordValidator.java"
+  ],
+  "video": ""
+}
