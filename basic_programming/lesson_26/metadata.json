@@ -6,7 +6,15 @@
   "homework": "homework.md",
   "code": [
     "code/PasswordValidator_25/src/PasswordValidatorApp.java",
-    "code/PasswordValidator_25/src/PasswordValidator.java"
+    "code/PasswordValidator_25/src/PasswordValidator.java",
+
+    "code/ClassWork_26/src/HwSolution_25.java",
+    "code/ClassWork_26/src/HwSolutionApp.java",
+
+    "code/Lesson_26/src/task1/Task1Runner.java",
+    "code/Lesson_26/src/task1/TaskUtils.java",
+    "code/Lesson_26/src/task2/TextEditorUtils.java",
+    "code/Lesson_26/src/task3/TextEditorUtils.java"
   ],
   "video": ""
 }
