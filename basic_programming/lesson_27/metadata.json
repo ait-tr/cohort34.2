@@ -1,11 +1,13 @@
 {
-  "topic": "Inheritance",
-  "date": "2023-10-06",
+  "topic": "Junit",
+  "date": "2023-10-11",
   "plan": "plan.md",
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/Lesson_23/src/Main.java"
+    "code/Lesson_27/src/CalculatorTest.java",
+    "code/Lesson_27/src/PasswordEncoderDecoder.java",
+    "code/Lesson_27/src/PasswordEncoderDecoderTest.java"
   ],
   "video": ""
 }
