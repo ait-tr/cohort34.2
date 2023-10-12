@@ -132,10 +132,9 @@ scenarios.
 
 1. **Обеспечение качества кода:** Проверяют, работает ли код правильно.
 2. **Улучшение структуры кода:** Заставляют делать код более модульным и чистым.
-3 **Предотвращение регрессий:** Помогают избегать ошибок после изменений.
-4 **Экономия времени и ресурсов:** Позволяют выявлять проблемы раньше.
-5 **Повышение уверенности:** Делают код надежным.
-
+   3 **Предотвращение регрессий:** Помогают избегать ошибок после изменений.
+   4 **Экономия времени и ресурсов:** Позволяют выявлять проблемы раньше.
+   5 **Повышение уверенности:** Делают код надежным.
 
 **Пример:**
 
@@ -257,7 +256,7 @@ scenarios.
 
 ## Полезные ссылки:
 
-User Guide - https://junit.org/junit5/docs/current/user-guide/index.html
-How to set up JUnit for your project - https://www.jetbrains.com/help/idea/junit.html
+- User Guide - https://junit.org/junit5/docs/current/user-guide/index.html
+- How to set up JUnit for your project - https://www.jetbrains.com/help/idea/junit.html
 
 </details>
