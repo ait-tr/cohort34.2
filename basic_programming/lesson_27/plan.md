@@ -1,9 +1,7 @@
-# 2023-10-12
+# 2023-09-21 
 
 1. Homework Review
-2. Unit testing, JUnit
 
 ---
 
 1. Разбор домашнего задания
-2. Unit testing, JUnit 
