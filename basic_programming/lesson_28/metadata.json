@@ -1,0 +1,11 @@
+{
+  "topic": "Repetition: Wrapper, String, Unit",
+  "date": "2023-10-13",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/Lesson_23/src/Main.java"
+  ],
+  "video": ""
+}
