@@ -5,10 +5,8 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/Lesson_23/src/Main.java",
-    "code/Lesson_23/src/Main.java",
-
-
+    "code/Lesson_28/src/Wrappers.java",
+    "code/Lesson_28/src/WrappersTest.java",
     "code/PasswordValidator/src/test/PasswordValidatorTest.java",
     "code/PasswordValidator/src/Application.java",
     "code/PasswordValidator/src/PasswordValidator.java"
