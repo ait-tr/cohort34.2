@@ -6,12 +6,12 @@
  */
 public class PasswordValidator {
 
-    private final int minLowerCase;
-    private final int minUpperCase;
-    private final int minDigits;
-    private final int minLength;
-    private final String symbolList;
-    private final int minSymbolCount;
+//    private final int minLowerCase;
+//    private final int minUpperCase;
+//    private final int minDigits;
+//    private final int minLength;
+//    private final String symbolList;
+//    private final int minSymbolCount;
 
     /**
      * Конструктор класса PasswordValidator для инициализации параметров проверки пароля.
@@ -93,6 +93,6 @@ public class PasswordValidator {
      * @return true, если длина пароля больше или равна минимальной длине, и false в противном случае.
      */
     public boolean isLengthValid(String password) {
-        return -1;
+        return false;
     }
 }
