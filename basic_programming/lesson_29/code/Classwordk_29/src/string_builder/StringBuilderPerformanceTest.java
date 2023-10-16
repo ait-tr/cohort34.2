@@ -7,11 +7,11 @@ package string_builder;
 public class StringBuilderPerformanceTest {
 
     public static void main(String[] args) {
-        String param1 = args.length >= 0 ? args[0] : null;
-        String param2 = args.length >= 1 ? args[1] : null;
-        int counter = Integer.parseInt(param2);
+        String param1 = args.length >= 0 ? args[0] : null; // текст
+        String param2 = args.length >= 1 ? args[1] : null; // количесво итераций склеивания текста
+        int counter = Integer.parseInt(param2); // конвертация строчного значения в числовое int
 
-        for (int i = 0; i <= 10; i++) {
+        for (int i = 0; i <= 3; i++) {
             System.out.println("#".repeat(60));
             System.out.println("Start test nr " + i);
             System.out.println("#".repeat(60));
@@ -32,9 +32,9 @@ public class StringBuilderPerformanceTest {
     }
 
     public static long stringPerformanceTest(String value, int counter) {
-//        System.out.println("Start test for String concatenation");
         String str = "";
 
+        // System.currentTimeMillis(); производит отсечку времени в милисекундах от 1 Января 1970
         long startTimeStringConcat = System.currentTimeMillis();
         for (int i = 0; i < counter; i++) {
             str += value;
@@ -43,13 +43,11 @@ public class StringBuilderPerformanceTest {
         long endTimeStringConcat = System.currentTimeMillis();
 
         long result = endTimeStringConcat - startTimeStringConcat;
-//        System.out.println("End test for String concatenation. Result in ms:" + result);
 
         return result;
     }
 
     public static long stringBuilderPerformanceTest(String value, int counter) {
-//        System.out.println("Start test for String concatenation");
         StringBuilder stringBuilder = new StringBuilder();
 
         long startTimeStringConcat = System.currentTimeMillis();
@@ -60,24 +58,21 @@ public class StringBuilderPerformanceTest {
         long endTimeStringConcat = System.currentTimeMillis();
 
         long result = endTimeStringConcat - startTimeStringConcat;
-//        System.out.println("End test for String concatenation. Result in ms:" + result);
 
         return result;
     }
 
     public static long stringBufferPerformanceTest(String value, int counter) {
-//        System.out.println("Start test for String concatenation");
-        StringBuffer stringBuilder = new StringBuffer();
+        StringBuffer stringBuffer = new StringBuffer();
 
         long startTimeStringConcat = System.currentTimeMillis();
         for (int i = 0; i < counter; i++) {
-            stringBuilder.append(value);
+            stringBuffer.append(value);
         }
 
         long endTimeStringConcat = System.currentTimeMillis();
 
         long result = endTimeStringConcat - startTimeStringConcat;
-//        System.out.println("End test for String concatenation. Result in ms:" + result);
 
         return result;
     }

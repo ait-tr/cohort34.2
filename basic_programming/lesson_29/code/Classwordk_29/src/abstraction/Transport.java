@@ -1,17 +1,21 @@
+package abstraction;
 
-// абстрактный класс для создания общего шаблона для всех транспортных средств
-public abstract class Transport {
+/**
+ * @author Andrej Reutow
+ * created on 16.10.2023
+ */
+public abstract class Transport { // абстрактный класс
 
-    //общие характеристики, такие как скорость(speed), количество колес (wheels) и возможность движения (move()).
-    protected int wheels;
-    protected int speed;
+    // общие характеристики/свойства для всех будующих транспортных средств
+    protected int wheels; // количество колес
+    protected int speed; // скорость
 
     public Transport(int wheels, int speed) {
         this.wheels = wheels;
         this.speed = speed;
     }
 
-    public abstract void move();
+    abstract public void move(); // абстрактный метод/поведение объекта
 }
 
 //  class Transport определяет общие характеристики для всех транспортных средств, такие как количество колес и скорость.

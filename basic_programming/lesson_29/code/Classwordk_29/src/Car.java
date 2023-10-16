@@ -1,4 +1,4 @@
-public class Car extends Transport {
+public class Car extends Transport2 {
     public Car(int speed) {
         super(4, speed);
     }
