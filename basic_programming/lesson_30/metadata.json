@@ -5,7 +5,21 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/Lesson_23/src/Main.java"
+    "code/Classwork_30/src/garage/entity/Car.java",
+    "code/Classwork_30/src/garage/entity/GarageService2.java",
+    "code/Classwork_30/src/garage/GarageApp.java",
+    "code/Classwork_30/src/garage/GarageService.java",
+    "code/Classwork_30/src/garage/IGarageService.java",
+    "code/Classwork_30/src/interface_lesson/CalculatorAbstract.java",
+    "code/Classwork_30/src/interface_lesson/CalculatorImpl.java",
+    "code/Classwork_30/src/interface_lesson/CalculatorInterface.java",
+    "code/Classwork_30/src/interface_lesson/Main.java",
+    "code/Messaging/src/service/EmilMessageService.java",
+    "code/Messaging/src/service/IKontaktService.java",
+    "code/Messaging/src/service/IMessageService.java",
+    "code/Messaging/src/service/IMessageService2.java",
+    "code/Messaging/src/service/SmsMessageService.java",
+    "code/Messaging/src/MessageApp.java"
   ],
   "video": ""
 }
