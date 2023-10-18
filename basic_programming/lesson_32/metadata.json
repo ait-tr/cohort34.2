@@ -1,0 +1,11 @@
+{
+  "topic": "Generic",
+  "date": "2023-10-19",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/Lesson_23/src/Main.java"
+  ],
+  "video": ""
+}
