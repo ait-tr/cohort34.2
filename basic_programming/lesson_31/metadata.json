@@ -6,14 +6,14 @@
   "homework": "homework.md",
   "code": [
     "../lesson_30/code/Classwork_30/src/entity/BaseEmployee.java",
-    "code/Classwork_30/src/entity/Developer.java",
-    "code/Classwork_30/src/entity/Employee.java",
-    "code/Classwork_30/src/entity/Manager.java",
-    "code/Classwork_30/src/entity/Salesperson.java",
-    "code/Classwork_30/src/repo/EmployeeRepository.java",
-    "code/Classwork_30/src/repo/EmployeeRepositoryInterface.java",
-    "code/Classwork_30/src/repo/EmployeeRepositoryTest.java",
-    "code/Classwork_30/src/Main.java"
+    "../lesson_30/code/Classwork_30/src/entity/Developer.java",
+    "../lesson_30/code/Classwork_30/src/entity/Employee.java",
+    "../lesson_30/code/Classwork_30/src/entity/Manager.java",
+    "../lesson_30/code/Classwork_30/src/entity/Salesperson.java",
+    "../lesson_30/code/Classwork_30/src/repo/EmployeeRepository.java",
+    "../lesson_30/code/Classwork_30/src/repo/EmployeeRepositoryInterface.java",
+    "../lesson_30/code/Classwork_30/src/repo/EmployeeRepositoryTest.java",
+    "../lesson_30/code/Classwork_30/src/Main.java"
   ],
   "video": ""
 }
