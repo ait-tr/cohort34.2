@@ -1,9 +1,5 @@
 # 2023-10-19
 
-1. Homework Review
-2. Generic
-
----
-
-1. Разбор домашнего задания
-2. Generic
+1. Generic
+2. Comparator
+3. Comparable

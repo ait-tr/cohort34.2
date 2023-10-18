@@ -1,11 +1,11 @@
 <details style="margin-top: 16px">
   <summary style="cursor: pointer; color: blue;"><b>English</b></summary>
 
-## Task
+## Task 1
 
-Write an interface for CRUD (Create, Read, Update, Delete) operations. The interface should be generic.
+Write an interface for CRUD (C - Create, R - Read, U - Update, D - Delete) operations. The interface should be generic.
 
-Example of a non-generic interface:
+**Example of a non-generic interface**:
 
 ```java
 public interface ICrudService { // a non-generic interface with CRUD operations for objects of type Car
@@ -23,95 +23,134 @@ public interface ICrudService { // a non-generic interface with CRUD operations 
 }
 ```
 
-Create several implementations of the generic interface for the classes: Book, Animal, BankCard.
+- Create a `entity` package and within this package, create the following classes:
+  - `Book` with fields: `int id`, `String title`
+  - `Animal` with fields: `long id`, `String color`
+- Create several implementations of the generic interface for the `Book` and `Animal` classes.
+  - **Optional** - implement methods in the implementation classes.
 
-Create a package called "entity" and within this package, create these classes:
+In the end, you should have the following methods (_Achtung - these are cheats_):
 
-- Book with fields: int id, String title
-- Animal with fields: long id, String color
-- BankCard with fields: String id, Double balance
+<hr>
 
-In the end, you should have the following methods:
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: #ff003b;"><b>For the Book class</b></summary>
 
-**For the Book class**
-
-```java
-private final Book[]SOURCE=new Book[10]; // Declare SOURCE explicitly without generics in each interface implementation
-
-public Book add(){
+```
+   private final Book[] SOURCE = new Book[10]; // SOURCE should be declared explicitly without generics in each implementation of the interface 
+    
+   public Book add(){
         // code here
-        }
+    }
 
-public Book get(Integer id){
+   public Book get(Integer id){
         // code here
-        }
+    }
 
-public Book[]getAll(){
+   public Book[] getAll(){
         // code here
-        }
+    }
 
-public Book edit(Integer id){
+   public Book edit(Integer id){
         // code here
-        }
+    }
 
-public boolean remove(Integer id){
+   public boolean remove(Integer id){
         // code here
-        }
+    }
 ```
 
-**For the Animal class**
+</details>
 
-```java
-private final Animal[]SOURCE=new Animal[10]; // Declare SOURCE explicitly without generics in each interface implementation
+<hr>
 
-public Animal add(){
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: #ff003b;"><b>For the Animal class</b></summary>
+
+```
+   private final Animal[] SOURCE = new Animal[10]; // SOURCE should be declared explicitly without generics in each implementation of the interface 
+   
+   public Animal add(){
         // code here
-        }
+    }
 
-public Animal get(Long id){
+   public Animal get(Long id){
         // code here
-        }
+    }
 
-public Animal[]getAll(){
+   public Animal[] getAll(){
         // code here
-        }
+    }
 
-public Animal edit(Long id){
+   public Animal edit(Long id){
         // code here
-        }
+    }
 
-public boolean remove(Long id){
+   public boolean remove(Long id){
         // code here
-        }
+    }
 ```
 
-**For the BankCard class**
+</details>
+
+**Important**: Use **one** interface for different classes and use generics for generalization!
+
+<hr>
+
+### Task 2:
+
+Create a class `Student` with `name` and `grade` fields. Implement the `Comparable` interface for it so that students can be sorted by grades.
+
+- Create an array of students and sort it using `Arrays.sort()`.
+
+<hr>
+
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: blue;"><b>Reminder</b></summary>
 
 ```java
-private final BankCard[]SOURCE=new BankCard[10]; // Declare SOURCE explicitly without generics in each interface implementation
-
-public BankCard add(){
-        // code here
-        }
-
-public BankCard get(String id){
-        // code here
-        }
-
-public BankCard[]getAll(){
-        // code here
-        }
-
-public BankCard edit(String id){
-        // code here
-        }
-
-public boolean remove(String id){
-        // code here
-        }
+       // Sort the array of students, using the implementation of the interface in the Student class
+        Arrays.sort(students);
 ```
 
-**Important:** Use a single interface for different classes and use generics for abstraction!
+</details>
+
+### Task 3:
+
+Homework: Create a class `Product` representing a product with fields `id`, `name`, and `price`.
+
+- Write a `Comparator` that compares products by price.
+- Write a `Comparator` that compares products by id.
+- Create an array of products and sort it by price using `Arrays.sort()`.
+- Sort the array by id using `Arrays.sort()`.
+
+Use your own comparators for sorting.
+
+<hr>
+
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: blue;"><b>Reminder</b></summary>
+
+```java
+       // Sort the array of products by price
+        Arrays.sort(products, priceComparator);
+        
+       // Sort the array of products by id
+        Arrays.sort(products, idComparator);
+```
+
+</details>
+
+### Task 4** (Very Difficult!!!)
+
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: blue;"><b>Task Description:</b></summary>
+
+# Take a Break !!!
+
+</details>
+
+</details>
 
 </details>
 
@@ -120,11 +159,11 @@ public boolean remove(String id){
 <details style="margin-top: 16px">
   <summary style="cursor: pointer; color: blue;"><b>На русском</b></summary>
 
-## Задача
+## Задача 1
 
 Напишите интерфейс для CRUD (С - Creat, R - Read, U - Update, D - Delete) операций. Интерфейс должен быть обобщенным
 
-Пример **не** обобщенного интерфейса:
+**Пример не** обобщенного интерфейса:
 
 ````java
 public interface ICrudService { // не обобщенный интерфейс с CRUD операциями над объектом типа Car
@@ -142,17 +181,18 @@ public interface ICrudService { // не обобщенный интерфейс 
 }
 ````
 
-Создайте несколько имплементаций обобщенного интерфейса для классов: Book, Animal, BankCard.
+- Создайте package entity и внутри этого package создайте эти класcы:
+    - Book c полями: int id, String title
+    - Animal, c полями: long id, String color
+- Создайте несколько имплементаций обобщенного интерфейса для классов: Book, Animal.
+    - **!!! Опционально** - реализуйте методы в классах имплементаций
 
-Создайте package entity и внутри этого package создайте эти класcы:
+В итоге у вас должны получится следующие методы (_Achtung - это читы_):
 
-- Book c полями: int id, String title
-- Animal, c полями: long id, String color
-- BankCard, c полями: String id, Double balance
+<hr>
 
-В итоге у вас должны получится следующие методы:
-
-**Для класса Book**
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: #ff003b;"><b>Для класса Book</b></summary>
 
 ```
    private final Book[] SOURCE = new Book[10]; // SOURCE объявите явно без обобщения в каждой имплементации интерфейса 
@@ -178,7 +218,12 @@ public interface ICrudService { // не обобщенный интерфейс 
     }
 ```
 
-**Для класса Animal**
+</details>
+
+<hr>
+
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: #ff003b;"><b>Для класса Animal</b></summary>
 
 ```
    private final Animal[] SOURCE = new Animal[10]; // SOURCE объявите явно без обобщения в каждой имплементации интерфейса 
@@ -204,32 +249,67 @@ public interface ICrudService { // не обобщенный интерфейс 
     }
 ```
 
-**Для класса BankCard**
+</details>
 
-```
-   private final Book[] SOURCE = new Book[10]; // SOURCE объявите явно без обобщения в каждой имплементации интерфейса 
-    
-   public BankCard add(){
-        // code hier
-    }
 
-   public BankCard get(String id){
-        // code hier
-    }
+**Важно**, используйте **один** интерфейс для разных классов и используйте **гейнерики** для обобщения!
 
-   public BankCard[] getAll(){
-        // code hier
-    }
+<hr>
 
-   public BankCard edit(String id){
-        // code hier
-    }
+### Задача 2:
 
-   public boolean remove(String id){
-        // code hier
-    }
-```
+Создайте класс `Student` с полями `name` и `grade`. Реализуйте для него интерфейс `Comparable` так, чтобы студенты
+сортировались
+по оценкам.
 
-**Важно**, используйте один интерфейс для разных классов и используйте гейнерики для обобщения!
+- создайте массив студентов и отсортируйте используя `Arrays.sort()`
+
+<hr>
+
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: blue;"><b>Напоминалка</b></summary>
+
+````
+       // Сортируем массив студентов, для сортировки используется имлементация интерфейса в классе Student
+        Arrays.sort(studends);
+````
+
+</details>
+
+### Задача 3:
+
+Домашнее задание: Создайте класс `Product`, представляющий товар с полями `id`, `name` и `price`.
+
+- Напишите `Comparator`, который сравнивает товары по цене.
+- Напишите `Comparator`, который сравнивает товары по id.
+- создайте массив товаров и отсортируйте его по цене используя `Arrays.sort()`
+- отсортируйте массив его по id `Arrays.sort()`
+
+Для сортировки используйте свои компараторы.
+
+
+<hr>
+
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: blue;"><b>Напоминалка</b></summary>
+
+````
+       // Сортируем массив товаров по цене
+        Arrays.sort(products, priceComparator);
+        
+       // Сортируем массив товаров по id
+        Arrays.sort(products, idComparator);
+````
+
+</details>
+
+### Задача 4** (Очень сложная!!!)
+
+<details style="margin-top: 16px">
+  <summary style="cursor: pointer; color: blue;"><b>Описание задачи:</b></summary>
+
+# Отдохните !!!
+
+</details>
 
 </details>

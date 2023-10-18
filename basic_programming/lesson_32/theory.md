@@ -1,129 +1,66 @@
 <details style="margin-top: 16px">
   <summary style="cursor: pointer; color: blue;"><b>English</b></summary>
 
-## Generics
+## Interfaces Comparator and Comparable
 
-**Generics** в Java is a mechanism that allows you to create classes, interfaces, and methods that work with parameterized data types. They enable you to write code that can work with different data types while ensuring type safety. Type safety guarantees that you cannot insert an object of an incompatible data type.
+`Comparable` and `Comparator` are interfaces that allow you to **compare** objects in Java.
 
-Here's a simple example of using generics:
+- `Comparable` allows you to define the **natural order** of comparison for objects of a particular class.
+- `Comparator` provides the ability to define **multiple ways of comparison** for a single class.
 
-```java
-public class Box<T> {
-    private T content;
+### Using Comparable
 
-    public Box(T content) {
-        this.content = content;
-    }
-
-    public T getContent() {
-        return content;
-    }
-}
-```
-
-In this example, `T` is a type parameter that can be replaced with a specific data type when creating an object of the `Box` class. For example:
-
-```
-        Box<Integer> integerBox = new Box<>(42);
-        Box<String> stringBox = new Box<>("Hello, world!");
-
-        Integer intValue = integerBox.getContent();
-        String stringValue = stringBox.getContent();
-```
-
-Now let's create a practice task:
-
-**Task:** Write a generic method `printArray` that takes an array of any data type and prints its content to the screen. Then create two arrays - one with integers and another with strings - and use `printArray` to display their contents.
+To use `Comparable`, a class must implement this interface and override the `compareTo()` method. Example:
 
 ```java
-public class GenericExample {
-    public static <T> void printArray(T[] array) {
-        for (T item : array) {
-            System.out.print(item + " ");
-        }
-        System.out.println();
-    }
+public class Person implements Comparable<Person> {
+    private String name;
+    private int age;
 
-    public static void main(String[] args) {
-        Integer[] intArray = {1, 2, 3, 4, 5};
-        String[] stringArray = {"Hello", "World", "Java"};
-
-        System.out.println("Array of integers:");
-        printArray(intArray);
-
-        System.out.println("Array of strings:");
-        printArray(stringArray);
-    }
-}
-```
-
-## Practice:
-
-- Write a generic interface for a calculator and implement it with several types (Short, Double, Integer, Long).
-
-#### Example:
-
-```java
-public class CalculatorImplDouble implements ICalculator<Double, Float> {
+    // Constructors, getters, setters
 
     @Override
-    public Double add(Float a, Float b) {
-        return (double) (a + b);
+    public int compareTo(Person other) {
+        return this.age - other.age;
     }
-
-    //...
 }
+```
 
-public class CalculatorImplLong implements ICalculator<Long, Integer> {
+### Using Comparator
 
+`Comparator` allows you to create custom comparison rules for objects. Example:
+
+```java
+public class PersonAgeComparator implements Comparator<Person> {
     @Override
-    public Long add(Integer a, Integer b) {
-        return (long) (a + b);
-    }
-
-    //...
-}
-```
-
-- Write a generic method `printArray` that takes an array of any data type and prints its content to the screen. Then create two arrays - one with integers, another with strings, and an array of Car objects, and use `printArray` to display their contents.
-
-```java
-public class Car {
-
-    private static int carIdCounter = 0;
-
-    private final Integer ID;
-    private String brand;
-    private String model;
-
-    public Car(String brand, String model) {
-        carIdCounter++;
-        this.ID = carIdCounter;
-        this.brand = brand;
-        this.model = model;
+    public int compare(Person p1, Person p2) {
+        return p1.getAge() - p2.getAge();
     }
 }
 ```
 
-```java
-public class GenericExample {
+### What's the Difference Between Comparator and Comparable in Java?
 
-    public static void main(String[] args) {
-        Integer[] intArray = {1, 2, 3, 4, 5};
-        String[] stringArray = {"Hello", "World", "Java"};
-        Car[] carArray = {new Car("Toyota", "Camry"), new Car("Honda", "Civic")};
+In Java, the `Comparator` and `Comparable` interfaces are used for object comparison, but they serve different purposes:
 
-        System.out.println("Array of integers:");
-        printArray(intArray);
+1. `Comparable`:
 
-        System.out.println("Array of strings:");
-        printArray(stringArray);
+- The `Comparable` interface allows an object to compare itself with another object.
+- A class implementing `Comparable` provides the `compareTo` method, which defines how one object compares to another.
+- Objects implementing `Comparable` can be naturally ordered, such as numbers or strings, and can be compared using the `compareTo` method.
 
-        System.out.println("Array of cars:");
-        printArray(carArray);
-    }
-}
-```
+2. `Comparator`:
+
+- The `Comparator` interface represents an external comparator that can be used to compare objects, even if the class itself does not implement `Comparable`.
+- You can create different `Comparator` instances for sorting objects based on different criteria.
+- `Comparator` implements the `compare` method, which takes two objects and determines which one should come first.
+
+**It's important to remember** that `Comparable` defines the natural order of comparison for objects of the same class, while `Comparator` allows you to create custom ways of comparing objects.
+
+##### Practical Tasks
+
+1. Create a `Student` class with `name` and `grade` fields. Implement the `Comparable` interface for it so that students can be sorted by grades.
+2. Create a list of students and sort it using both `Comparator` and `Comparable`.
 
 </details>
 
@@ -167,7 +104,7 @@ public class Box<T> {
         String stringValue=stringBox.getContent();
 ```
 
-Теперь давайте создадим задачу для тренировки:
+- Использование обобщений делает код более гибким и безопасным. Примеры использования:
 
 **Задача:** Напишите обобщенный метод `printArray`, который принимает массив любого типа данных и выводит его содержимое
 на экран. Затем создайте два массива - один с целыми числами, другой с строками, и используйте `printArray` для их
@@ -195,7 +132,7 @@ public class GenericExample {
 }
 ```
 
-## Практика:
+### Практика:
 
 - Напишите обобщенный интерфейс для калькулятора и несколько имплементаций с разными типами (Short, Double, Integer,
   Long) для интерфейса.
@@ -253,21 +190,88 @@ public class Car {
 ````java
 public class GenericExample {
 
-  public static void main(String[] args) {
-    Integer[] intArray = {1, 2, 3, 4, 5};
-    String[] stringArray = {"Привет", "Мир", "Java"};
-    Car[] carArray = {new Car("Toyota", "Camry"), new Car("Honda", "Civic")};
+    public static void main(String[] args) {
+        Integer[] intArray = {1, 2, 3, 4, 5};
+        String[] stringArray = {"Привет", "Мир", "Java"};
+        Car[] carArray = {new Car("Toyota", "Camry"), new Car("Honda", "Civic")};
 
-    System.out.println("Массив целых чисел:");
-    printArray(intArray); // вызов обобщенного метода
+        System.out.println("Массив целых чисел:");
+        printArray(intArray); // вызов обобщенного метода
 
-    System.out.println("Массив строк:");
-    printArray(stringArray); // вызов обобщенного метода 
+        System.out.println("Массив строк:");
+        printArray(stringArray); // вызов обобщенного метода 
 
-    System.out.println("Массив машин:");
-    printArray(carArray); // вызов обобщенного метода
-  }
+        System.out.println("Массив машин:");
+        printArray(carArray); // вызов обобщенного метода
+    }
 }
 ````
+
+## Интерфейсы Comparator и Comparable
+
+`Comparable` и `Comparator` - это интерфейсы, которые позволяют **сравнивать** объекты в Java.
+
+- `Comparable` позволяет определить **естественный порядок** сравнения для объектов данного класса.
+- `Comparator` предоставляет возможность определить **несколько способов сравнения** для одного класса.
+
+### Использование Comparable
+
+Чтобы использовать `Comparable`, класс должен реализовать этот интерфейс и переопределить метод `compareTo()`. Пример:
+
+```java
+public class Person implements Comparable<Person> {
+    private String name;
+    private int age;
+
+    // Конструкторы, геттеры, сеттеры
+
+    @Override
+    public int compareTo(Person other) {
+        return this.age - other.age;
+    }
+}
+```
+
+### Использование Comparator
+
+`Comparator` позволяет создавать собственные правила сравнения для объектов. Пример:
+
+```java
+public class PersonAgeComparator implements Comparator<Person> {
+    @Override
+    public int compare(Person p1, Person p2) {
+        return p1.getAge() - p2.getAge();
+    }
+}
+```
+
+### Чем отличается в Java Comparator от Comparable?
+
+В Java интерфейсы `Comparator` и `Comparable` используются для сравнения объектов, но они имеют разные назначения:
+
+1. `Comparable`:
+
+- Интерфейс `Comparable` позволяет объекту сравнивать себя с другим объектом.
+- Класс, реализующий `Comparable`, предоставляет метод `compareTo`, который определяет, как один объект сравнивается с
+  другим.
+- Объекты, реализующие `Comparable`, могут быть естественно упорядочены, например, числа или строки, их можно сравнивать
+  с использованием метода `compareTo`.
+
+
+2. `Comparator`:
+
+- Интерфейс `Comparator` представляет собой внешний компаратор, который можно использовать для сравнения объектов, даже
+  если класс сам по себе не реализует `Comparable`.
+- Вы можете создать различные `Comparator` для сортировки объектов по разным критериям.
+- `Comparator` реализует метод `compare`, который принимает два объекта и определяет, какой из них должен идти первым.
+
+**Важно помнить**, что `Comparable` определяет естественный порядок сравнения для объектов данного класса, в то время
+как `Comparator` позволяет создавать пользовательские способы сравнения объектов.
+
+##### Практические задачи
+
+1. Создайте класс `Student` с полями `name` и `grade`. Реализуйте для него интерфейс `Comparable` так, чтобы студенты
+   сортировались по оценкам.
+2. Создайте список студентов и отсортируйте его с использованием `Comparator` и `Comparable`.
 
 </details>
