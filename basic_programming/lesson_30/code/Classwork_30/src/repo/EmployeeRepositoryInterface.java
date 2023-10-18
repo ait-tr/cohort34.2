@@ -1,5 +1,6 @@
 package repo;
 
+import entity.BaseEmployee;
 import entity.Employee;
 
 /**
@@ -12,7 +13,7 @@ public interface EmployeeRepositoryInterface {
      *
      * @param employee Добавляемый работник.
      */
-    Employee addEmployee(Employee employee);
+    boolean addEmployee(BaseEmployee employee);
 
     /**
      * Удаляет работника из репозитория по его ID.
@@ -27,14 +28,14 @@ public interface EmployeeRepositoryInterface {
      * @param id ID работника, которого необходимо найти.
      * @return Найденный работник или null, если работник не найден.
      */
-    Employee findEmployeeById(int id);
+    BaseEmployee findEmployeeById(int id);
 
     /**
      * Получает массив всех работников в репозитории.
      *
      * @return Массив всех работников в репозитории.
      */
-    Employee[] getAllEmployees();
+    BaseEmployee[] getAllEmployees();
 
     /**
      * Возвращает количество работников в репозитории.

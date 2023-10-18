@@ -5,13 +5,12 @@ import java.util.Calendar;
 // Абстрактный класс BaseEmployee
 public abstract class BaseEmployee implements Employee {
     private String name;
-    private int id;
+    private Integer id; // null
     private int hireYear;
     private double salary;
 
-    public BaseEmployee(String name, int id, int hireYear) {
+    public BaseEmployee(String name, int hireYear) {
         this.name = name;
-        this.id = id;
         this.hireYear = hireYear;
     }
 
@@ -23,6 +22,11 @@ public abstract class BaseEmployee implements Employee {
     @Override
     public int getId() {
         return id;
+    }
+
+    @Override
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public int getHireYear() {
@@ -38,15 +42,17 @@ public abstract class BaseEmployee implements Employee {
     }
 
     public void adjustSalaryByExperience(int minExperience, int maxExperience, double percentage) {
-        int currentYear = Calendar.getInstance().get(Calendar.YEAR); // Текущий год
-        int experience = currentYear - hireYear;
-        if (experience >= minExperience && experience <= maxExperience) {
-            // Расчет новой зарплаты с учетом процента повышения
-            double currentSalary = calculateSalary();
-            double increaseAmount = (currentSalary * percentage) / 100;
-            double newSalary = currentSalary + increaseAmount;
-            // Установка новой зарплаты
-            setSalary(newSalary);
-        }
+        // todo
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("BaseEmployee{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", id=").append(id);
+        sb.append(", hireYear=").append(hireYear);
+        sb.append(", salary=").append(salary);
+        sb.append('}');
+        return sb.toString() + " ";
     }
 }

@@ -1,31 +1,49 @@
 package repo;
 
-import entity.Employee;
+import entity.BaseEmployee;
 
 public class EmployeeRepository implements EmployeeRepositoryInterface {
-    private Employee[] employees = new Employee[100]; // Массив для хранения работников
-    private int size = 0; // Размер массива
+    private BaseEmployee[] employees = new BaseEmployee[10]; // Массив для хранения работников
+    private int size = 0; // количесвто работников
+    private static int counterId = 46985;
 
-    public Employee addEmployee(Employee employee) {
+    // employees {1, 2 ,3, null, null, ...  } // size = 3
+    // employees {1, 2 ,3 }
+
+    public boolean addEmployee(BaseEmployee employee) {
         if (size < employees.length) {
-            employees[size] = employee;
+            employees[size] = employee; // employees[3] = employees {1, 2 ,3, 4, null, ...  }
+            // size = 2
+            // {1, 2, null, 4, null, ...  }
+            // employees[2] = 5
+            // {1, 2, 5, 4, null, ...  }
+
+            // size = 3
+            // {1, 2, null, 4, null, ...  }
+            // employees[3] = 6
+            // {1, 2, 5, 6, null, ...  }
             size++;
-            return employee;
+            employee.setId(++counterId);
+            return true;
         } else {
             System.out.println("Репозиторий работников заполнен.");
-            return employee;
+            return false;
         }
     }
 
-    public boolean removeEmployee(int id) {
+    public boolean removeEmployee(int id) { // employees[3] = employees {1, 2 ,3, 4, null, ...  } id = 3
         for (int i = 0; i < size; i++) {
             if (employees[i].getId() == id) {
-                // Если найден работник с заданным ID, удаляем его и сдвигаем остальных работников
-                for (int j = i; j < size - 1; j++) {
+//                // Если найден работник с заданным ID, удаляем его и сдвигаем остальных работников
+                employees[i] = null;
+                for (int j = i; j < size; j++) {
                     employees[j] = employees[j + 1];
                 }
-                employees[size - 1] = null;
-                size--;
+                // {1, 2 ,3, 4, null, ...  }
+                // {1, 2 , null, 4, null, ...  }
+                // {1, 2 , 4, null, ...    }
+                // employees[2] = employees {1, 2 ,null, 4, null, ...  }
+                size--;             // size = 3, -> size 2
                 return true;
             }
         }
@@ -33,7 +51,19 @@ public class EmployeeRepository implements EmployeeRepositoryInterface {
         return false;
     }
 
-    public Employee findEmployeeById(int id) {
+    public boolean removeEmployee2(int id) {
+        for (int i = 0; i < size; i++) {
+            if (employees[i] != null && employees[i].getId() == id) {
+                employees[i] = null;
+                System.out.println("Работник с ID " + id + " уволен");
+                return true;
+            }
+        }
+        System.out.println("Работник с ID " + id + " не найден.");
+        return false;
+    }
+
+    public BaseEmployee findEmployeeById(int id) {
         for (int i = 0; i < size; i++) {
             if (employees[i].getId() == id) {
                 return employees[i];
@@ -42,11 +72,19 @@ public class EmployeeRepository implements EmployeeRepositoryInterface {
         return null;
     }
 
-    public Employee[] getAllEmployees() {
-        return employees;
+    public BaseEmployee[] getAllEmployees() {
+        BaseEmployee[] result = new BaseEmployee[size];
+        for (int i = 0; i < size; i++) {
+            result[i] = employees[i];
+        }
+        return result;
     }
 
     public int countEmployees() {
         return size;
+    }
+
+    public BaseEmployee[] getAll() {
+        return employees;
     }
 }

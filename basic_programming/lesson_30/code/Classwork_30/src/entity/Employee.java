@@ -7,4 +7,6 @@ public interface Employee {
     int getId();
 
     double calculateSalary();
+
+    void setId(Integer id);
 }
