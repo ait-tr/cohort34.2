@@ -12,14 +12,14 @@ public interface EmployeeRepositoryInterface {
      *
      * @param employee Добавляемый работник.
      */
-    void addEmployee(Employee employee);
+    Employee addEmployee(Employee employee);
 
     /**
      * Удаляет работника из репозитория по его ID.
      *
      * @param id ID работника, которого необходимо удалить.
      */
-    void removeEmployee(int id);
+    boolean removeEmployee(int id);
 
     /**
      * Ищет работника в репозитории по его ID.

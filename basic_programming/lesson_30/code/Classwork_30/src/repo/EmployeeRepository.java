@@ -6,16 +6,18 @@ public class EmployeeRepository implements EmployeeRepositoryInterface {
     private Employee[] employees = new Employee[100]; // Массив для хранения работников
     private int size = 0; // Размер массива
 
-    public void addEmployee(Employee employee) {
+    public Employee addEmployee(Employee employee) {
         if (size < employees.length) {
             employees[size] = employee;
             size++;
+            return employee;
         } else {
             System.out.println("Репозиторий работников заполнен.");
+            return employee;
         }
     }
 
-    public void removeEmployee(int id) {
+    public boolean removeEmployee(int id) {
         for (int i = 0; i < size; i++) {
             if (employees[i].getId() == id) {
                 // Если найден работник с заданным ID, удаляем его и сдвигаем остальных работников
@@ -24,10 +26,11 @@ public class EmployeeRepository implements EmployeeRepositoryInterface {
                 }
                 employees[size - 1] = null;
                 size--;
-                return;
+                return true;
             }
         }
         System.out.println("Работник с ID " + id + " не найден.");
+        return false;
     }
 
     public Employee findEmployeeById(int id) {
