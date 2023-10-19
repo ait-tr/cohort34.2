@@ -5,7 +5,18 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/Lesson_23/src/Main.java"
+    "code/ClassWork_32/src/class_work/Box.java",
+    "code/ClassWork_32/src/class_work/BoxAppRunner.java",
+    "code/ClassWork_32/src/class_work/BoxSimple.java",
+    "code/ClassWork_32/src/class_work/BoxSimpleString.java",
+    "code/ClassWork_32/src/class_work/Car.java",
+
+    "code/ClassWork_32/src/interface_generic/ConcatIntegerAsString.java",
+    "code/ClassWork_32/src/interface_generic/ConcatStrings.java",
+    "code/ClassWork_32/src/interface_generic/DoubleCalculator.java",
+    "code/ClassWork_32/src/interface_generic/ICalculator.java",
+    "code/ClassWork_32/src/interface_generic/ShortCalculator.java",
+    "code/ClassWork_32/src/interface_generic/ICalculator.java"
   ],
   "video": ""
 }
