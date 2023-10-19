@@ -47,19 +47,23 @@ In Java, the `Comparator` and `Comparable` interfaces are used for object compar
 
 - The `Comparable` interface allows an object to compare itself with another object.
 - A class implementing `Comparable` provides the `compareTo` method, which defines how one object compares to another.
-- Objects implementing `Comparable` can be naturally ordered, such as numbers or strings, and can be compared using the `compareTo` method.
+- Objects implementing `Comparable` can be naturally ordered, such as numbers or strings, and can be compared using
+  the `compareTo` method.
 
 2. `Comparator`:
 
-- The `Comparator` interface represents an external comparator that can be used to compare objects, even if the class itself does not implement `Comparable`.
+- The `Comparator` interface represents an external comparator that can be used to compare objects, even if the class
+  itself does not implement `Comparable`.
 - You can create different `Comparator` instances for sorting objects based on different criteria.
 - `Comparator` implements the `compare` method, which takes two objects and determines which one should come first.
 
-**It's important to remember** that `Comparable` defines the natural order of comparison for objects of the same class, while `Comparator` allows you to create custom ways of comparing objects.
+**It's important to remember** that `Comparable` defines the natural order of comparison for objects of the same class,
+while `Comparator` allows you to create custom ways of comparing objects.
 
 ##### Practical Tasks
 
-1. Create a `Student` class with `name` and `grade` fields. Implement the `Comparable` interface for it so that students can be sorted by grades.
+1. Create a `Student` class with `name` and `grade` fields. Implement the `Comparable` interface for it so that students
+   can be sorted by grades.
 2. Create a list of students and sort it using both `Comparator` and `Comparable`.
 
 </details>
@@ -71,13 +75,12 @@ In Java, the `Comparator` and `Comparable` interfaces are used for object compar
 
 ## Генерики
 
-**Генерики** (generics) в Java представляют собой механизм, который позволяет создавать классы, интерфейсы и методы,
-которые
-работают с параметризованными типами данных. Они позволяют написать код, который будет работать с разными типами данных,
-обеспечивая типовую безопасность. Типовая безопасность гарантирует, что вы не сможете вставить объект несовместимого
-типа данных.
+**Генерики** (generics) в Java представляют собой механизм, который позволяет создавать **классы**, **интерфейсы** и **методы**,
+которые работают с параметризованными типами данных. Они позволяют написать код, который будет работать с разными типами
+данных, обеспечивая типовую безопасность. Типовая безопасность гарантирует, что вы не сможете вставить объект
+несовместимого типа данных.
 
-Вот простой пример использования генериков:
+**Пример использования генериков для классов:**
 
 ```java
 public class Box<T> {
@@ -104,11 +107,9 @@ public class Box<T> {
         String stringValue=stringBox.getContent();
 ```
 
-- Использование обобщений делает код более гибким и безопасным. Примеры использования:
+- Использование обобщений делает код более гибким и безопасным.
 
-**Задача:** Напишите обобщенный метод `printArray`, который принимает массив любого типа данных и выводит его содержимое
-на экран. Затем создайте два массива - один с целыми числами, другой с строками, и используйте `printArray` для их
-вывода.
+**Примеры использования гейнериков для методов:**
 
 ```java
 public class GenericExample {
@@ -173,13 +174,13 @@ public class Car {
      */
     private static int carIdCounter = 0;
 
-    private final Integer ID; // коснтанта/финальная переменная. Id не должна быть изменяемой после инициализации в конструкторе 
+    private final Integer ID; // Константа/финальная переменная. Id не должна быть изменяемой после инициализации в конструкторе 
     private String brand;
     private String model;
 
     public Car(String brand,
                String model) {
-        carIdCounter++; // добавляем 1 к каждому новому созданному объекту. Если объект создается через этот конструктор
+        carIdCounter++; // Добавляем +1 к каждому новому созданному объекту. Если объект создается через этот конструктор
         this.ID = carIdCounter; // присвоение значения для ID на основе счетчика
         this.brand = brand;
         this.model = model;
