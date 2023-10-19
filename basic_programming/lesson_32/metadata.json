@@ -16,7 +16,10 @@
     "code/ClassWork_32/src/interface_generic/DoubleCalculator.java",
     "code/ClassWork_32/src/interface_generic/ICalculator.java",
     "code/ClassWork_32/src/interface_generic/ShortCalculator.java",
-    "code/ClassWork_32/src/interface_generic/ICalculator.java"
+    "code/ClassWork_32/src/interface_generic/ICalculator.java",
+
+    "code/ClassWork_32/src/comparable/entity/Person.java",
+    "code/ClassWork_32/src/comparable/PersonApp.java"
   ],
   "video": ""
 }
