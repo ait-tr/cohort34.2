@@ -19,7 +19,13 @@
     "code/ClassWork_32/src/interface_generic/ICalculator.java",
 
     "code/ClassWork_32/src/comparable/entity/Person.java",
-    "code/ClassWork_32/src/comparable/PersonApp.java"
+    "code/ClassWork_32/src/comparable/PersonApp.java",
+
+    "code/ClassWork_32/src/comparator/car_comparator/CarIdComparator.java",
+    "code/ClassWork_32/src/comparator/car_comparator/CarModelComparator.java",
+    "code/ClassWork_32/src/comparator/car_comparator/CarPowerComparator.java",
+    "code/ClassWork_32/src/comparator/entity/Car.java",
+    "code/ClassWork_32/src/comparator/ComparatorRunner.java"
   ],
   "video": ""
 }
