@@ -1,6 +1,44 @@
 # 2023-10-20
 
-1.
+### OOP Review
+
+1. General Concepts
+   - General idea
+   - Object
+   - Class
+   - Field/Attribute
+   - Class methods
+   - Constructor
+      - Default constructors
+      - Parameterized constructors
+   - super
+   - this
+   - getters
+   - setters
+   - Special features of a class with a single private constructor
+2. Encapsulation
+   - General idea
+   - Access modifiers (private, protected, public)
+3. Polymorphism
+   - General idea
+   - Constructor overloading
+   - Static (method and operator overloading)
+   - Dynamic (method overriding)
+      - toString
+      - equals vs ==
+4. Inheritance
+   - General idea
+   - Inheritance restrictions (use of final methods)
+   - instanceof operator
+   - Relation of any class to the Object class
+   - final method
+   - Extending modifiers in inheritance, overriding, and method hiding
+5. Abstraction
+   - General idea
+   - Abstract classes
+   - Abstract methods
+   - Interfaces
+   - Multiple inheritance of interfaces
 
 ---
 
