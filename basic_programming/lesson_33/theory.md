@@ -529,4 +529,8 @@ public void go(){
         }
 ```
 
+## Вопросы по ООП
+
+[ссылка на статью](https://javastudy.ru/interview/java-oop/)
+
 </details>

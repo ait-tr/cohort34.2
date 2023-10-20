@@ -5,10 +5,22 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/Lesson_33/src/example2/Audi.java",
+    "code/Lesson_33/src/example2/Bwm.java",
+    "code/Lesson_33/src/example2/Car.java",
+    "code/Lesson_33/src/example2/CarAppRunner2.java",
+    "code/Lesson_33/src/example2/Plane.java",
+    "code/Lesson_33/src/example2/Transport.java",
+    "code/Lesson_33/src/exsample3/Example3Runner.java",
+    "code/Lesson_33/src/exsample3/SomeUtilityClass.java",
+    "code/Lesson_33/src/exsample4/Example4Runner.java",
+    "code/Lesson_33/src/exsample4/User.java",
     "code/Lesson_33/src/Car.java",
     "code/Lesson_33/src/CarAppRunner.java",
+    "code/Lesson_33/src/CarAppRunner2.java",
     "code/Lesson_33/src/Plane.java",
-    "code/Lesson_33/src/Transport.java"
+    "code/Lesson_33/src/Transport.java",
+    "code/Lesson_33/src/Truck.java"
   ],
   "video": ""
 }
