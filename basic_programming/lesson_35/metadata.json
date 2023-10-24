@@ -1,0 +1,23 @@
+{
+  "topic": "Predicate, Arrays methods",
+  "date": "2023-10-23",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/employee/comparators/EmployeeHireYearComparator.java",
+    "code/employee/entity",
+    "code/employee/entity/BaseEmployee.java",
+    "code/employee/entity/Developer.java",
+    "code/employee/entity/Employee.java",
+    "code/employee/entity/Manager.java",
+    "code/employee/entity/Salesperson.java",
+    "code/employee/repo",
+    "code/employee/repo/EmployeeRepository.java",
+    "code/employee/repo/EmployeeRepositoryInterface.java",
+    "code/employee/repo/EmployeeRepositoryTest.java",
+    "code/employee/Main.java",
+    "code/employee/Main2.java"
+  ],
+  "video": ""
+}
