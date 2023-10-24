@@ -3,6 +3,7 @@ package repo;
 import entity.BaseEmployee;
 
 import java.util.Comparator;
+import java.util.function.Predicate;
 
 /**
  * Интерфейс для репозитория работников.
@@ -60,5 +61,9 @@ public interface EmployeeRepositoryInterface {
      * @param toYear   до какого годо
      * @return отфильтрованный массив
      */
-    BaseEmployee[] filterByHireYear(int fromYear, int toYear);
+//    BaseEmployee[] filterByHireYear(int fromYear, int toYear);
+
+//    BaseEmployee[] filterBySalary(double fromSalary, double toSalary);
+
+    BaseEmployee[] filterBy(Predicate<BaseEmployee> predicate);
 }

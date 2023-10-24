@@ -1,13 +1,14 @@
 package entity;
 
 import java.util.Calendar;
+import java.util.Objects;
 
 // Абстрактный класс BaseEmployee
 public abstract class BaseEmployee implements Employee {
-    private String name;
-    private Integer id; // null
-    private int hireYear;
-    private double salary;
+    protected String name;
+    protected Integer id; // null
+    protected int hireYear;
+    protected double salary;
 
     public BaseEmployee(String name, int hireYear) {
         this.name = name;
@@ -54,5 +55,30 @@ public abstract class BaseEmployee implements Employee {
         sb.append(", salary=").append(salary);
         sb.append('}');
         return sb.toString() + " ";
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (this == object) return true;
+        if (object == null || getClass() != object.getClass()) return false;
+
+        BaseEmployee that = (BaseEmployee) object;
+
+        if (hireYear != that.hireYear) return false;
+        if (Double.compare(salary, that.salary) != 0) return false;
+        if (!Objects.equals(name, that.name)) return false;
+        return Objects.equals(id, that.id);
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (id != null ? id.hashCode() : 0);
+        result = 31 * result + hireYear;
+        temp = Double.doubleToLongBits(salary);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
     }
 }

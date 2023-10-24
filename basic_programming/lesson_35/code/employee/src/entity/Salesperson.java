@@ -18,10 +18,13 @@ public class Salesperson extends BaseEmployee {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("Salesperson{");
-        sb.append("baseSalary=").append(baseSalary);
-        sb.append(", numberOfDeals=").append(numberOfDeals);
-        sb.append('}');
-        return super.toString() + sb;
+        return "Salesperson{" +
+                "baseSalary=" + baseSalary +
+                ", numberOfDeals=" + numberOfDeals +
+                ", name='" + name + '\'' +
+                ", id=" + id +
+                ", hireYear=" + hireYear +
+                ", salary=" + salary +
+                '}';
     }
 }

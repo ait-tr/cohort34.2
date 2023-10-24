@@ -4,6 +4,7 @@ import entity.BaseEmployee;
 
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.function.Predicate;
 
 public class EmployeeRepository implements EmployeeRepositoryInterface {
     private BaseEmployee[] employees = new BaseEmployee[10]; // Массив для хранения работников
@@ -98,27 +99,71 @@ public class EmployeeRepository implements EmployeeRepositoryInterface {
         return sortedArray;
     }
 
+//    @Override
+//    public BaseEmployee[] filterByHireYear(int fromYear, int toYear) {
+//        BaseEmployee[] copy = Arrays.copyOf(employees, size);
+//
+//        int filterCounter = 0;
+//        for (int i = 0; i < copy.length; i++) {
+//            if (copy[i].getHireYear() >= fromYear && copy[i].getHireYear() <= toYear) {
+//                filterCounter++;
+//            }
+//        }
+//
+//        BaseEmployee[] result = new BaseEmployee[filterCounter];
+//        for (int i = 0, j = 0; j < result.length; i++) {
+//            if (copy[i].getHireYear() >= fromYear && copy[i].getHireYear() <= toYear) {
+//                result[j] = copy[i];
+//                j++;
+//            }
+//        }
+//
+//        return result;
+//    }
+
     @Override
-    public BaseEmployee[] filterByHireYear(int fromYear, int toYear) {
+    public BaseEmployee[] filterBy(Predicate<BaseEmployee> predicate) {
         BaseEmployee[] copy = Arrays.copyOf(employees, size);
 
         int filterCounter = 0;
         for (int i = 0; i < copy.length; i++) {
-            if (copy[i].getHireYear() >= fromYear && copy[i].getHireYear() <= toYear) {
+            if (predicate.test(copy[i])) {
                 filterCounter++;
             }
         }
 
         BaseEmployee[] result = new BaseEmployee[filterCounter];
         for (int i = 0, j = 0; j < result.length; i++) {
-            if (copy[i].getHireYear() >= fromYear && copy[i].getHireYear() <= toYear) {
+            if (predicate.test(copy[i])) {
                 result[j] = copy[i];
                 j++;
             }
         }
 
-        return copy;
+        return result;
     }
+
+//    @Override
+//    public BaseEmployee[] filterBySalary(double fromSalary, double toSalary) {
+//        BaseEmployee[] copy = Arrays.copyOf(employees, size);
+//
+//        int filterCounter = 0;
+//        for (int i = 0; i < copy.length; i++) {
+//            if (copy[i].calculateSalary() >= fromSalary && copy[i].calculateSalary() <= toSalary) {
+//                filterCounter++;
+//            }
+//        }
+//
+//        BaseEmployee[] result = new BaseEmployee[filterCounter];
+//        for (int i = 0, j = 0; j < result.length; i++) {
+//            if (copy[i].calculateSalary() >= fromSalary && copy[i].calculateSalary() <= toSalary) {
+//                result[j] = copy[i];
+//                j++;
+//            }
+//        }
+//
+//        return result;
+//    }
 
     public BaseEmployee[] getAll() {
         return employees;
