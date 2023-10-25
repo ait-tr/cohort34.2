@@ -18,11 +18,6 @@ public class ArrayTools {
     }
 
     public static <T> T search(T[] source, T value) {
-        for (int i = 0; i < source.length; i++) {
-            if (source[i].equals(value)) {
-                return source[i];
-            }
-        }
         return null;
     }
 
@@ -36,15 +31,6 @@ public class ArrayTools {
     }
 
     public static <T extends Id> boolean removeById(T[] source, long id) {
-        for (int i = 0; i < source.length; i++) {
-            if (id == source[i].getId()) {
-                for (int j = i; j < source.length - 1; j++) {
-                    source[j] = source[j + 1];
-                }
-                source[source.length - 1] = null;
-                return true;
-            }
-        }
         return false;
     }
 }
