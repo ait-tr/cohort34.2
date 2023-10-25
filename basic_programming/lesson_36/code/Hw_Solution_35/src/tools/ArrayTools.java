@@ -1,6 +1,5 @@
 package tools;
 
-import java.util.Arrays;
 
 /**
  * @author Andrej Reutow
@@ -35,13 +34,21 @@ public class ArrayTools {
         return null;
     }
 
+    public static <T> boolean remove(T[] source, T value) {
+        for (int i = 0; i < source.length; i++) {
+//            if (value != null && value.equals(source[i])) {
+            if (source[i] != null && source[i].equals(value)) {
+                source[i] = null;
+                return true;
+            }
+        }
+        return false;
+    }
+
     public static <T extends Id> boolean removeById(T[] source, long id) {
         for (int i = 0; i < source.length; i++) {
-            if (id == source[i].getId()) {
-                for (int j = i; j < source.length - 1; j++) {
-                    source[j] = source[j + 1];
-                }
-                source[source.length - 1] = null;
+            if (source[i] != null && source[i].getId() == id) {
+                source[i] = null;
                 return true;
             }
         }

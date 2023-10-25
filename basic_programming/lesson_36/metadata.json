@@ -5,24 +5,15 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/employee/src/comparators/EmployeeHireYearComparator.java",
-    "code/employee/src/entity/BaseEmployee.java",
-    "code/employee/src/entity/Developer.java",
-    "code/employee/src/entity/Employee.java",
-    "code/employee/src/entity/Manager.java",
-    "code/employee/src/entity/Salesperson.java",
-    "code/employee/src/predicate/EmployeeHireYearPredicate.java",
-    "code/employee/src/predicate/EmployeeSalaryPredicate.java",
-    "code/employee/src/repo/EmployeeRepository.java",
-    "code/employee/src/repo/EmployeeRepositoryInterface.java",
-    "code/employee/src/repo/EmployeeRepositoryTest.java",
-    "code/employee/src/test_entity/Animal.java",
-    "code/employee/src/test_entity/Car.java",
-    "code/employee/src/tools/ArrayTools.java",
-    "code/employee/src/tools/ArrayToolsTest.java",
-    "code/employee/src/tools/Id.java",
-    "code/employee/src/Main.java",
-    "code/employee/src/Main2.java"
+    "code/Hw_Solution_35/src/nested/inner_class/Library.java",
+    "code/Hw_Solution_35/src/nested/inner_class/Main.java",
+    "code/Hw_Solution_35/src/nested/local_inner_classes/TaskManager.java",
+    "code/Hw_Solution_35/src/nested/static_nested_classes/Calculator.java",
+    "code/Hw_Solution_35/src/nested/static_nested_classes/Main.java",
+    "code/Hw_Solution_35/src/tests/ArrayToolsTest.java",
+    "code/Hw_Solution_35/src/tools/ArrayTools.java",
+    "code/Hw_Solution_35/src/tools/Id.java",
+    "code/Hw_Solution_35/src/Main.java"
   ],
   "video": ""
 }
