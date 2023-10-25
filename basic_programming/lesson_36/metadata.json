@@ -1,0 +1,28 @@
+{
+  "topic": "Practice, Arrays methods, Inner Classes",
+  "date": "2023-10-25",
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/employee/src/comparators/EmployeeHireYearComparator.java",
+    "code/employee/src/entity/BaseEmployee.java",
+    "code/employee/src/entity/Developer.java",
+    "code/employee/src/entity/Employee.java",
+    "code/employee/src/entity/Manager.java",
+    "code/employee/src/entity/Salesperson.java",
+    "code/employee/src/predicate/EmployeeHireYearPredicate.java",
+    "code/employee/src/predicate/EmployeeSalaryPredicate.java",
+    "code/employee/src/repo/EmployeeRepository.java",
+    "code/employee/src/repo/EmployeeRepositoryInterface.java",
+    "code/employee/src/repo/EmployeeRepositoryTest.java",
+    "code/employee/src/test_entity/Animal.java",
+    "code/employee/src/test_entity/Car.java",
+    "code/employee/src/tools/ArrayTools.java",
+    "code/employee/src/tools/ArrayToolsTest.java",
+    "code/employee/src/tools/Id.java",
+    "code/employee/src/Main.java",
+    "code/employee/src/Main2.java"
+  ],
+  "video": ""
+}
