@@ -5,7 +5,17 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-
+    "code/Hw_Solution_36/src/entity/Button.java",
+    "code/Hw_Solution_36/src/entity/University.java",
+    "code/Hw_Solution_36/src/Task1.java",
+    "code/Hw_Solution_36/src/Task3.java",
+    "code/Hw_Solution_36/Hw_Solution_36.iml",
+    "code/Lesson_37/src/arrays_copy/Main.java",
+    "code/Lesson_37/src/binary_search/SimpleBS.java",
+    "code/Lesson_37/src/binary_search_obj/model/City.java",
+    "code/Lesson_37/src/binary_search_obj/Main.java",
+    "code/Lesson_37/src/system_copy_of/Main.java",
+    "code/Lesson_37/src/system_copy_of/MainTest.java"
   ],
   "video": ""
 }
