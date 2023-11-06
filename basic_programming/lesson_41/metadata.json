@@ -11,6 +11,7 @@
 		"code/SortedAlbum/src/dao/Album.java",
 		"code/SortedAlbum/src/dao/AlbumImpl.java",
 		"code/SortedAlbum/src/model/Photo.java",
+		"code/SortedAlbum/src/test/PhotoTest.java",
 		"code/SortedAlbum/src/test/AlbumTest.java"
 	]
 }
