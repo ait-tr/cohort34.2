@@ -1,8 +1,9 @@
-package ait.album.dao.ait.album.test;
+package test;
 
-import ait.album.dao.ait.album.dao.Album;
-import ait.album.dao.ait.album.dao.AlbumImpl;
-import ait.album.dao.ait.album.model.Photo;
+
+import dao.Album;
+import dao.AlbumImpl;
+import model.Photo;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -42,10 +43,11 @@ class AlbumTest {
         assertFalse(album.addPhoto(null));
         assertFalse(album.addPhoto(ph[1]));
         Photo photo = new Photo(1, 5, "title5", "url5", now.minusDays(3));
-        assertTrue(album.addPhoto(photo));
+        assertTrue(album.addPhoto(photo)); // 7
         assertEquals(7, album.size());
         photo = new Photo(1, 6, "title6", "url6", now.minusDays(3));
-        assertFalse(album.addPhoto(photo));
+        boolean isAdded = album.addPhoto(photo);
+        assertFalse(isAdded);
     }
 
     @Test
