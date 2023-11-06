@@ -1,0 +1,13 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"homework": "homework.md",
+	"code": [
+		"code/src/homeworks/GarageImpl.java",
+		"code/src/Season.java",
+		"code/src/SeasonAppl.java",
+		"code/src/Month.java",
+		"code/src/MonthAppl.java",
+		"code/src/ExceptionAppl.java"
+	]
+}

@@ -1,0 +1,15 @@
+{
+	"plan": "plan.md",
+	"theory": "theory.md",
+	"homework": "homework.md",
+	"code": [
+		"code/src/homeworks/CompanyImpl.java",
+		"code/src/homeworks/CompanyTest.java",
+		"code/src/TimeAppl.java",
+		"code/src/DateOperation.java",
+		"code/src/DateOperationTest.java",
+		"code/src/ExeptionAppl.java",
+		"code/src/NoSolutionException.java",
+		"code/src/SolutionAnyNumberException.java"
+	]
+}
