@@ -1,8 +1,10 @@
-package ait.album.test;
+package ait.album.dao.ait.album.test;
 
-import ait.album.dao.Album;
-import ait.album.dao.AlbumImpl;
-import ait.album.model.Photo;
+import ait.album.dao.ait.album.dao.Album;
+import ait.album.dao.ait.album.dao.AlbumImpl;
+import ait.album.dao.ait.album.model.Photo;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -20,7 +22,7 @@ class AlbumTest {
         return res != 0 ? res : Integer.compare(p1.getAlbumId(), p2.getAlbumId());
     };
 
-    @org.junit.jupiter.api.BeforeEach
+    @BeforeEach
     void setUp() {
         album = new AlbumImpl(7);
         ph = new Photo[6];
@@ -35,7 +37,7 @@ class AlbumTest {
         }
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void addPhoto() {
         assertFalse(album.addPhoto(null));
         assertFalse(album.addPhoto(ph[1]));
@@ -46,7 +48,7 @@ class AlbumTest {
         assertFalse(album.addPhoto(photo));
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void removePhoto() {
         assertFalse(album.removePhoto(5, 1));
         assertTrue(album.removePhoto(1, 1));
@@ -54,19 +56,19 @@ class AlbumTest {
         assertNull(album.getPhotoFromAlbum(1, 1));
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void updatePhoto() {
         assertTrue(album.updatePhoto(1, 1, "newUrl"));
         assertEquals("newUrl", album.getPhotoFromAlbum(1, 1).getUrl());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getPhotoFromAlbum() {
         assertEquals(ph[0], album.getPhotoFromAlbum(1, 1));
         assertNull(album.getPhotoFromAlbum(1, 5));
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getAllPhotoFromAlbum() {
         Photo[] actual = album.getAllPhotoFromAlbum(2); //{ph[4], ph[3]}
         Photo[] expected = {ph[3], ph[4]};
@@ -74,7 +76,7 @@ class AlbumTest {
         assertArrayEquals(expected, actual);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void getPhotoBetweenDate() {
         LocalDate ld = LocalDate.now();
         Photo[] actual = album.getPhotoBetweenDate(ld.minusDays(5), ld.minusDays(2));
@@ -83,7 +85,7 @@ class AlbumTest {
         assertArrayEquals(expected, actual);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void size() {
         assertEquals(6, album.size());
     }

@@ -1,4 +1,4 @@
-package ait.album.model;
+package ait.album.dao.ait.album.model;
 
 import java.time.LocalDateTime;
 import java.util.Objects;

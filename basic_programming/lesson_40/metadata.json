@@ -3,10 +3,11 @@
 	"theory": "theory.md",
 	"homework": "homework.md",
 	"code": [
-		"code/src/homeworks/DateOperation.java",
-		"code/src/Photo.java",
-		"code/src/Album.java",
-		"code/src/AlbumImpl.java",
-		"code/src/AlbumTest.java"
+		"code/Homework/src/ait/time/utils/DateOperation.java",
+
+		"code/Album/src/ait/album/dao/Album.java",
+		"code/Album/src/ait/album/dao/AlbumImpl.java",
+		"code/Album/src/ait/album/model/Photo.java",
+		"code/Album/src/ait/album/test/AlbumTest.java"
 	]
 }

@@ -1,6 +1,6 @@
-package ait.album.dao;
+package ait.album.dao.ait.album.dao;
 
-import ait.album.model.Photo;
+import ait.album.dao.ait.album.model.Photo;
 
 import java.time.LocalDate;
 
