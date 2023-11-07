@@ -3,9 +3,9 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "basic_programming/lesson_42/code/ClassWorkIterator/src/student/Student.java",
-    "basic_programming/lesson_42/code/ClassWorkIterator/src/MyString.java",
-    "basic_programming/lesson_42/code/ClassWorkIterator/src/MyStringApp.java"
+    "code/ClassWorkIterator/src/student/Student.java",
+    "code/ClassWorkIterator/src/MyString.java",
+    "code/ClassWorkIterator/src/MyStringApp.java"
   ],
   "video": ""
 }
