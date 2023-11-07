@@ -14,8 +14,10 @@ public class AlbumImpl implements Album {
         this.photos = new Photo[capacity];
     }
 
+
     @Override
     public boolean addPhoto(Photo photo) {
+
         boolean isInvalid = photo == null;
         if (isInvalid) {
             return false;
@@ -32,6 +34,9 @@ public class AlbumImpl implements Album {
         }
 
         photos[size++] = photo;
+        if (size > 0) {
+            Arrays.sort(photos, 0, size);
+        }
         return true;
     }
 

@@ -3,7 +3,7 @@ package ait.album.dao.ait.album.model;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
-public class Photo {
+public class Photo implements Comparable<Photo> {
     private int albumId;
     private int photoId;
     private String title;
@@ -18,6 +18,9 @@ public class Photo {
         this.date = date;
     }
 
+        
+        
+        
     public int getAlbumId() {
         return albumId;
     }
@@ -47,6 +50,14 @@ public class Photo {
     }
 
     @Override
+    public int compareTo(Photo other) {
+        // int albumCompare = Integer.compare(this.getAlbumId(), other.albumId);
+        // return albumCompare != 0 ? albumCompare : Integer.compare(this.getPhotoId(), other.getPhotoId());
+        return this.getAlbumId() - other.getAlbumId();
+
+    }
+
+    @Override
     public String toString() {
         return "Photo albumId = " + albumId + ", photoId=" + photoId +
                 ", title='" + title + '\'' +
@@ -66,7 +77,6 @@ public class Photo {
     public int hashCode() {
         return Objects.hash(albumId, photoId);
     }
-
 }
 
 
