@@ -1,7 +1,13 @@
 <details style="margin-top: 16px">
   <summary style="cursor: pointer; color: blue;"><b>English</b></summary>
 
+1. Create a `Playlist` class that implements `Iterable` and contains a list of songs. Implement an iterator that allows
+   switching between songs.
 
+2. Create an enum `WaterCycleStages` with the stages of the water cycle (evaporation, condensation, precipitation).
+   Implement `Iterable` for the enumeration, allowing the user to iterate through the cycle stages.
+
+3. Implement an independent application called Forum.
 
 </details>
 

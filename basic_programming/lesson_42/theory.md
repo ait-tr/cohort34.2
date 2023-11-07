@@ -1,7 +1,47 @@
 <details style="margin-top: 16px">
   <summary style="cursor: pointer; color: blue;"><b>English</b></summary>
 
+## What is Iterable?
 
+In Java, `Iterable` is an interface that represents a collection of objects that can be iterated over, that is, sequentially moved from one element to another. This interface is defined in the `java.lang` package.
+
+First and foremost, `Iterable` contains the method `iterator()`, which returns an iterator, another interface that allows traversing a collection of objects.
+
+```java
+public interface Iterable<T> {
+    Iterator<T> iterator();
+}
+```
+
+The iterator obtained from `Iterable`, in turn, must implement the methods `hasNext()` and `next()`, as well as `remove()` - which is optional.
+
+- `hasNext()` checks if there is a next element.
+- `next()` returns the next element.
+- `remove()` (optional) removes the current element.
+
+Example of an iterator:
+
+```java
+Iterator<String> iterator = someCollection.iterator();
+while(iterator.hasNext()) {
+    String element = iterator.next();
+    // Process the element
+}
+```
+
+## Real-life Examples
+
+- Imagine `Iterable` as a restaurant menu. You can review all the dishes (`hasNext()`), choose a dish (`next()`), and if you wish, cancel the order (`remove()`).
+
+- `Iterable` is like a playlist in a music application. You can move from song to song (iterate) until the songs run out (`hasNext()` returns `false`).
+
+## Tasks
+
+1. **"Bouquet" Task**: Create a `Bouquet` class that implements `Iterable`, containing a list of flowers. Implement an iterator that will allow you to go through all the flowers in the bouquet.
+
+2. **"Bookshelf" Task**: Create a `Bookshelf` class with a collection of books. Implement `Iterable` so that you can iterate through the books using a for-each loop.
+
+3. **"Smart Home" Task**: There is a set of smart home devices. Create a `SmartHome` class that implements `Iterable`, which will allow iterating through the devices and, for example, turning them on or off.
 
 </details>
 
