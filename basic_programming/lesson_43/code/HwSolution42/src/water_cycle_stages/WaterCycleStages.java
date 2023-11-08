@@ -8,7 +8,7 @@ public class WaterCycleStages implements Iterable<Stage> {
     private final Stage[] STAGES;
 
     public WaterCycleStages() {
-        STAGES = new Stage[]{Stage.CONDENSATION, Stage.PRECIPITATION, Stage.EVAPORATION};
+        STAGES = new Stage[]{Stage.EVAPORATION, Stage.CONDENSATION, Stage.PRECIPITATION};
         //или обратиться к enum Stage.values()
         //STAGES = Stage.values();
     }
