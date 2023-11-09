@@ -36,22 +36,23 @@
 public interface MyList<E> {
 
   // Добавляем элемент и увеличиваем размер массива, если нужно
-  void add(E e);
+  void add(E o);
 
   // Получаем элемент по индексу
-  E get(int index);
+  E get (int index);
 
-  // Удаляем элемент по индексу
-  E removeById(int index);
+  // устанавливает объект по индексу, смещая объекты
+  void set(E o, int index);
+
+  // Возвращаем размер коллекции
+  int size();
+  boolean contains(E o);
 
   // Удаляем элемент по значению
   boolean remove(E o);
 
-  // проверяем наличае объекта
-  boolean contains(E o);
-
-  // Возвращаем размер коллекции
-  int size();
+  // Удаляем элемент по индексу
+  E removeByIndex(int index);
 }
 ````
 
