@@ -71,6 +71,10 @@ List<String> list = new ArrayList<>(начальная_емкость);
 
 Это позволит избежать лишних расширений и увеличить производительность при добавлении большого количества элементов.
 
+#### Код с урока в github:
+
+- https://github.com/AR1988/Ait-34_2_ArrayList
+- https://github.com/AR1988/Game21_AIT
 
 
 </details>

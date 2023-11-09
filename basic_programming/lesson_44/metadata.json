@@ -3,6 +3,14 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
+    "code/Game21_AIT/src/Card.java",
+    "code/Game21_AIT/src/Deck.java",
+    "code/Game21_AIT/src/DeckTest.java",
+    "code/Game21_AIT/src/Game21.java",
+    "code/Game21_AIT/src/Player.java",
+    "code/OurArrayList/src/collection/EmptyListException.java",
+    "code/OurArrayList/src/collection/OurArrayList.java",
+    "code/OurArrayList/src/collection/OurList.java"
   ],
   "video": ""
 }
