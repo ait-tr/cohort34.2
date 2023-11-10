@@ -5,9 +5,9 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "basic_programming/lesson_45/ClassWork45/src/timer/Timer.java",
-    "basic_programming/lesson_45/ClassWork45/src/timer/TimerImpl.java",
-    "basic_programming/lesson_45/ClassWork45/src/Main.java"
+    "code/ClassWork45/src/timer/Timer.java",
+    "code/ClassWork45/src/timer/TimerImpl.java",
+    "code/ClassWork45/src/Main.java"
   ],
   "video": ""
 }
