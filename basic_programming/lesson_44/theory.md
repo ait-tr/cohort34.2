@@ -1,7 +1,47 @@
 <details style="margin-top: 16px">
   <summary style="cursor: pointer; color: blue;"><b>English</b></summary>
 
+- Java Collection Framework (JCF) is a set of classes and interfaces that implement the most commonly used data structures. JCF consists of two major sections: Map and Collection. We begin our study with collections.
+- The Collection interface extends the Iterable interface, meaning that all collections are iterable. The Collection interface defines a basic set of methods for working with data collections. For example, adding, removing, searching, getting the number of elements in the collection, and so on.
+- There are many interfaces that extend the Collection interface. We will look at the Set and List interfaces. Let's start with the List interface. The List interface defines collections whose elements have indices, somewhat similar to an array but without size restrictions. Accordingly, in the List interface, in addition to methods inherited from Iterable and Collection, there are methods that work with indices. For example, inserting by index, deleting by index, getting an element by index, searching for the index of a specified argument, and so on.
+- One of the implementations of the List interface is the ArrayList class. To implement the functionality of the List interface, ArrayList encapsulates an array of some initial size. When this array is fully filled, its elements are copied into a new, larger array. Now we wait for the new array to fill up. And so on. In simple terms, ArrayList represents a "resizable array."
 
+### Implementing a Custom ArrayList
+
+For a practical exercise, we can take a simple data structure similar to ArrayList in Java as a basis, which we'll call MyArrayList. Here is a basic outline of the class for implementation:
+
+```java
+public interface MyList<E> {
+
+  // Add an element and increase the array size if necessary
+  void add(E o);
+
+  // Get an element by index
+  E get(int index);
+
+  // Set an object by index, shifting objects
+  void set(E o, int index);
+
+  // Return the size of the collection
+  int size();
+  boolean contains(E o);
+
+  // Remove an element by value
+  boolean remove(E o);
+
+  // Remove an element by index
+  E removeByIndex(int index);
+}
+```
+
+- When elements are added to ArrayList and its current capacity is filled, ArrayList must increase its size to accommodate more elements. This is done by creating a new, larger array and copying the elements from the old array to the new one.
+- The process of increasing the size is called "resizing" or "reallocating," and while it is relatively efficient, it can be performance-intensive when adding a large number of elements since every expansion involves copying all elements. Therefore, it is recommended that if the number of elements or an approximate upper limit is known, initialize the ArrayList with this initial capacity:
+
+```java
+List<String> list = new ArrayList<>(initial_capacity);
+```
+
+This will help avoid unnecessary expansions and improve performance when adding a large number of elements.
 
 </details>
 
