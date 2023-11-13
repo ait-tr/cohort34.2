@@ -1,0 +1,11 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/array_list/Main.java",
+    "src/array_list/MyArrayList.java",
+    "src/array_list/MyList.java"
+  ],
+  "video": ""
+}
