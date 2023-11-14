@@ -1,5 +1,7 @@
 package array_list;
 
+import java.util.Objects;
+
 public class MyArrayList<T> implements MyList<T> {
 
     private Object[] elements;
@@ -45,17 +47,37 @@ public class MyArrayList<T> implements MyList<T> {
 
     @Override
     public void set(int index, T element) {
-
+        if (index < 0 || index >= size) {
+//            throw new IllegalArgumentException("Неверный индекс!");
+            System.out.println("Неверный индекс!");
+            return;
+        }
+        elements[index] = element;
     }
 
     @Override
     public boolean contains(T element) {
+        for (int i = 0; i < size; i++) {
+            if (Objects.equals(element, elements[i])) {
+                return true;
+            }
+        }
         return false;
     }
 
     @Override
     public T remove(int index) {
-        return null;
+        if (index < 0 || index >= size) {
+//            throw new IllegalArgumentException("Неверный индекс!");
+            System.out.println("Неверный индекс!");
+            return null;
+        }
+
+        Object deletedElement = elements[index];
+
+        System.arraycopy(elements, index + 1, elements, index, --size - index);
+
+        return (T) deletedElement;
     }
 
     @Override
