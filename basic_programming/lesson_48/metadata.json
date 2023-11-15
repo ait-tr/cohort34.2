@@ -1,0 +1,12 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/set/task_1/TreeSetTest.java",
+    "src/set/task_2/HashSetTest.java",
+    "src/set/task_3/LinkedHashSetTest.java",
+    "src/set/task_4/ArrayToSet.java"
+  ],
+  "video": ""
+}

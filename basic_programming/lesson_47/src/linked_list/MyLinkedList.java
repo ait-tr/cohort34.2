@@ -1,5 +1,7 @@
 package linked_list;
 
+import java.util.Objects;
+
 public class MyLinkedList<T> implements MyList<T> {
 
     private int size;
@@ -48,17 +50,57 @@ public class MyLinkedList<T> implements MyList<T> {
 
     @Override
     public void set(int index, T element) {
+        if (index < 0 || index >= size) {
+            System.out.println("Некорректный индекс!");
+            return;
+        }
 
+        Node<T> current = first;
+        for (int i = 0; i < index; i++) {
+            current = current.getNext();
+        }
+
+        current.setValue(element);
     }
 
     @Override
     public boolean contains(T element) {
+        if (isEmpty()) {
+            return false;
+        }
+
+        Node<T> current = first;
+        while (current != null) {
+            if (Objects.equals(element, current.getValue())) {
+                return true;
+            }
+            current = current.getNext();
+        }
         return false;
     }
 
     @Override
     public T remove(int index) {
-        return null;
+        if (index < 0 || index >= size) {
+            System.out.println("Некорректный индекс!");
+            return null;
+        }
+
+        size--;
+
+        if (index == 0) {
+            T deletedValue = first.getValue();
+            first = first.getNext();
+            return deletedValue;
+        }
+
+        Node<T> current = first;
+        for (int i = 0; i < index - 1; i++) {
+            current = current.getNext();
+        }
+        T deletedValue = current.getNext().getValue();
+        current.setNext(current.getNext().getNext());
+        return deletedValue;
     }
 
     @Override

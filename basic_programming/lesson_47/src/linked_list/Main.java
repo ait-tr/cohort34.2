@@ -24,5 +24,18 @@ public class Main {
         System.out.println(list);
 
         System.out.println(list.get(3));
+
+        list.set(3, "FFF");
+
+        System.out.println(list);
+
+        System.out.println("Есть ли в листе элемент EEE? - " + list.contains("EEE"));
+        System.out.println("Есть ли в листе элемент GGG? - " + list.contains("GGG"));
+
+        String deletedElement = list.remove(0);
+        System.out.println("Удалённое значение - " + deletedElement);
+        System.out.println(list);
+
+        System.out.println("Размер листа - " + list.size());
     }
 }
