@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/interfaces/MyCollection.java",
+    "src/queue/MyQueue.java",
+    "src/queue/Main.java",
+    "src/stack/MyStack.java",
+    "src/stack/Main.java"
+  ],
+  "video": ""
+}

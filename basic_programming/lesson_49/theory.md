@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_49/resources/44.Data_structures_Queue,_Stack._ArrayDeque.pptm
