@@ -60,12 +60,38 @@ public class MyQueue<T> implements MyCollection<T> {
 
     @Override
     public T peek() {
-        return null;
+
+        if (isEmpty()) {
+            System.out.println("Очередь пуста");
+            return null;
+        }
+
+        return (T) elements[head];
     }
 
     @Override
     public int search(T element) {
-        return 0;
+
+        if (isEmpty()) {
+            System.out.println("Очередь пуста");
+            return -1;
+        }
+
+        for (int i = head; i <= tail; i++) {
+            if (element.equals(elements[i])) {
+                return i - head;
+            }
+        }
+
+//        int counter = 0;
+//        for (int i = head; counter < size; i++) {
+//            if (element.equals(elements[i])) {
+//                return i - head;
+//            }
+//            counter++;
+//        }
+
+        return -1;
     }
 
     @Override
