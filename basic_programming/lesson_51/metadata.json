@@ -1,0 +1,17 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/homework/task_1/Main.java",
+    "src/homework/task_2/Main.java",
+    "src/task_01/Degree.java",
+    "src/task_01/Filter.java",
+    "src/task_01/FirstStudentFilter.java",
+    "src/task_01/Main.java",
+    "src/task_01/SecondStudentFilter.java",
+    "src/task_01/Student.java",
+    "src/task_01/StudentService.java"
+  ],
+  "video": ""
+}

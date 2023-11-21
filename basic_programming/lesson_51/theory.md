@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_51/resources/51.Lambdas,Functional_Interfaces,Method_references.pptm
