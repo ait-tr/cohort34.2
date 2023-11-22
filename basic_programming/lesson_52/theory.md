@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_52/resources/52.Practice.Functions_and_Supplier_interfaces.pptm
