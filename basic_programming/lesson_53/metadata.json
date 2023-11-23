@@ -1,0 +1,13 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/homework/ArraysExample.java",
+    "src/homework/SupplierTest.java",
+    "src/task_01/Main.java",
+    "src/task_02/Main.java",
+    "src/task_03/Main.java"
+  ],
+  "video": ""
+}

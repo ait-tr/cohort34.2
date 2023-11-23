@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_53/resources/53.Stream_API_Stream,primitive_streams.Intermediate_and_Terminal_operations.pptm
