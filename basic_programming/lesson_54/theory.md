@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_54/resources/54.Java_Streams.Practice.Flat_map.Collectors.pptm
