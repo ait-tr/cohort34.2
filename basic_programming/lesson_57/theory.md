@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_57/resources/57.ReadingWriting_streams_of_bytes,streams_of_strings.pptm
