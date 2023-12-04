@@ -1,0 +1,18 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/shop/domain/interfaces/Cart.java",
+    "src/shop/domain/interfaces/Customer.java",
+    "src/shop/domain/interfaces/Product.java",
+    "src/shop/domain/CommonCart.java",
+    "src/shop/domain/CommonCustomer.java",
+    "src/shop/domain/CommonProduct.java",
+    "src/shop/repositories/interfaces/ProductRepository.java",
+    "src/shop/repositories/CommonProductRepository.java",
+    "src/shop/services/interfaces/ProductService.java",
+    "src/shop/services/CommonProductService.java"
+  ],
+  "video": ""
+}
