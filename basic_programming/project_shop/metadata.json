@@ -12,7 +12,10 @@
     "src/shop/repositories/interfaces/ProductRepository.java",
     "src/shop/repositories/CommonProductRepository.java",
     "src/shop/services/interfaces/ProductService.java",
-    "src/shop/services/CommonProductService.java"
+    "src/shop/services/CommonProductService.java",
+    "src/shop/controllers/ProductController.java",
+    "src/shop/controllers/MainController.java",
+    "src/application/Application.java"
   ],
   "video": ""
 }
