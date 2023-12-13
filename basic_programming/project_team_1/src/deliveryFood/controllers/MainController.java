@@ -16,7 +16,7 @@ public class MainController {
 
     public List<Object> sendRequest(String query) {
 
-        try { // "2 3"
+        // "2 3"
             String[] parts = query.split(" "); // "2 3" -> ["2", "3"]
             int objectNum = Integer.parseInt(parts[0]); // ["2", "3"] -> "2" -> 2
             int operationNum = Integer.parseInt(parts[1]); // ["2", "3"] -> "3" -> 3
@@ -74,35 +74,42 @@ public class MainController {
                             result.addAll(clientController.getAllAvailableClients());
                             return result;
                         case 4:
-                            result.addAll(clientController.getAllOrdersByClientById());
+                            result.addAll(clientController.getAllVipClients());
                             return result;
                         case 5:
-                            clientController.deleteClientById();
+                            result.addAll(clientController.getAllOrdersByClientById());
                             return result;
                         case 6:
-                            clientController.deleteClientByName();
+                            clientController.deleteClientById();
                             return result;
                         case 7:
-                            clientController.restoreClientById();
+                            clientController.deleteClientByName();
                             return result;
                         case 8:
-                            clientController.restoreClientByName();
+                            clientController.restoreClientById();
                             return result;
                         case 9:
-                            clientController.changeName();
+                            clientController.restoreClientByName();
                             return result;
                         case 10:
-                            clientController.changeAddress();
+                            clientController.changeName();
                             return result;
                         case 11:
+                            clientController.changeAddress();
+                            return result;
+                        case 12:
                             int result1 = clientController.totalClientQuantity();
                             result.add(result1);
                             return result;
-                        case 12:
+                        case 13:
+                            int result4 = clientController.totalVipClientQuantity();
+                            result.add(result4);
+                            return result;
+                        case 14:
                             int result2 = clientController.totalOrderQuantity();
                             result.add(result2);
                             return result;
-                        case 13:
+                        case 15:
                             int result3 = clientController.orderQuantityByClient();
                             result.add(result3);
                             return result;
@@ -129,11 +136,6 @@ public class MainController {
                 break;
             }
             return result;
-
-        } catch (Exception e) {
-            System.out.println("An error has occurred in the main controller!");
-            throw new RuntimeException(e);
-        }
     }
 }
 
