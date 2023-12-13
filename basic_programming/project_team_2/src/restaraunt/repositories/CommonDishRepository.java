@@ -28,7 +28,7 @@ public class CommonDishRepository implements DishRepository {
     }
 
     @Override
-    public Dish getDishById(String id) {
+    public Dish getDishById(int id) {
         return dishe.get(id);
     }
 

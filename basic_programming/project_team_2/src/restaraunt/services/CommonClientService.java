@@ -40,11 +40,8 @@ public class CommonClientService implements ClientService {
 
     @Override
     public void removeClient(int id) {
-        if (id == 0) {
+        if (id == 0 || id <= 0) {
             throw new IllegalArgumentException("Wrong id!");
-        }
-        if (id <= 0) {
-            throw new IllegalArgumentException("Id can't be negative number!");
         }
         clientRepository.removeClient(id);
     }
@@ -62,31 +59,23 @@ public class CommonClientService implements ClientService {
 
     @Override
     public boolean isClientExist(int id) {
-//        List<Client> clients = clientRepository.getAllClients();
-//        for (int i = 0; i < clients.size(); i++) {
-//            if (clients.get(i).getId() == id) {
-//                return true;
-//            }
-//        }
-//        return false;
         return clientRepository.getById(id) != null;
     }
 
     @Override
-        public void addDishToOrder(String dishName, int clientId) {
-            Dish dish = dishRepository.getDishByName(dishName);
-            Client client = clientRepository.getById(clientId);
+    public void addDishToOrder(String dishName, int clientId) {
+        Dish dish = dishRepository.getDishByName(dishName);
+        Client client = clientRepository.getById(clientId);
 
-            if (dish == null || client == null) {
-                throw new IllegalArgumentException("Dish or client doesn't exist");
-            }
-            client.getOrder().getListItems().add(dish);
+        if (dish == null || client == null) {
+            throw new IllegalArgumentException("Dish or client doesn't exist");
+        }
+        client.getOrder().getListItems().add(dish);
     }
-
 
     @Override
     public void removeDishFromOrder(int dishId, int clientId) {
-        Dish dish = dishRepository.getDishById(String.valueOf(dishId));
+        Dish dish = dishRepository.getDishById(dishId);
         Client client = clientRepository.getById(clientId);
 
         if (dish == null || client == null) {
@@ -97,7 +86,7 @@ public class CommonClientService implements ClientService {
 
 
     @Override
-    public List<Dish> printAllOrders(int clientId) {
+    public List<Dish> getOrder(int clientId) {
         Client client = clientRepository.getById(clientId);
         if (client != null) {
             return client.getOrder().getListItems();

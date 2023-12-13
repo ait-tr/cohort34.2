@@ -37,7 +37,15 @@ public class MainController {
                             clientController.removeClient();
                             break;
                         case 4:
-                            clientController.getClientByLastname();
+                            result.addAll(clientController.getClientByLastname());
+                            break;
+                        case 5: // not working
+                            clientController.addDishToClientOrder();
+                            break;
+                        case 6:
+                            clientController.removeDishFromClientOrder();
+                        case  7:
+                           result.addAll(clientController.displayClientDishesFromOrder()) ;
                             break;
 
                         default:
@@ -69,6 +77,7 @@ public class MainController {
             return result;
         } catch (Exception e) {
             System.err.println("Main controller data error!");
+            System.err.println(e.getMessage());
             throw new RuntimeException(e);
 
         }

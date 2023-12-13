@@ -12,10 +12,7 @@ import java.util.Map;
 public class CommonTablesRepository implements TablesRepository {
 
     private Map<Integer, Table> tables = new HashMap<>();
-
-
     private int currentId;
-    private int maxSeats = 4;
 
     public CommonTablesRepository() {
         addTable(2, "window");

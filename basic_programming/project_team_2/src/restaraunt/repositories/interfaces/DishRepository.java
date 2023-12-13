@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface DishRepository {
 
-    Dish getDishById(String id);
+    Dish getDishById(int id);
 
     List<Dish> getAllDishes();
 

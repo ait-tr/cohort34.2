@@ -49,7 +49,10 @@ public class Application {
                                 "1. Add new client.\n" +
                                 "2. Get list all clients.\n" +
                                 "3. Remove client.\n" +
-                                "4. Get client by lastname.\n");
+                                "4. Get client by lastname.\n" +
+                                "5. Add Dish to client order.\n" +
+                                "6. Remove Dish from client order.\n" +
+                                "7. Display all dishe from client order.");
 
                         String firstOperationNum = scanner.nextLine();
                         mainController.sendRequest(objectNum + " " + firstOperationNum)

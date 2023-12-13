@@ -16,7 +16,7 @@ public class CommonDishService implements DishService {
 
     @Override
     public void addDish(String name, double price) {  // Реализация метода интерфейса DishService для добавления блюда
-        if (name == null) {  // Проверка на null и выброс исключения, если name равно null
+        if (name == null || price == 0) {  // Проверка на null и выброс исключения, если name равно null
             throw new IllegalArgumentException("Dish name can't be empty");
         }
         repository.addDish(name, price);  // Вызов метода добавления блюда из repository
@@ -29,30 +29,22 @@ public class CommonDishService implements DishService {
 
     @Override
     public void removeDish(int id) {  // Реализация метода интерфейса DishService для удаления блюда по ID
-        if (id == 0) {   // Проверка на корректность ID и выброс исключения при несоответствии
-            throw new IllegalArgumentException("Error");
-        }
-        if (id <= 0) {
-            throw new IllegalArgumentException("Index can't be negative number");
+        if (id == 0 || id <= 0) {   // Проверка на корректность ID и выброс исключения при несоответствии
+            throw new IllegalArgumentException("Id can't be null or negative nuber!");
+
         }
         repository.removeDish(id);   // Вызов метода удаления блюда из repository
     }
 
     @Override
     public int getTotalNumberOfDishes() {  // Реализация метода интерфейса DishService для получения общего числа блюд
-        List<Dish> dishes = repository.getAllDishes();   // Получение списка всех блюд и возврат их общего числа
-        return dishes.size();
+
+        return repository.getAllDishes().size();
     }
 
     @Override
     public boolean isDishExist(int id) {  // Реализация метода интерфейса DishService для проверки существования блюда по ID
-        List<Dish> dishes = repository.getAllDishes(); // Получение списка всех блюд и проверка существования блюда по ID
-        for (int i = 0; i < dishes.size(); i++) {
-            if (dishes.get(i).getId() == id) {
-                return true;
-            }
-        }
-        return false;
+        return repository.getDishById(id) != null;
     }
 
     @Override

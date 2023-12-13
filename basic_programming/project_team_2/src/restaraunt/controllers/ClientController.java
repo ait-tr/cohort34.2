@@ -1,7 +1,7 @@
 package restaraunt.controllers;
 
 import restaraunt.domain.interfaces.Client;
-import restaraunt.repositories.CommonDishRepository;
+import restaraunt.domain.interfaces.Dish;
 import restaraunt.services.interfaces.ClientService;
 
 import java.util.List;
@@ -10,14 +10,15 @@ import java.util.Scanner;
 public class ClientController {
 
     private ClientService clientService;
-    private CommonDishRepository dishRepository;
 
 
-    public ClientController(ClientService service) {
-        this.clientService = service;
-        this.dishRepository = new CommonDishRepository();
+
+    public ClientController(ClientService clientService) {
+        this.clientService = clientService;
 
     }
+
+
 
     public void addClient() {
         try {
@@ -27,6 +28,7 @@ public class ClientController {
             String lastname = scanner.nextLine();
 
             clientService.addClient(lastname);
+            System.out.println("Client is added");
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -41,31 +43,22 @@ public class ClientController {
         System.out.println("Type Client ID to remove:");
         int idToRemove = scanner.nextInt();
         clientService.removeClient(idToRemove);
+        System.out.println("Client is removed");
     }
 
-    public void getClientByLastname() {
+    public List<Client> getClientByLastname() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Type client lastname:");
         String findByLastname = scanner.nextLine();
+        return clientService.getClientsByLastName(findByLastname);
 
-        List<Client> clients = clientService.getClientsByLastName(findByLastname);
-
-        if (clients.isEmpty()) {
-            System.out.println("Client with lastname " + findByLastname + " doesn't exist");
-        } else {
-            System.out.println("Client with lastname " + findByLastname + ":");
-            for (Client client : clients) {
-                System.out.println(client);
-            }
-        }
     }
+
 
     public void addDishToClientOrder() {
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("Type Client ID to add a dish to their order:");
         int clientId = scanner.nextInt();
-        scanner.nextLine();
 
         System.out.println("Enter dish name:");
         String dishName = scanner.nextLine();
@@ -75,5 +68,27 @@ public class ClientController {
         System.out.println("Dish added to the order for Client ID: " + clientId);
     }
 
-}
 
+    public void removeDishFromClientOrder() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Type Client ID to remove dish from order:");
+        int clienId = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.println("Type dish name:");
+        int dishId = scanner.nextInt();
+
+        clientService.removeDishFromOrder(clienId, dishId);
+        System.out.println("Dish is removed from client order:" + clienId);
+    }
+
+    public List<Dish> displayClientDishesFromOrder() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Type Client ID:");
+        int clientId = scanner.nextInt();
+       return clientService.getOrder(clientId);
+
+
+            }
+        }

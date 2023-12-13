@@ -22,8 +22,8 @@ public interface ClientService {
 
     void removeDishFromOrder(int dishId, int clientId);
 
-    List<Dish> printAllOrders(int clientId);
 
 
+    List<Dish> getOrder(int clientId);
 }
 
