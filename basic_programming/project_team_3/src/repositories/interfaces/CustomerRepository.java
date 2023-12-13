@@ -16,5 +16,13 @@ public interface CustomerRepository {
 
     Subscribe getSubscribeById(int subscribeId);
 
+    int getSizeSubscribe();
+    int getSizeCustomer();
+
+    List<Subscribe> getAllSubscribes();
+
+
+
+
 
 }

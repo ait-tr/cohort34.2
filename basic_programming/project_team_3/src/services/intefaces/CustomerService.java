@@ -2,11 +2,18 @@ package services.intefaces;
 
 import domain.interfaces.Book;
 import domain.interfaces.Customer;
+import domain.interfaces.Subscribe;
 
 import java.util.List;
 
 public interface CustomerService {
     void addCustomer(String customerName, int subscribeId);
+
+    void removeCustomer(int clientNumber);
+    List<Customer> getAllCustomers();
+    List<Customer> getAllActiveCustomers();
+    List<Customer> getAllInactiveCustomers();
+
 
     void addBookToCustomerCart(int clientNumber, int bookId); // для добавления книги в корзину покупателя.
 
@@ -26,6 +33,8 @@ public interface CustomerService {
     double getRemainingSubscriptionTerm(int customerId);// - для получения оставшегося срока действия подписки у покупателя.
 
     List<Customer> getListSubscribedCustomer(int customerId); //- для получения листа  покупателей, подписанного на определенный тариф.
+
+    List<Subscribe> getAllSubscribes();
 
 }
 

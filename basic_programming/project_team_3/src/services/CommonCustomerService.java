@@ -2,6 +2,7 @@ package services;
 
 import domain.interfaces.Book;
 import domain.interfaces.Customer;
+import domain.interfaces.Subscribe;
 import repositories.interfaces.BookRepository;
 import repositories.interfaces.CustomerRepository;
 import services.intefaces.CustomerService;
@@ -25,76 +26,159 @@ public class CommonCustomerService implements CustomerService {
             throw new IllegalArgumentException("Name cannot be empty");
         }
 
-        if (subscribeId <= 0) {
-            throw new IllegalArgumentException("Subscribe's ID cannot be empty");
+        if (subscribeId < 0) {
+            throw new IllegalArgumentException("Subscribe's ID incorrect");
         }
         customerRepository.addCustomer(customerName, subscribeId);
     }
 
     @Override
-    public void addBookToCustomerCart(int clientNumber, int bookId) {
-        customerRepository.getClientById(clientNumber).getCart().addBook(bookRepository.getBookById(bookId));
-
-     /* Customer currentCustomer = customerRepository.getClientById(clientNumber);
-      Book currentBook = bookRepository.getBookById(bookId);
-      currentCustomer.getCart().addBook(currentBook);*/
-
-
+    public void removeCustomer(int clientNumber) {
+        if (clientNumber < 0) {
+            throw new IllegalArgumentException("Client's ID incorrect");
+        }
+        customerRepository.getClientById(clientNumber).getCart().getBooks().forEach(x -> x.setActive(true));
+        customerRepository.getClientById(clientNumber).getCart().clear();
+        customerRepository.getClientById(clientNumber).setActive(false);
 
     }
 
     @Override
-    public List<Book> getCustomerCart(int customerId) {
-        Customer customer = customerRepository.getClientById(customerId);
+    public List<Customer> getAllCustomers() {
+        return customerRepository.getAllCustomers();
+    }
 
-        if (customer == null) {
-            //
+    @Override
+    public List<Customer> getAllActiveCustomers() {
+        return customerRepository.getAllCustomers()
+                .stream()
+                .filter(x -> x.isActive() == true)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public List<Customer> getAllInactiveCustomers() {
+        return customerRepository.getAllCustomers()
+                .stream()
+                .filter(x -> x.isActive() == false)
+                .collect(Collectors.toList());
+    }
+
+    @Override
+    public void addBookToCustomerCart(int clientNumber, int bookId) {
+        if (clientNumber < 0) {
+            throw new IllegalArgumentException("Client's ID incorrect");
         }
 
-        return customer.getCart().getBooks();
-    }
+        if (bookId < 0) {
+            throw new IllegalArgumentException("Book's ID incorrect");
+        }
 
-    @Override
-    public boolean isCustomerCartEmpty(int customerId) {
-        return customerRepository.getClientById(customerId).getCart().getBooks().isEmpty();
-
-    }
-
-    @Override
-    public void clearCustomerCart(int customerId) {
-        customerRepository.getClientById(customerId).getCart().clear();
-
-    }
-
-    @Override
-    public boolean isCustomerSubscribed(int customerId) {
-        return customerRepository.getClientById(customerId).getSubscribe().isActive();
-    }
-
-    @Override
-    public void subscribeCustomer(int customerId, int subscribeId) {
-        customerRepository.getClientById(customerId).setSubscribe(customerRepository.getSubscribeById(subscribeId));
+        if (!bookRepository.getBookById(bookId).isActive()) {
+            throw new IllegalArgumentException("Book is unavailable");
+        }
+        bookRepository.getBookById(bookId).setActive(false);
+        customerRepository.getClientById(clientNumber).getSubscribe().setActive(true);
+        customerRepository.getClientById(clientNumber).setActive(true);
+        customerRepository.getClientById(clientNumber).getCart()
+                .addBook(bookRepository.getBookById(bookId));
 
     }
 
     @Override
-    public void unsubscribeCustomer(int customerId) {
-        customerRepository.getClientById(customerId).getSubscribe().setActive(false);
+    public List<Book> getCustomerCart(int clientNumber) {
+        if (clientNumber < 0) {
+            throw new IllegalArgumentException("Client's ID incorrect");
+        }
+        return customerRepository.getClientById(clientNumber).getCart().getBooks();
 
     }
 
     @Override
-    public double getRemainingSubscriptionTerm(int customerId) {
+    public boolean isCustomerCartEmpty(int clientNumber) {
+        if (clientNumber < 0) {
+            throw new IllegalArgumentException("Client's ID incorrect");
+        }
+        return customerRepository.getClientById(clientNumber).getCart().getBooks().isEmpty();
 
-        return customerRepository.getClientById(customerId).getSubscribe().getTerm();
+    }
+
+    @Override
+    public void clearCustomerCart(int clientNumber) {
+        if (clientNumber < 0) {
+            throw new IllegalArgumentException("Client's ID incorrect");
+        }
+        customerRepository.getClientById(clientNumber).getCart().getBooks().forEach(x -> x.setActive(true));
+        customerRepository.getClientById(clientNumber).getCart().clear();
+
+    }
+
+    @Override
+    public boolean isCustomerSubscribed(int clientNumber) {
+        if (clientNumber < 0) {
+            throw new IllegalArgumentException("Client's ID incorrect");
+        }
+        return customerRepository.getClientById(clientNumber).getSubscribe().isActive();
+    }
+
+    @Override
+    public void subscribeCustomer(int clientNumber, int subscribeId) {
+        if (clientNumber < 0) {
+            throw new IllegalArgumentException("Client's ID incorrect");
+
+        }
+        if (subscribeId < 0) {
+            throw new IllegalArgumentException("Subscribe's ID incorrect");
+        }
+
+        customerRepository.getClientById(clientNumber).setSubscribe(customerRepository.getSubscribeById(subscribeId));
+
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    @Override
+    public void unsubscribeCustomer(int clientNumber) {
+        if (clientNumber < 0) {
+            throw new IllegalArgumentException("Client's ID incorrect");
+
+        }
+        customerRepository.getClientById(clientNumber).getSubscribe().setActive(false);
+        customerRepository.getClientById(clientNumber).getCart().getBooks().forEach(x -> x.setActive(true));
+        customerRepository.getClientById(clientNumber).getCart().clear();
+
+
+    }
+
+    @Override
+    public double getRemainingSubscriptionTerm(int clientNumber) {
+        if (clientNumber < 0) {
+            throw new IllegalArgumentException("Client's ID incorrect");
+
+        }
+
+        return customerRepository.getClientById(clientNumber).getSubscribe().getTerm();
     }
 
     @Override
     public List<Customer> getListSubscribedCustomer(int subscribeId) {
+        if (subscribeId < 0) {
+            throw new IllegalArgumentException("Subscribe's ID incorrect");
+        }
+
         return customerRepository.getAllCustomers().stream()
-                .filter(x->x.getSubscribe().equals(customerRepository.getSubscribeById(subscribeId)))
+                .filter(x -> x.getSubscribe().equals(customerRepository.getSubscribeById(subscribeId)))
                 .collect(Collectors.toList());
 
     }
+
+    @Override
+    public List<Subscribe> getAllSubscribes() {
+        return customerRepository.getAllSubscribes();
+    }
+
 
 }

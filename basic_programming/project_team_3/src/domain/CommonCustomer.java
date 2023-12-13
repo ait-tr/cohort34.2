@@ -18,9 +18,7 @@ public class CommonCustomer implements Customer {
     public CommonCustomer(String name, int clientNumber, Subscribe subscribe, Cart cart) {
         this.name = name;
         this.clientNumber = clientNumber;
-        setClientNumber(clientNumber);
         this.subscribe = subscribe;
-        this.subscribe.setActive(true);
         this.cart = cart;
         this.isActive = true;
     }
@@ -49,6 +47,16 @@ public class CommonCustomer implements Customer {
         this.subscribe = subscribe;
     }
 
+    @Override
+    public void setActive(boolean active) {
+        this.isActive = active;
+    }
+
+    @Override
+    public boolean isActive() {
+        return isActive;
+    }
+
     public void setClientNumber(int clientNumber) {
         this.clientNumber = clientNumber;
     }
@@ -68,9 +76,6 @@ public class CommonCustomer implements Customer {
 
     @Override
     public String toString() {
-        return "Читатель: {" +
-                "Имя - " + name + '\'' +
-                ", Номер читательского билета - " + clientNumber +
-                '}';
+        return String.format("Клиент: ID - %d, Имя - %s, Подписка - %s%s , Активность %s" + "\n", clientNumber, name, subscribe.getName(), subscribe.isActive() ? "+" : "-", isActive ? "+" : "-");
     }
 }

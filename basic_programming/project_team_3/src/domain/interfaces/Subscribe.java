@@ -8,9 +8,8 @@ public interface Subscribe {
 
     boolean isActive();
 
-    double getPrice();
-
     void setActive(boolean active);
+
 
 
 }
