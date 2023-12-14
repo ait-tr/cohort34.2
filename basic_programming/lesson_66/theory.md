@@ -1,0 +1,1 @@
+https://raw.githubusercontent.com/ait-tr/cohort34.2/main/basic_programming/lesson_66/resources/66_General_Introduction_to_multithreading.pptx
