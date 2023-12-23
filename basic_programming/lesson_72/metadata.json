@@ -1,0 +1,19 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "src/main/java/example_1/Cat.java",
+    "src/main/java/example_1/CatLoad.java",
+    "src/main/java/example_1/CatSave.java",
+    "src/main/java/example_2/Cat.java",
+    "src/main/java/example_2/CatLoad.java",
+    "src/main/java/example_2/CatSave.java",
+    "src/main/java/example_2/Food.java",
+    "src/main/java/example_2/Owner.java",
+    "src/main/java/example_3/Cat.java",
+    "src/main/java/example_3/CatLoad.java",
+    "src/main/java/example_3/CatSave.java"
+  ],
+  "video": ""
+}
