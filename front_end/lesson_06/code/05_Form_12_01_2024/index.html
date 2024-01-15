@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Signup Form</h1>
+    <form>
+      <div>
+        <label for="name">Name:</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Enter your name..."
+          required
+        />
+      </div>
+
+      <label for="email">Email:</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter your email..."
+        required
+      />
+
+      <label for="phone">Phone:</label>
+      <!-- PATTERN ??? -->
+      <input
+        id="phone"
+        type="tel"
+        placeholder="Example: +123-456-7890"
+        pattern="\+?[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+        required
+      />
+
+      <label for="password">Password:</label>
+      <input
+        id="password"
+        type="password"
+        placeholder="Enter your password..."
+        minlength="8"
+        required
+      />
+
+      <label for="hobby">Hobby:</label>
+      <select id="hobby" required>
+        <option value="">Choose your hobby from this list:</option>
+        <option value="chess">Chess</option>
+        <option value="football">Soccer</option>
+        <option value="no">No in this list</option>
+      </select>
+
+      <div>
+        <label for="agree">I agree...</label>
+        <input id="agree" type="checkbox" required />
+      </div>
+
+      <!-- <input type="date" > -->
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
