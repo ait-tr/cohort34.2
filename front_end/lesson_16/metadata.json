@@ -1,0 +1,14 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/15_Promises_26_01_2024/index.html",
+    "code/15_Promises_26_01_2024/script.js",
+    "code/16_Promises2_29_01_2024/index.html",
+    "code/16_Promises2_29_01_2024/style.css",
+    "code/16_Promises2_29_01_2024/script.js"
+  ],
+  "video": "",
+  "etc": ""
+}
