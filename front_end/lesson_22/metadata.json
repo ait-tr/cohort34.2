@@ -1,0 +1,17 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/21_react-app_05_02_2024/src/index.js",
+    "code/21_react-app_05_02_2024/src/App.js",
+    "code/21_react-app_05_02_2024/src/components/Counter.js",
+    "code/21_react-app_05_02_2024/src/components/CounterClass.js",
+    "code/22_react_ts_app_06_02_2024/src/index.tsx",
+    "code/22_react_ts_app_06_02_2024/src/App.tsx",
+    "code/22_react_ts_app_06_02_2024/src/components/Counter.tsx",
+    "code/22_react_ts_app_06_02_2024/src/theory/theory.ts"
+  ],
+  "video": "",
+  "etc": ""
+}

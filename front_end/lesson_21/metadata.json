@@ -3,10 +3,10 @@
   "theory": "theory.md",
   "homework": "homework.md",
   "code": [
-    "code/21_react-app_05_02_2024/index.js",
-    "code/21_react-app_05_02_2024/App.js",
-    "code/21_react-app_05_02_2024/components/Counter.js",
-    "code/21_react-app_05_02_2024/components/CounterClass.js"
+    "code/21_react-app_05_02_2024/src/index.js",
+    "code/21_react-app_05_02_2024/src/App.js",
+    "code/21_react-app_05_02_2024/src/components/Counter.js",
+    "code/21_react-app_05_02_2024/src/components/CounterClass.js"
   ],
   "video": "",
   "etc": ""
