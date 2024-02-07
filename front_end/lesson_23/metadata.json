@@ -1,0 +1,15 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/23_todo_list_ts_app_07_02_2024/src/components/TodoList.tsx",
+    "code/23_todo_list_ts_app_07_02_2024/src/components/Todo.tsx",
+    "code/23_todo_list_ts_app_07_02_2024/src/components/Counter.tsx",
+    "code/23_todo_list_ts_app_07_02_2024/src/index.tsx",
+    "code/23_todo_list_ts_app_07_02_2024/src/App.tsx",
+    "code/23_todo_list_ts_app_07_02_2024/src/theory/theory.ts"
+  ],
+  "video": "",
+  "etc": ""
+}
