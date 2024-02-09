@@ -1,0 +1,17 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/25_react_router_dom_09_02_2024/src/components/Task.tsx",
+    "code/25_react_router_dom_09_02_2024/src/components/Todos.tsx",
+    "code/25_react_router_dom_09_02_2024/src/components/Post.tsx",
+    "code/25_react_router_dom_09_02_2024/src/components/PostList.tsx",
+    "code/25_react_router_dom_09_02_2024/src/components/Photo.tsx",
+    "code/25_react_router_dom_09_02_2024/src/components/PhotoList.tsx",
+    "code/25_react_router_dom_09_02_2024/src/index.tsx",
+    "code/25_react_router_dom_09_02_2024/src/App.tsx"
+  ],
+  "video": "",
+  "etc": ""
+}
