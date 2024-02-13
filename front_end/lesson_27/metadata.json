@@ -11,7 +11,13 @@
     "code/26_displaying_component_12_02_2024/src/components/Photo.tsx",
     "code/26_displaying_component_12_02_2024/src/components/PhotoList.tsx",
     "code/26_displaying_component_12_02_2024/src/index.tsx",
-    "code/26_displaying_component_12_02_2024/src/App.tsx"
+    "code/26_displaying_component_12_02_2024/src/App.tsx",
+    "code/27_redux_13_02_2024/src/components/Counter.tsx",
+    "code/27_redux_13_02_2024/src/redux/counterActions.ts",
+    "code/27_redux_13_02_2024/src/redux/counterReducer.ts",
+    "code/27_redux_13_02_2024/src/redux/store.ts",
+    "code/27_redux_13_02_2024/src/index.tsx",
+    "code/27_redux_13_02_2024/src/App.tsx"
   ],
   "video": "",
   "etc": ""
