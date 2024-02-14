@@ -1,0 +1,24 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/26_displaying_component_12_02_2024/src/components/Layout.tsx",
+    "code/26_displaying_component_12_02_2024/src/components/Task.tsx",
+    "code/26_displaying_component_12_02_2024/src/components/Todos.tsx",
+    "code/26_displaying_component_12_02_2024/src/components/Post.tsx",
+    "code/26_displaying_component_12_02_2024/src/components/PostsList.tsx",
+    "code/26_displaying_component_12_02_2024/src/components/Photo.tsx",
+    "code/26_displaying_component_12_02_2024/src/components/PhotoList.tsx",
+    "code/26_displaying_component_12_02_2024/src/index.tsx",
+    "code/26_displaying_component_12_02_2024/src/App.tsx",
+    "code/27_redux_13_02_2024/src/components/Counter.tsx",
+    "code/27_redux_13_02_2024/src/redux/counterActions.ts",
+    "code/27_redux_13_02_2024/src/redux/counterReducer.ts",
+    "code/27_redux_13_02_2024/src/redux/store.ts",
+    "code/27_redux_13_02_2024/src/index.tsx",
+    "code/27_redux_13_02_2024/src/App.tsx"
+  ],
+  "video": "",
+  "etc": ""
+}
