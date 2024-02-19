@@ -1,0 +1,19 @@
+{
+  "plan": "plan.md",
+  "theory": "theory.md",
+  "homework": "homework.md",
+  "code": [
+    "code/30_library_rtk_16_02_2024/src/components/Counter.tsx",
+    "code/30_library_rtk_16_02_2024/src/components/CreateBook.tsx",
+    "code/30_library_rtk_16_02_2024/src/components/Library.tsx",
+    "code/30_library_rtk_16_02_2024/src/components/Sandwich.tsx",
+    "code/30_library_rtk_16_02_2024/src/redux/counter/counterSlice.ts",
+    "code/30_library_rtk_16_02_2024/src/redux/library/librarySlice.ts",
+    "code/30_library_rtk_16_02_2024/src/redux/sandwich/sandwichSlice.ts",
+    "code/30_library_rtk_16_02_2024/src/redux/storeRTK.ts",
+    "code/30_library_rtk_16_02_2024/src/index.tsx",
+    "code/30_library_rtk_16_02_2024/src/App.tsx"
+  ],
+  "video": "",
+  "etc": ""
+}
